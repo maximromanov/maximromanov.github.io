@@ -1,0 +1,125 @@
+/* test */
+
+/*
+body {
+    background-image: url("http://maximromanov.github.io/images/logo/RM_LogosOnly_Light.gif");
+    background-size: 80px ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 99% 97%;
+}
+
+
+
+h1 {
+text-shadow: 0px 1px 2px #4d4d4d;
+color: #222;
+font-family: Brill, Georgia;
+font-weight:normal;
+font-size: 45px;
+text-align:center;
+}
+*/
+
+.arabicSourcesTable .astHeaderL {
+vertical-align: top;
+font-family:Brill, Georgia;
+font-size:20px;
+font-weight:bold;
+padding:10px 5px;
+overflow:hidden;
+word-break:normal;
+text-align:left;
+}
+
+.arabicSourcesTable .astHeaderC {
+vertical-align: top;
+font-family:Brill, Georgia;
+font-size:20px;
+font-weight:bold;
+padding:10px 5px;
+overflow:hidden;
+word-break:normal;
+text-align:center;
+}
+
+.arabicSourcesTable .astHeaderR {
+vertical-align: top;
+font-family:Brill, Georgia;
+font-size:20px;
+font-weight:bold;
+padding:10px 5px;
+overflow:hidden;
+word-break:normal;
+text-align:right;
+}
+
+.arabicSourcesTable .titleCell {
+vertical-align: top;
+font-family:'Amiri',XBKhoramshahrRegular, Sakkal Majalla, Geeza Pro;
+direction: rtl;
+font-size:16px;
+font-weight:normal;
+padding:10px 5px;
+overflow:hidden;
+word-break:normal;
+width:500px;
+text-align:right;
+}
+
+.arabicSourcesTable .titleWord {
+font-family:'Amiri',XBKhoramshahrRegular,Sakkal Majalla, Geeza Pro;
+font-size:20px;
+font-weight:bold;
+}
+
+a.astUrl:link {
+font-family:Brill, Georgia;
+font-weight:normal;
+text-decoration: underline;
+color: #900000;
+}
+
+a.astUrl:hover {
+font-family:Brill, Georgia;
+font-weight:normal;
+text-decoration: none;
+background-color: #900000;
+color: white;
+}
+
+.arabicSourcesTable .centCell {
+vertical-align: top;
+font-family:Brill, Georgia;
+font-size:18px;
+font-weight:normal;
+padding:5px 5px 5px 5px;
+overflow:hidden;
+word-break:normal;
+width:70px;
+text-align:right;
+}
+
+.arabicSourcesTable .urlCell {
+vertical-align: top;
+font-family:Brill, Georgia;
+font-size:16px;
+font-weight:normal;
+padding:5px 5px;
+overflow:hidden;
+word-break:normal;
+width:200px;
+text-align:left;
+}
+
+.arabicSourcesTable .freq {
+vertical-align: top;
+font-family:Brill, Georgia;
+font-size:25px;
+font-weight:normal;
+padding:5px 5px;
+overflow:hidden;
+word-break:normal;
+width:70px;
+text-align:right;
+}

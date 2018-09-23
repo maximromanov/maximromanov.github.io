@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="generator" content="pandoc"/>
+    <title>Exploratorium Prototype: Template Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.0/mapbox.js'></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-geo.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v0.min.js"></script>
+    <script src="init_map.js"></script>
+    <script src="topo.js"></script>
+    <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+    <script src="load_data.js"></script>
+    <script src="helpers.js"></script>
+    <script src="diagram/create_line_tooltip.js"></script>
+    <script src="diagram/draw_chart.js"></script>
+    <link href="slider/nouislider.css" rel="stylesheet"/>
+</head>
+<body>
+<div align="center" style="width:100%;">
+    <div style="background: darkslategray; height:50px;" class="fixed" role="navigation">
+        <h3 style="color:white;margin-top: 10px;font-family:serif" align="center">Exploratorium Prototype</h3>
+    </div>
+    <!--/.navbar -->
+    <!--<p>This page represents a prototype template for dynamic (automated) data visualization.</p>-->
+    <div id="patterns-of-" width="100%">
+        <p class="body">The page offers an exploratory insight into groups of individuals from the “History of Islām”
+            (<i>Taʾrīḫ al-islām</i>) of al-Ḏahabī who share common ‘descriptors’ (sing. <i>nisbaŧ</i>). By selecting a
+            ‘descriptor’ from a drop-down below,
+            you will get preliminary analyses of geographical, chronological, and network patterns.</p>
+
+        <p class="body" fontsize=+1><center>Select a ‘descriptor’ (sing. <i>nisbaŧ</i>): <select id="people"></select></center>
+        </p>
+
+        <br/>
+        <!--<h1 id="scholar_name">Patterns of الواعظ</h1>-->
+        <div id="space" style="font-family: Georgia, serif;;">
+            <div id="geoscatter"
+                 style="width:100%;height:550px;">
+                <svg id="container" width="100%" height="500px"
+                     style="border: solid; border-left:none;border-right:none">
+                    <g id="main-svg">
+                        <g id="land"></g>
+                        <g id="rivers"></g>
+                        <g id="lakes"></g>
+                        <g id="topos"></g>
+                    </g>
+                    <g id="legend"></g>
+                    <!--<rect x="0" y="0" width="700" height="50" fill="gray"/>-->
+                    <foreignObject id="map_time_slider" width="530" height="50">
+                        <div style="margin: 0px;">
+                            <table>
+                                <tr>
+                                    <td id="min_yede" class="font">0 AH</td>
+                                    <td>
+                                        <div style="width:250px; margin-left: 15px;margin-right: 15px;"
+                                             id="cont_time_filter">
+                                            <div id="timeFilter"></div>
+                                        </div>
+                                    </td>
+                                    <td id="max_yede" class="font">1000 AH
+                                    </td>
+                                    <td>
+                                        <button type="button" id="timeFilter_btn" class="btn btn-default btn-circle">Go</i></button>
+                                    </td>
+                                    <td>
+                                        <img id="anime_btn" class="btn btn-default btn-circle btn-play" src="play.png">
+                                    </td>
+                                    <!--<td>-->
+                                        <!--<img id="anime_pause_btn" style="width: 30px;height: 30px;visibility: hidden" src="pause.jpg">-->
+                                    <!--</td>-->
+                                </tr>
+                            </table>
+                            <h4>
+                                <label>
+                                    <!--Time frame: <span id="timeFilter-value">0 AH to 100 AH</span>-->
+                                </label>
+                            </h4>
+                        </div>
+                    </foreignObject>
+                    <g id="bottom-explain">
+                        <text id="fromto" style="font-weight:bold;font-size: 18px;font-family: Georgia, serif;">
+
+                        <!--x="2%" y="90%" -->
+                        </text>
+                        <!--<rect x="80%" y="80%" height="80" width="250" style="fill:gray;" opacity="0.7"></rect>-->
+                        <text id="bottom-explain-text" class="title_text">
+                              <!--x="2%" y="83%" -->
+                        </text>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <!--TODO: move styles to css-->
+
+        <!--<div style="width: 100%;height:500px;-->
+                    <!--display: flex;-webkit-flex: 1;  /* Safari 6.1+ */-->
+                    <!-- -ms-flex: 1;  /* IE 10 */  flex: 1;">-->
+            <!--<div id="time" style="display:inline-block;width:80%;height:500px;">-->
+
+                <div id="freqs" style="display:inline-block;margin-bottom: 80px;width:90%;height:500px;">
+                    <text id = "dual_time_label"
+                          class="title_text time_chart_title bilingual-excerpt">
+                    </text>
+                    <br>
+                    <text id = "freq_time_label"
+                          class="time_chart_title bilingual-excerpt title_text">
+                    </text>
+                    <svg class="dual-axis-svg" id="filter_dual">
+                        <g></g>
+                    </svg>
+                </div>
+            <!--</div>-->
+            <!--<div id="mostFreq_time" style="display:inline-block;margin-left:10px;width:40%;height:500px;">-->
+                <!--<text id = "single_time_label">-->
+
+                <!--</text>-->
+                <!--<div id="most_freqs" style="width:100%;height: 300px;" class="">-->
+                    <!--<svg class="dual-axis-svg" id="filter_dual">-->
+                        <!--<g></g>-->
+                    <!--</svg>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <p class="body">Corresponding entities: </p>
+        <p class="body" id="items_list" style="line-height: 1.1em">
+        </p>
+
+
+        <div id="network-of-entities" class="section level2">
+            <h2>Network of entities</h2>
+
+            <div id="mygraph" style="width:90%;height:600px;" class="">
+                <svg id="graph_presented">
+                    <g id="graph"></g>
+                    <g id="slider">
+                        <foreignObject x="0" y="2" width="700" height="100">
+                            <div><h3>
+                                <label for="freqFilter" style="display: inline-block;">
+                                    Frequency &ge; <span id="freqFilter-value">3</span>
+                                </label></h3>
+                                <table>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><input type="range" min="1" max="20" id="freqFilter" value="3"
+                                                   style="width:200px;height:30px;"></td>
+                                        <td>20</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </foreignObject>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <!--<p class="body">-->
+        <!--The graph can be similarly visualized using a heatmap matrix. The values-->
+        <!--are shown by colors here: the darker color means higher overlap frequency.-->
+        <!--</p>-->
+
+        <!--<div id="matrix-of-entities-alternative-to-network" style="width:90%;height:500px;">-->
+        <!--<h2>Matrix of entities (alternative to network)</h2>-->
+        <!--<div id="chart" style="width:100%;height:510px;" class="">-->
+        <!--<svg></svg>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+    <br/><br/>
+
+    <div>
+        <h2>Close reading:</h2>
+        <div id="close_reading" style="width:70%;">
+            <div style="width:70%;">
+                <div>
+                    <table style="float: left;">
+                        <tr>
+                            <td id="min_yede_source" style="font-weight: bold;font-family: Georgia, serif;">0 AH</td>
+                            <td>
+                                <div style="width:250px; margin-left: 15px;margin-right: 15px;"
+                                     id="source_time_filter">
+                                    <div id="source_timeFilter"></div>
+                                </div>
+                            </td>
+                            <td id="max_yede_source" style="font-weight: bold;font-family: Georgia, serif;">1000 AH
+                            </td>
+                            <td id="source_filterbutton">
+                                <button id="sourceFilter_btn" type="button" class="btn btn-default btn-circle">Go</i></button>
+                            </td>
+                            <td id="timeframeselected"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="details_area" style="width: 90%;direction: rtl;float: left;margin-right: 0px"></div>
+            </div>
+            <div style="width: 30%;direction: ltr">
+                <!--class="container">-->
+                <ul id="list_ids"></ul>
+            </div>
+        </div>
+
+        <!--<div>-->
+        <!--</div>-->
+
+        <br>
+        <!--<h2 id="details_header" style="display: none">Details</h2>-->
+        <!--<div style="border: solid;">-->
+        <!--<table style="font-family: amiri, Georgia,serif;"-->
+        <!--width="100%"-->
+        <!--id="details" align="right" class="righttable"></table>-->
+        <!--</div>-->
+    </div>
+    <p>Development &copy; 2016—2017 Maxim Romanov <i>and</i> Masoumeh Seydi</p>
+</div>
+<script src="generate_network_data.js"></script>
+<script src="prepare_line_chart.js"></script>
+<script src="init_select_scholars.js"></script>
+<script src="main.js"></script>
+<script src="slider/nouislider.min.js"></script>
+<script src="slider/init_slider.js"></script>
+<script src="create_table_ids.js"></script>
+<script src="gen_netw.js"></script>
+<script src="site_libs/canvas-toBlob.js"></script>
+<script src="site_libs/FileSaver.min.js"></script>
+<script src="save_svg.js"></script>
+</body>
+</html>

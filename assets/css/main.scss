@@ -1,0 +1,14 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+$link-color: #cc0300;
+$serif              : Baskerville, Brill, Georgia, Times, serif;
+$sans-serif         : Baskerville, Brill, sans-serif;
+$sans-serif-narrow  : Baskerville, Brill, "Lucida Grande", Arial, sans-serif;
+
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials

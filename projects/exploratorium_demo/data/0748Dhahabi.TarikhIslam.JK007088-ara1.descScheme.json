@@ -1,0 +1,2885 @@
+{
+    "الاخباري": {
+        "CLASSIFIERS": [
+            "?general",
+            "knowledge",
+            "",
+            "religious",
+            "civilian"
+        ],
+        "COMMENT": "$akhbari #knowledge #religious #civilian #review",
+        "ITEM": "الاخباري",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "aḫbārī",
+        "TYPE": "",
+        "URI": "الاخباري"
+    },
+    "الاديب": {
+        "CLASSIFIERS": [
+            "language",
+            "literature",
+            "knowledge",
+            "civilian"
+        ],
+        "COMMENT": "",
+        "ITEM": "الاديب",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "adīb",
+        "TYPE": "nisbaŧ",
+        "URI": "الاديب"
+    },
+    "الاربلي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$irbili #toponymic",
+        "ITEM": "الاربلي",
+        "KW": "",
+        "TOP_URI": "اربل [NOURI]",
+        "TRANSLIT": "irbilī",
+        "TYPE": "",
+        "URI": "الاربلي"
+    },
+    "الازجي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$azaji #toponymic",
+        "ITEM": "الازجي",
+        "KW": "",
+        "TOP_URI": "BAGHDAD_443E333N_S",
+        "TRANSLIT": "azajī",
+        "TYPE": "",
+        "URI": "الازجي"
+    },
+    "الازدي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "",
+        "ITEM": "الازدي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "azdī",
+        "TYPE": "nisbaŧ",
+        "URI": "الازدي"
+    },
+    "الاستراباذي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$astarabadhi #toponymic",
+        "ITEM": "الاستراباذي",
+        "KW": "",
+        "TOP_URI": "ASTARABADH_544E367N_S",
+        "TRANSLIT": "astarābāḏī",
+        "TYPE": "",
+        "URI": "الاستراباذي"
+    },
+    "الاسدي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "",
+        "ITEM": "الاسدي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "asadī",
+        "TYPE": "nisbaŧ",
+        "URI": "الاسدي"
+    },
+    "الاسكندراني": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$iskandarani #toponymic",
+        "ITEM": "الاسكندراني",
+        "KW": "",
+        "TOP_URI": "ISKANDARIYYA_299E311N_S",
+        "TRANSLIT": "iskandarānī",
+        "TYPE": "nisbaŧ",
+        "URI": "الاسكندراني"
+    },
+    "الاسكندري": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$iskandari #secondary %possibleDuplicate",
+        "ITEM": "الاسكندري",
+        "KW": "",
+        "TOP_URI": "ISKANDARIYYA_299E311N_S",
+        "TRANSLIT": "iskandarī",
+        "TYPE": "",
+        "URI": "الاسكندري"
+    },
+    "الاشبيلي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "الاشبيلي",
+        "KW": "",
+        "TOP_URI": "ISHBILIYYA_059W374N_S",
+        "TRANSLIT": "išbīlī",
+        "TYPE": "nisbaŧ",
+        "URI": "الاشبيلي"
+    },
+    "الاشعري": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$ash`ari #tribal @arab",
+        "ITEM": "الاشعري",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ašʿarī",
+        "TYPE": "",
+        "URI": "الاشعري"
+    },
+    "الاصبهاني": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "الاصبهاني",
+        "KW": "",
+        "TOP_URI": "ISBAHAN_516E326N_S",
+        "TRANSLIT": "iṣbahānī",
+        "TYPE": "nisbaŧ",
+        "URI": "الاصبهاني"
+    },
+    "الافريقي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$ifriqi #toponymic",
+        "ITEM": "الافريقي",
+        "KW": "",
+        "TOP_URI": "Maghrib",
+        "TRANSLIT": "ifrīqī",
+        "TYPE": "",
+        "URI": "الافريقي"
+    },
+    "الامام": {
+        "CLASSIFIERS": [
+            "general",
+            "status",
+            "position",
+            "religious",
+            "mosque"
+        ],
+        "COMMENT": "",
+        "ITEM": "الامام",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "imām",
+        "TYPE": "nisbaŧ",
+        "URI": "الامام"
+    },
+    "الاموي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "",
+        "ITEM": "الاموي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "umawī",
+        "TYPE": "nisbaŧ",
+        "URI": "الاموي"
+    },
+    "الامير": {
+        "CLASSIFIERS": [
+            "general",
+            "position",
+            "military"
+        ],
+        "COMMENT": "",
+        "ITEM": "الامير",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "amīr",
+        "TYPE": "nisbaŧ",
+        "URI": "الامير"
+    },
+    "الانباري": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$anbari #toponymic",
+        "ITEM": "الانباري",
+        "KW": "",
+        "TOP_URI": "ANBAR_437E333N_S",
+        "TRANSLIT": "anbārī",
+        "TYPE": "",
+        "URI": "الانباري"
+    },
+    "الاندلسي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "الاندلسي",
+        "KW": "",
+        "TOP_URI": "Andalus",
+        "TRANSLIT": "andalusī",
+        "TYPE": "nisbaŧ",
+        "URI": "الاندلسي"
+    },
+    "الانصاري": {
+        "CLASSIFIERS": [
+            "tribal",
+            "prophet"
+        ],
+        "COMMENT": "",
+        "ITEM": "الانصاري",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "anṣārī",
+        "TYPE": "nisbaŧ",
+        "URI": "الانصاري"
+    },
+    "الانطاكي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$antaki #toponymic",
+        "ITEM": "الانطاكي",
+        "KW": "",
+        "TOP_URI": "ANTAKIYYA_361E361N_S",
+        "TRANSLIT": "anṭākī",
+        "TYPE": "",
+        "URI": "الانطاكي"
+    },
+    "الانماطي": {
+        "CLASSIFIERS": [
+            "textiles",
+            "carpets",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$anmati #trade #civilian @textile %carpets",
+        "ITEM": "الانماطي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "anmāṭī",
+        "TYPE": "",
+        "URI": "الانماطي"
+    },
+    "الباهلي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$bahili #tribal",
+        "ITEM": "الباهلي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "bāhilī",
+        "TYPE": "",
+        "URI": "الباهلي"
+    },
+    "البجلي": {
+        "CLASSIFIERS": [
+            "?doctrines",
+            "?faction",
+            "?religious",
+            "?shia",
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$bajali #tribal",
+        "ITEM": "البجلي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "bajalī",
+        "TYPE": "",
+        "URI": "البجلي"
+    },
+    "البخاري": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "البخاري",
+        "KW": "",
+        "TOP_URI": "BUKHARA_644E398N_S",
+        "TRANSLIT": "buḫārī",
+        "TYPE": "nisbaŧ",
+        "URI": "البخاري"
+    },
+    "البزار": {
+        "CLASSIFIERS": [
+            "foods",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$bazzar #trade #civilian @food %oilFromSeeds",
+        "ITEM": "البزار",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "bazzār",
+        "TYPE": "",
+        "URI": "البزار"
+    },
+    "البزاز": {
+        "CLASSIFIERS": [
+            "textiles",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "cloth in general",
+        "ITEM": "البزاز",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "bazzāz",
+        "TYPE": "nisbaŧ",
+        "URI": "البزاز"
+    },
+    "البصري": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "البصري",
+        "KW": "",
+        "TOP_URI": "BASRA_477E304N_S",
+        "TRANSLIT": "baṣrī",
+        "TYPE": "nisbaŧ",
+        "URI": "البصري"
+    },
+    "البعلبكي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$ba`labakki #toponymic",
+        "ITEM": "البعلبكي",
+        "KW": "",
+        "TOP_URI": "BALABAKK_361E340N_S",
+        "TRANSLIT": "baʿlabakkī",
+        "TYPE": "",
+        "URI": "البعلبكي"
+    },
+    "البغدادي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "البغدادي",
+        "KW": "",
+        "TOP_URI": "BAGHDAD_443E333N_S",
+        "TRANSLIT": "baġdādī",
+        "TYPE": "nisbaŧ",
+        "URI": "البغدادي"
+    },
+    "البكري": {
+        "CLASSIFIERS": [
+            ""
+        ],
+        "COMMENT": "$bakri #ancestoral %status %religious %AbuBakr",
+        "ITEM": "البكري",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "bakrī",
+        "TYPE": "",
+        "URI": "البكري"
+    },
+    "البلخي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "البلخي",
+        "KW": "",
+        "TOP_URI": "BALKH_668E367N_S",
+        "TRANSLIT": "balḫī",
+        "TYPE": "",
+        "URI": "البلخي"
+    },
+    "البلنسي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$balansi #toponymic",
+        "ITEM": "البلنسي",
+        "KW": "",
+        "TOP_URI": "BALANSIYYA_004W394N_R",
+        "TRANSLIT": "balansī",
+        "TYPE": "",
+        "URI": "البلنسي"
+    },
+    "البيع": {
+        "CLASSIFIERS": [
+            "trade",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$bayyi` #trade #civilian @merchant %seller #review",
+        "ITEM": "البيع",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "bayyiʿ",
+        "TYPE": "",
+        "URI": "البيع"
+    },
+    "التاجر": {
+        "CLASSIFIERS": [
+            "trade",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "",
+        "ITEM": "التاجر",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "tājir",
+        "TYPE": "nisbaŧ",
+        "URI": "التاجر"
+    },
+    "التجيبي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$tajibi #tribal",
+        "ITEM": "التجيبي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "tujibī",
+        "TYPE": "",
+        "URI": "التجيبي"
+    },
+    "التغلبي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$taghlibi #tribal @arab",
+        "ITEM": "التغلبي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "taġlibī",
+        "TYPE": "",
+        "URI": "التغلبي"
+    },
+    "التميمي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "",
+        "ITEM": "التميمي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "tamīmī",
+        "TYPE": "nisbaŧ",
+        "URI": "التميمي"
+    },
+    "التنوخي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$tanukhi #tribal @arab",
+        "ITEM": "التنوخي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "tanūḫī",
+        "TYPE": "",
+        "URI": "التنوخي"
+    },
+    "التيمي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$taymi #tribal %arab",
+        "ITEM": "التيمي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "taymī",
+        "TYPE": "",
+        "URI": "التيمي"
+    },
+    "الثقة": {
+        "CLASSIFIERS": [
+            "hadith",
+            "status",
+            "religious"
+        ],
+        "COMMENT": "",
+        "ITEM": "الثقة",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ṯiqaŧ",
+        "TYPE": "nisbaŧ",
+        "URI": "الثقة"
+    },
+    "الثقفي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "",
+        "ITEM": "الثقفي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ṯaqafī",
+        "TYPE": "nisbaŧ",
+        "URI": "الثقفي"
+    },
+    "الجذامي": {
+        "CLASSIFIERS": [
+            "?arab",
+            "tribal"
+        ],
+        "COMMENT": "$judhami #tribal @arab %Yemen",
+        "ITEM": "الجذامي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "juḏāmī",
+        "TYPE": "",
+        "URI": "الجذامي"
+    },
+    "الجرجاني": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "الجرجاني",
+        "KW": "",
+        "TOP_URI": "JURJAN_549E373N_R",
+        "TRANSLIT": "jurjānī",
+        "TYPE": "",
+        "URI": "الجرجاني"
+    },
+    "الجزري": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$jazari #toponymic",
+        "ITEM": "الجزري",
+        "KW": "",
+        "TOP_URI": "Aqur",
+        "TRANSLIT": "jazarī",
+        "TYPE": "",
+        "URI": "الجزري"
+    },
+    "الجمال": {
+        "CLASSIFIERS": [
+            "animals",
+            "camels",
+            "beast_of_burden",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$jammal #trade #civilian @animal %camels #ancestoral #review @transport",
+        "ITEM": "الجمال",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "jammāl",
+        "TYPE": "",
+        "URI": "الجمال"
+    },
+    "الجمحي": {
+        "CLASSIFIERS": [
+            "?arab",
+            "tribal"
+        ],
+        "COMMENT": "$jumahi #tribal",
+        "ITEM": "الجمحي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "jumaḥī",
+        "TYPE": "",
+        "URI": "الجمحي"
+    },
+    "الجهني": {
+        "CLASSIFIERS": [
+            "?arab",
+            "tribal"
+        ],
+        "COMMENT": "$juhani #tribal",
+        "ITEM": "الجهني",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "juhanī",
+        "TYPE": "",
+        "URI": "الجهني"
+    },
+    "الجوهري": {
+        "CLASSIFIERS": [
+            "jewelry",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$jawhari #trade #civilian @jewelry",
+        "ITEM": "الجوهري",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "jawharī",
+        "TYPE": "",
+        "URI": "الجوهري"
+    },
+    "الجيلاني": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$jilani #toponymic",
+        "ITEM": "الجيلاني",
+        "KW": "",
+        "TOP_URI": "JIL_496E371N_R",
+        "TRANSLIT": "jīlānī",
+        "TYPE": "",
+        "URI": "الجيلاني"
+    },
+    "الجيلي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$jili #toponymic",
+        "ITEM": "الجيلي",
+        "KW": "",
+        "TOP_URI": "JIL_496E371N_R",
+        "TRANSLIT": "jīlī",
+        "TYPE": "",
+        "URI": "الجيلي"
+    },
+    "الحاجب": {
+        "CLASSIFIERS": [
+            "general",
+            "position",
+            "administrative"
+        ],
+        "COMMENT": "$hajib #status #administrative #military #position",
+        "ITEM": "الحاجب",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḥājib",
+        "TYPE": "",
+        "URI": "الحاجب"
+    },
+    "الحارثي": {
+        "CLASSIFIERS": [
+            "?arab",
+            "tribal"
+        ],
+        "COMMENT": "$harithi #tribal",
+        "ITEM": "الحارثي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḥāriṯī",
+        "TYPE": "",
+        "URI": "الحارثي"
+    },
+    "الحافظ": {
+        "CLASSIFIERS": [
+            "hadith",
+            "knowledge",
+            "status",
+            "religious"
+        ],
+        "COMMENT": "",
+        "ITEM": "الحافظ",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḥāfiẓ",
+        "TYPE": "nisbaŧ",
+        "URI": "الحافظ"
+    },
+    "الحداد": {
+        "CLASSIFIERS": [
+            "metals",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$haddad #trade #civilian @metal",
+        "ITEM": "الحداد",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḥaddād",
+        "TYPE": "",
+        "URI": "الحداد"
+    },
+    "الحراني": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "الحراني",
+        "KW": "",
+        "TOP_URI": "HARRAN_390E368N_S",
+        "TRANSLIT": "ḥarrānī",
+        "TYPE": "nisbaŧ",
+        "URI": "الحراني"
+    },
+    "الحربي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "%quarterBaghdad",
+        "ITEM": "الحربي",
+        "KW": "",
+        "TOP_URI": "BAGHDAD_443E333N_S",
+        "TRANSLIT": "ḥarbī",
+        "TYPE": "",
+        "URI": "الحربي"
+    },
+    "الحريمي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$harimi #tribal",
+        "ITEM": "الحريمي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḥarīmī",
+        "TYPE": "",
+        "URI": "الحريمي"
+    },
+    "الحسني": {
+        "CLASSIFIERS": [
+            "ancestral",
+            "status",
+            "prophet",
+            "shia",
+            "religious"
+        ],
+        "COMMENT": "$hasani #ancestoral #status #religious @shiCa %Hasanid",
+        "ITEM": "الحسني",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḥasanī",
+        "TYPE": "",
+        "URI": "الحسني"
+    },
+    "الحسيني": {
+        "CLASSIFIERS": [
+            "ancestral",
+            "status",
+            "shia",
+            "?faction"
+        ],
+        "COMMENT": "$husayni #ancestoral #status #religious #faction @shiCa",
+        "ITEM": "الحسيني",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḥusaynī",
+        "TYPE": "",
+        "URI": "الحسيني"
+    },
+    "الحضرمي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$hadrami #toponymic",
+        "ITEM": "الحضرمي",
+        "KW": "",
+        "TOP_URI": "HADRAMAWT_488E156N_R",
+        "TRANSLIT": "ḥaḍramī",
+        "TYPE": "",
+        "URI": "الحضرمي"
+    },
+    "الحلبي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "الحلبي",
+        "KW": "",
+        "TOP_URI": "HALAB_371E361N_S",
+        "TRANSLIT": "ḥalabī",
+        "TYPE": "nisbaŧ",
+        "URI": "الحلبي"
+    },
+    "الحمصي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "الحمصي",
+        "KW": "",
+        "TOP_URI": "HIMS_367E347N_S",
+        "TRANSLIT": "ḥimṣī",
+        "TYPE": "nisbaŧ",
+        "URI": "الحمصي"
+    },
+    "الحموي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$hamawi #toponymic",
+        "ITEM": "الحموي",
+        "KW": "",
+        "TOP_URI": "HAMA_367E351N_S",
+        "TRANSLIT": "ḥamawī",
+        "TYPE": "",
+        "URI": "الحموي"
+    },
+    "الحميري": {
+        "CLASSIFIERS": [
+            "arab",
+            "confederation",
+            "tribal"
+        ],
+        "COMMENT": "$himyari #tribal",
+        "ITEM": "الحميري",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḥimyarī",
+        "TYPE": "",
+        "URI": "الحميري"
+    },
+    "الحنبلي": {
+        "CLASSIFIERS": [
+            "law",
+            "faction",
+            "knowledge",
+            "religious"
+        ],
+        "COMMENT": "",
+        "ITEM": "الحنبلي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḥanbalī",
+        "TYPE": "nisbaŧ",
+        "URI": "الحنبلي"
+    },
+    "الحنفي": {
+        "CLASSIFIERS": [
+            "law",
+            "faction",
+            "knowledge",
+            "religious",
+            "earlyTribal"
+        ],
+        "COMMENT": "also, early tribal",
+        "ITEM": "الحنفي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḥanafī",
+        "TYPE": "nisbaŧ",
+        "URI": "الحنفي"
+    },
+    "الخادم": {
+        "CLASSIFIERS": [
+            "general",
+            "eunich",
+            "position",
+            "administrative"
+        ],
+        "COMMENT": "$khadim #status #administrative #military #position @eunich",
+        "ITEM": "الخادم",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḫādim",
+        "TYPE": "",
+        "URI": "الخادم"
+    },
+    "الخباز": {
+        "CLASSIFIERS": [
+            "foods",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$khabbaz #trade #civilian @food %breadmaker",
+        "ITEM": "الخباز",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḫabbāz",
+        "TYPE": "",
+        "URI": "الخباز"
+    },
+    "الخراساني": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$khurasani #toponymic",
+        "ITEM": "الخراساني",
+        "KW": "",
+        "TOP_URI": "Khurasan",
+        "TRANSLIT": "ḫurāsānī",
+        "TYPE": "",
+        "URI": "الخراساني"
+    },
+    "الخزاعي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$khuza`i #tribal %notInAnsab",
+        "ITEM": "الخزاعي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḫuzāʿī",
+        "TYPE": "",
+        "URI": "الخزاعي"
+    },
+    "الخزرجي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$khazraji #tribal",
+        "ITEM": "الخزرجي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḫazrajī",
+        "TYPE": "",
+        "URI": "الخزرجي"
+    },
+    "الخطيب": {
+        "CLASSIFIERS": [
+            "preaching",
+            "position",
+            "religious",
+            "mosque"
+        ],
+        "COMMENT": "",
+        "ITEM": "الخطيب",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḫaṭīb",
+        "TYPE": "nisbaŧ",
+        "URI": "الخطيب"
+    },
+    "الخولاني": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$khulani #tribal #toponymic",
+        "ITEM": "الخولاني",
+        "KW": "",
+        "TOP_URI": "Yemen",
+        "TRANSLIT": "ḫūlānī",
+        "TYPE": "",
+        "URI": "الخولاني"
+    },
+    "الخياط": {
+        "CLASSIFIERS": [
+            "textiles",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$khayyat #trade #civilian @textile %tailor",
+        "ITEM": "الخياط",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḫayyāṭ",
+        "TYPE": "",
+        "URI": "الخياط"
+    },
+    "الداني": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$dani #toponymic",
+        "ITEM": "الداني",
+        "KW": "",
+        "TOP_URI": "دانية [NOURI]",
+        "TRANSLIT": "dānī",
+        "TYPE": "",
+        "URI": "الداني"
+    },
+    "الدقاق": {
+        "CLASSIFIERS": [
+            "foods",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$daqqaq #trade #civilian @food %flour",
+        "ITEM": "الدقاق",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "daqqāq",
+        "TYPE": "",
+        "URI": "الدقاق"
+    },
+    "الدلال": {
+        "CLASSIFIERS": [
+            "?finances",
+            "ocupation",
+            "civilian"
+        ],
+        "COMMENT": "$dallal #trade #civilian @broker %middleman",
+        "ITEM": "الدلال",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "dallāl",
+        "TYPE": "",
+        "URI": "الدلال"
+    },
+    "الدمشقي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "الدمشقي",
+        "KW": "",
+        "TOP_URI": "DIMASHQ_363E335N_S",
+        "TRANSLIT": "dimašqī",
+        "TYPE": "nisbaŧ",
+        "URI": "الدمشقي"
+    },
+    "الدينوري": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$dinawri #toponymic",
+        "ITEM": "الدينوري",
+        "KW": "",
+        "TOP_URI": "DINAWAR_474E346N_S",
+        "TRANSLIT": "dīnawarī",
+        "TYPE": "",
+        "URI": "الدينوري"
+    },
+    "الرءيس": {
+        "CLASSIFIERS": [
+            "general",
+            "status",
+            "position"
+        ],
+        "COMMENT": "",
+        "ITEM": "الرءيس",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "raʾīs",
+        "TYPE": "nisbaŧ",
+        "URI": "الرءيس"
+    },
+    "الرازي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "الرازي",
+        "KW": "",
+        "TOP_URI": "RAYY_515E356N_S",
+        "TRANSLIT": "rāzī",
+        "TYPE": "nisbaŧ",
+        "URI": "الرازي"
+    },
+    "الربعي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$raba`i #tribal",
+        "ITEM": "الربعي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "rabaʿī",
+        "TYPE": "",
+        "URI": "الربعي"
+    },
+    "الرحال": {
+        "CLASSIFIERS": [
+            "hadith",
+            "traveller",
+            "status",
+            "religious"
+        ],
+        "COMMENT": "$rahhala #status #religious @hadith @positive",
+        "ITEM": "الرحال",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "raḥḥāl",
+        "TYPE": "",
+        "URI": "الرحال"
+    },
+    "الرعيني": {
+        "CLASSIFIERS": [
+            "?arab",
+            "tribal"
+        ],
+        "COMMENT": "$ru`ayni #tribal",
+        "ITEM": "الرعيني",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ruʿaynī",
+        "TYPE": "",
+        "URI": "الرعيني"
+    },
+    "الرقي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$raqqi #toponymic",
+        "ITEM": "الرقي",
+        "KW": "",
+        "TOP_URI": "RAQQA_390E359N_S",
+        "TRANSLIT": "raqqī",
+        "TYPE": "",
+        "URI": "الرقي"
+    },
+    "الرملي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$ramli #toponymic",
+        "ITEM": "الرملي",
+        "KW": "",
+        "TOP_URI": "RAMLA_348E319N_S",
+        "TRANSLIT": "ramlī",
+        "TYPE": "",
+        "URI": "الرملي"
+    },
+    "الرومي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$rumi #toponymic #ethnic",
+        "ITEM": "الرومي",
+        "KW": "",
+        "TOP_URI": "Rum",
+        "TRANSLIT": "rūmī",
+        "TYPE": "",
+        "URI": "الرومي"
+    },
+    "الزاهد": {
+        "CLASSIFIERS": [
+            "piety",
+            "status",
+            "religious"
+        ],
+        "COMMENT": "",
+        "ITEM": "الزاهد",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "zāhid",
+        "TYPE": "nisbaŧ",
+        "URI": "الزاهد"
+    },
+    "الزهري": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$zuhri #tribal",
+        "ITEM": "الزهري",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "zuhrī",
+        "TYPE": "",
+        "URI": "الزهري"
+    },
+    "الزوج": {
+        "CLASSIFIERS": [
+            "family",
+            "status"
+        ],
+        "COMMENT": "$zawj #family",
+        "ITEM": "الزوج",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "zawj",
+        "TYPE": "",
+        "URI": "الزوج"
+    },
+    "السراج": {
+        "CLASSIFIERS": [
+            "craft",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$sarraj #trade #civilian @craft %saddles",
+        "ITEM": "السراج",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "sarrāj",
+        "TYPE": "",
+        "URI": "السراج"
+    },
+    "السرخسي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$sarakhsi #toponymic",
+        "ITEM": "السرخسي",
+        "KW": "",
+        "TOP_URI": "SARAKHS_611E365N_S",
+        "TRANSLIT": "saraḫsī",
+        "TYPE": "",
+        "URI": "السرخسي"
+    },
+    "السعدي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$sa`di #tribal",
+        "ITEM": "السعدي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "saʿdī",
+        "TYPE": "",
+        "URI": "السعدي"
+    },
+    "السلطان": {
+        "CLASSIFIERS": [
+            "general",
+            "status",
+            "military"
+        ],
+        "COMMENT": "",
+        "ITEM": "السلطان",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "sulṭān",
+        "TYPE": "nisbaŧ",
+        "URI": "السلطان"
+    },
+    "السلمي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "?arab",
+        "ITEM": "السلمي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "sulamī",
+        "TYPE": "nisbaŧ",
+        "URI": "السلمي"
+    },
+    "السمرقندي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$samarqandi #toponymic",
+        "ITEM": "السمرقندي",
+        "KW": "",
+        "TOP_URI": "SAMARQAND_670E396N_S",
+        "TRANSLIT": "samarqandī",
+        "TYPE": "",
+        "URI": "السمرقندي"
+    },
+    "السمسار": {
+        "CLASSIFIERS": [
+            "finances",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$samsar #trade #civilian @finance @broker",
+        "ITEM": "السمسار",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "samsār",
+        "TYPE": "",
+        "URI": "السمسار"
+    },
+    "السمعاني": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$sam`ani #tribal #toponymic #review",
+        "ITEM": "السمعاني",
+        "KW": "",
+        "TOP_URI": "Sham",
+        "TRANSLIT": "samʿānī",
+        "TYPE": "",
+        "URI": "السمعاني"
+    },
+    "السيد": {
+        "CLASSIFIERS": [
+            "ancestral",
+            "status",
+            "prophet"
+        ],
+        "COMMENT": "$sayyid #status #religious @prophet",
+        "ITEM": "السيد",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "sayyid",
+        "TYPE": "",
+        "URI": "السيد"
+    },
+    "الشاطبي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$shatibi #toponymic",
+        "ITEM": "الشاطبي",
+        "KW": "",
+        "TOP_URI": "SHATIBA_005W389N_S",
+        "TRANSLIT": "šāṭibī",
+        "TYPE": "",
+        "URI": "الشاطبي"
+    },
+    "الشاعر": {
+        "CLASSIFIERS": [
+            "language",
+            "literature",
+            "knowledge",
+            "civilian"
+        ],
+        "COMMENT": "",
+        "ITEM": "الشاعر",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "šāʿir",
+        "TYPE": "nisbaŧ",
+        "URI": "الشاعر"
+    },
+    "الشافعي": {
+        "CLASSIFIERS": [
+            "law",
+            "faction",
+            "faction",
+            "religious"
+        ],
+        "COMMENT": "",
+        "ITEM": "الشافعي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "šāfiʿī",
+        "TYPE": "nisbaŧ",
+        "URI": "الشافعي"
+    },
+    "الشامي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$shami #toponymic",
+        "ITEM": "الشامي",
+        "KW": "",
+        "TOP_URI": "Sham",
+        "TRANSLIT": "šāmī",
+        "TYPE": "",
+        "URI": "الشامي"
+    },
+    "الشريف": {
+        "CLASSIFIERS": [
+            "ancestral",
+            "status",
+            "prophet"
+        ],
+        "COMMENT": "$sharif #status #religious #ancestoral @prophet",
+        "ITEM": "الشريف",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "šarīf",
+        "TYPE": "",
+        "URI": "الشريف"
+    },
+    "الشيباني": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$shaybani #tribal",
+        "ITEM": "الشيباني",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "šaybānī",
+        "TYPE": "",
+        "URI": "الشيباني"
+    },
+    "الشيخ": {
+        "CLASSIFIERS": [
+            "general",
+            "status",
+            "religious"
+        ],
+        "COMMENT": "",
+        "ITEM": "الشيخ",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "šayḫ",
+        "TYPE": "nisbaŧ",
+        "URI": "الشيخ"
+    },
+    "الشيرازي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$shirazi #toponymic",
+        "ITEM": "الشيرازي",
+        "KW": "",
+        "TOP_URI": "SHIRAZ_525E296N_S",
+        "TRANSLIT": "šīrāzī",
+        "TYPE": "",
+        "URI": "الشيرازي"
+    },
+    "الشيعي": {
+        "CLASSIFIERS": [
+            "doctrinal",
+            "faction",
+            "religious"
+        ],
+        "COMMENT": "$shi`i #religious #faction @shiCa",
+        "ITEM": "الشيعي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "šīʿī",
+        "TYPE": "",
+        "URI": "الشيعي"
+    },
+    "الصاءغ": {
+        "CLASSIFIERS": [
+            "?chemistry",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$sa'igh #trade #civilian @jewelry @metal",
+        "ITEM": "الصاءغ",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ṣāʾiġ",
+        "TYPE": "",
+        "URI": "الصاءغ"
+    },
+    "الصالح": {
+        "CLASSIFIERS": [
+            "piety",
+            "status",
+            "religious"
+        ],
+        "COMMENT": "",
+        "ITEM": "الصالح",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ṣāliḥ",
+        "TYPE": "nisbaŧ",
+        "URI": "الصالح"
+    },
+    "الصالحي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$salihi #toponymic %quarterDimashq",
+        "ITEM": "الصالحي",
+        "KW": "",
+        "TOP_URI": "DIMASHQ_363E335N_S",
+        "TRANSLIT": "ṣāliḥī",
+        "TYPE": "",
+        "URI": "الصالحي"
+    },
+    "الصدوق": {
+        "CLASSIFIERS": [
+            "piety",
+            "status",
+            "religious"
+        ],
+        "COMMENT": "$saduq #religious #status @piety",
+        "ITEM": "الصدوق",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "sadūq",
+        "TYPE": "",
+        "URI": "الصدوق"
+    },
+    "الصفار": {
+        "CLASSIFIERS": [
+            "metals",
+            "occupation",
+            "civilian",
+            "copper"
+        ],
+        "COMMENT": "$saffar #trade #civilian @metal @copper",
+        "ITEM": "الصفار",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ṣaffār",
+        "TYPE": "",
+        "URI": "الصفار"
+    },
+    "الصنعاني": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$san`ani #toponymic",
+        "ITEM": "الصنعاني",
+        "KW": "",
+        "TOP_URI": "SANA_442E153N_S",
+        "TRANSLIT": "ṣanʿānī",
+        "TYPE": "",
+        "URI": "الصنعاني"
+    },
+    "الصوفي": {
+        "CLASSIFIERS": [
+            "piety",
+            "status",
+            "knowledge",
+            "faction",
+            "religious"
+        ],
+        "COMMENT": "",
+        "ITEM": "الصوفي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ṣūfī",
+        "TYPE": "nisbaŧ",
+        "URI": "الصوفي"
+    },
+    "الصيدلاني": {
+        "CLASSIFIERS": [
+            "?chemistry",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$syadalani #trade #civilian @chem",
+        "ITEM": "الصيدلاني",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ṣaydalānī",
+        "TYPE": "",
+        "URI": "الصيدلاني"
+    },
+    "الصيرفي": {
+        "CLASSIFIERS": [
+            "finances",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$sayrafi #trade #civilian @finance @broker",
+        "ITEM": "الصيرفي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ṣayrafī",
+        "TYPE": "",
+        "URI": "الصيرفي"
+    },
+    "الضبي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$dabbi #tribal",
+        "ITEM": "الضبي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḍabbī",
+        "TYPE": "",
+        "URI": "الضبي"
+    },
+    "الضرير": {
+        "CLASSIFIERS": [
+            "eyes",
+            "blindness",
+            "physical"
+        ],
+        "COMMENT": "",
+        "ITEM": "الضرير",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ḍarīr",
+        "TYPE": "nisbaŧ",
+        "URI": "الضرير"
+    },
+    "الطاءي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$ta'i #tribal @arab",
+        "ITEM": "الطاءي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ṭāʾī",
+        "TYPE": "",
+        "URI": "الطاءي"
+    },
+    "الطبري": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$tabari #toponymic",
+        "ITEM": "الطبري",
+        "KW": "",
+        "TOP_URI": "TABARISTAN_526E363N_R",
+        "TRANSLIT": "ṭabarī",
+        "TYPE": "",
+        "URI": "الطبري"
+    },
+    "الطبيب": {
+        "CLASSIFIERS": [
+            "medicine",
+            "knowledge",
+            "occupation",
+            "position",
+            "civilian"
+        ],
+        "COMMENT": "$tabib #knowledge #position #trade #civilian @medicine",
+        "ITEM": "الطبيب",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ṭabīb",
+        "TYPE": "",
+        "URI": "الطبيب"
+    },
+    "الطحان": {
+        "CLASSIFIERS": [
+            "foods",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$tahhan #trade #civilian @food %miller",
+        "ITEM": "الطحان",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ṭaḥḥān",
+        "TYPE": "",
+        "URI": "الطحان"
+    },
+    "الطليطلي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$tulaytili #toponymic",
+        "ITEM": "الطليطلي",
+        "KW": "",
+        "TOP_URI": "TULAYTILA_040W398N_S",
+        "TRANSLIT": "ṭulayṭilī",
+        "TYPE": "",
+        "URI": "الطليطلي"
+    },
+    "الطوسي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$tusi #toponymic",
+        "ITEM": "الطوسي",
+        "KW": "",
+        "TOP_URI": "TUS_594E364N_S",
+        "TRANSLIT": "ṭūsī",
+        "TYPE": "",
+        "URI": "الطوسي"
+    },
+    "الطويل": {
+        "CLASSIFIERS": [
+            "appearance",
+            "height",
+            "physical"
+        ],
+        "COMMENT": "$tawil #physical @height",
+        "ITEM": "الطويل",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ṭawīl",
+        "TYPE": "",
+        "URI": "الطويل"
+    },
+    "الظاهري": {
+        "CLASSIFIERS": [
+            "law",
+            "knowledge",
+            "faction",
+            "religious"
+        ],
+        "COMMENT": "$zahiri #religious #knowledge #faction @law",
+        "ITEM": "الظاهري",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ẓāhirī",
+        "TYPE": "",
+        "URI": "الظاهري"
+    },
+    "العابد": {
+        "CLASSIFIERS": [
+            "piety",
+            "status",
+            "religious"
+        ],
+        "COMMENT": "",
+        "ITEM": "العابد",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ʿābid",
+        "TYPE": "nisbaŧ",
+        "URI": "العابد"
+    },
+    "العادل": {
+        "CLASSIFIERS": [
+            "?law",
+            "position",
+            "religious",
+            "civilian"
+        ],
+        "COMMENT": "$`adil #religious #position @law %juristicAdjunctPetry ",
+        "ITEM": "العادل",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ʿādil",
+        "TYPE": "",
+        "URI": "العادل"
+    },
+    "العارف": {
+        "CLASSIFIERS": [
+            "piety",
+            "status",
+            "religious"
+        ],
+        "COMMENT": "$`arif #religious #status @piety",
+        "ITEM": "العارف",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ʿārif",
+        "TYPE": "",
+        "URI": "العارف"
+    },
+    "العالم": {
+        "CLASSIFIERS": [
+            "general",
+            "knowledge",
+            "status",
+            "religious"
+        ],
+        "COMMENT": "",
+        "ITEM": "العالم",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ʿālim",
+        "TYPE": "nisbaŧ",
+        "URI": "العالم"
+    },
+    "العباسي": {
+        "CLASSIFIERS": [
+            "ancestral",
+            "status"
+        ],
+        "COMMENT": "$`abbasi #ancestoral #review",
+        "ITEM": "العباسي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ʿabbāsī",
+        "TYPE": "nisbaŧ",
+        "URI": "العباسي"
+    },
+    "العبدي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$`abdi #tribal",
+        "ITEM": "العبدي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ʿabdī",
+        "TYPE": "",
+        "URI": "العبدي"
+    },
+    "العجلي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$`ijli #tribal",
+        "ITEM": "العجلي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ʿijlī",
+        "TYPE": "",
+        "URI": "العجلي"
+    },
+    "العدوي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$`adwi #tribal",
+        "ITEM": "العدوي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ʿadwī",
+        "TYPE": "",
+        "URI": "العدوي"
+    },
+    "العراقي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$`iraqi #toponymic",
+        "ITEM": "العراقي",
+        "KW": "",
+        "TOP_URI": "Iraq",
+        "TRANSLIT": "ʿirāqī",
+        "TYPE": "",
+        "URI": "العراقي"
+    },
+    "العسقلاني": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$`asqalani #toponymic",
+        "ITEM": "العسقلاني",
+        "KW": "",
+        "TOP_URI": "ASQALAN_345E316N_S",
+        "TRANSLIT": "ʿasqalānī",
+        "TYPE": "",
+        "URI": "العسقلاني"
+    },
+    "العطار": {
+        "CLASSIFIERS": [
+            "chemistry",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$`attar #trade #civilian @chem",
+        "ITEM": "العطار",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ʿaṭṭār",
+        "TYPE": "nisbaŧ",
+        "URI": "العطار"
+    },
+    "العقيلي": {
+        "CLASSIFIERS": [
+            "ancestral",
+            "status",
+            "?arab",
+            "tribal"
+        ],
+        "COMMENT": "$`uqayli/`aqili #ancestoral #tribal",
+        "ITEM": "العقيلي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ʿaqīlī",
+        "TYPE": "",
+        "URI": "العقيلي"
+    },
+    "العكبري": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$`ukbari #toponymic",
+        "ITEM": "العكبري",
+        "KW": "",
+        "TOP_URI": "UKBARA_442E338N_S",
+        "TRANSLIT": "ʿukbarī",
+        "TYPE": "",
+        "URI": "العكبري"
+    },
+    "العلامة": {
+        "CLASSIFIERS": [
+            "general",
+            "status",
+            "religious"
+        ],
+        "COMMENT": "",
+        "ITEM": "العلامة",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ʿallāmaŧ",
+        "TYPE": "nisbaŧ",
+        "URI": "العلامة"
+    },
+    "العلوي": {
+        "CLASSIFIERS": [
+            "ancestral",
+            "status",
+            "shia",
+            "?faction"
+        ],
+        "COMMENT": "$`alawi #ancestoral #status #religious #faction @shiCa #review",
+        "ITEM": "العلوي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ʿalawī",
+        "TYPE": "nisbaŧ",
+        "URI": "العلوي"
+    },
+    "العنبري": {
+        "CLASSIFIERS": [
+            "?arab",
+            "tribal"
+        ],
+        "COMMENT": "$`anbari #tribal",
+        "ITEM": "العنبري",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ʿanbarī",
+        "TYPE": "",
+        "URI": "العنبري"
+    },
+    "الغافقي": {
+        "CLASSIFIERS": [
+            "?arab",
+            "tribal"
+        ],
+        "COMMENT": "$ghafiqi #tribal",
+        "ITEM": "الغافقي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ġāfiqī",
+        "TYPE": "",
+        "URI": "الغافقي"
+    },
+    "الغرناطي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$gharnati #toponymic",
+        "ITEM": "الغرناطي",
+        "KW": "",
+        "TOP_URI": "GHARNATA_035W372N_S",
+        "TRANSLIT": "ġarnāṭī",
+        "TYPE": "",
+        "URI": "الغرناطي"
+    },
+    "الغساني": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$ghassani #tribal",
+        "ITEM": "الغساني",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "ġassānī",
+        "TYPE": "",
+        "URI": "الغساني"
+    },
+    "الفارسي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$farisi #toponymic #ethnic @nonarab",
+        "ITEM": "الفارسي",
+        "KW": "",
+        "TOP_URI": "Faris",
+        "TRANSLIT": "fārisī",
+        "TYPE": "",
+        "URI": "الفارسي"
+    },
+    "الفزاري": {
+        "CLASSIFIERS": [
+            "?arab",
+            "tribal"
+        ],
+        "COMMENT": "$fazari #tribal @arab",
+        "ITEM": "الفزاري",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "fazārī",
+        "TYPE": "",
+        "URI": "الفزاري"
+    },
+    "الفقير": {
+        "CLASSIFIERS": [
+            "piety",
+            "status",
+            "religious"
+        ],
+        "COMMENT": "$faqir #religious #status @piety @sufism",
+        "ITEM": "الفقير",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "faqīr",
+        "TYPE": "",
+        "URI": "الفقير"
+    },
+    "الفقيه": {
+        "CLASSIFIERS": [
+            "law",
+            "knowledge",
+            "religious"
+        ],
+        "COMMENT": "",
+        "ITEM": "الفقيه",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "faqīh",
+        "TYPE": "nisbaŧ",
+        "URI": "الفقيه"
+    },
+    "الفهري": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$fihri #tribal @arab",
+        "ITEM": "الفهري",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "fihrī",
+        "TYPE": "",
+        "URI": "الفهري"
+    },
+    "القاضي": {
+        "CLASSIFIERS": [
+            "law",
+            "position",
+            "religious",
+            "?civilian"
+        ],
+        "COMMENT": "",
+        "ITEM": "القاضي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "qāḍī",
+        "TYPE": "nisbaŧ",
+        "URI": "القاضي"
+    },
+    "القرشي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal",
+            "prophet"
+        ],
+        "COMMENT": "",
+        "ITEM": "القرشي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "qurašī",
+        "TYPE": "nisbaŧ",
+        "URI": "القرشي"
+    },
+    "القرطبي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "القرطبي",
+        "KW": "",
+        "TOP_URI": "QURTUBA_047W379N_S",
+        "TRANSLIT": "qurṭubī",
+        "TYPE": "nisbaŧ",
+        "URI": "القرطبي"
+    },
+    "القزاز": {
+        "CLASSIFIERS": [
+            "textiles",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$qazzaz #trade #civilian @textile @silk @glass %glazier",
+        "ITEM": "القزاز",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "qazzāz",
+        "TYPE": "",
+        "URI": "القزاز"
+    },
+    "القزويني": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$qazwini #toponymic",
+        "ITEM": "القزويني",
+        "KW": "",
+        "TOP_URI": "QAZWIN_500E362N_S",
+        "TRANSLIT": "qazwīnī",
+        "TYPE": "",
+        "URI": "القزويني"
+    },
+    "القشيري": {
+        "CLASSIFIERS": [
+            "?arab",
+            "tribal"
+        ],
+        "COMMENT": "$qushayri #tribal",
+        "ITEM": "القشيري",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "qušayrī",
+        "TYPE": "",
+        "URI": "القشيري"
+    },
+    "القطان": {
+        "CLASSIFIERS": [
+            "textiles",
+            "occupation",
+            "civilian",
+            "cotton"
+        ],
+        "COMMENT": "$qattan #trade #civilian @textile @cotton",
+        "ITEM": "القطان",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "qaṭṭān",
+        "TYPE": "",
+        "URI": "القطان"
+    },
+    "القيرواني": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$qayrawani #toponymic",
+        "ITEM": "القيرواني",
+        "KW": "",
+        "TOP_URI": "QAYRAWAN_101E357N_S",
+        "TRANSLIT": "qayrawānī",
+        "TYPE": "",
+        "URI": "القيرواني"
+    },
+    "القيسي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$qaysi #tribal @arab",
+        "ITEM": "القيسي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "qaysī",
+        "TYPE": "nisbaŧ",
+        "URI": "القيسي"
+    },
+    "الكاتب": {
+        "CLASSIFIERS": [
+            "general",
+            "position",
+            "administrative"
+        ],
+        "COMMENT": "",
+        "ITEM": "الكاتب",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "kātib",
+        "TYPE": "nisbaŧ",
+        "URI": "الكاتب"
+    },
+    "الكرخي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$karkhi #toponymic #topMulti",
+        "ITEM": "الكرخي",
+        "KW": "",
+        "TOP_URI": "BAGHDAD_443E333N_S",
+        "TRANSLIT": "karḫī",
+        "TYPE": "",
+        "URI": "الكرخي"
+    },
+    "الكردي": {
+        "CLASSIFIERS": [
+            "nonarab",
+            "tribal"
+        ],
+        "COMMENT": "$kurdi #ethnic #toponymic",
+        "ITEM": "الكردي",
+        "KW": "",
+        "TOP_URI": "Aqur",
+        "TRANSLIT": "kurdī",
+        "TYPE": "",
+        "URI": "الكردي"
+    },
+    "الكلابي": {
+        "CLASSIFIERS": [
+            "?arab",
+            "tribal"
+        ],
+        "COMMENT": "$kilabi/kulabi #tribal",
+        "ITEM": "الكلابي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "kilābī",
+        "TYPE": "",
+        "URI": "الكلابي"
+    },
+    "الكلبي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$kalbi #tribal @arab",
+        "ITEM": "الكلبي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "kalbī",
+        "TYPE": "",
+        "URI": "الكلبي"
+    },
+    "الكناني": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$kinani #tribal",
+        "ITEM": "الكناني",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "kinānī",
+        "TYPE": "",
+        "URI": "الكناني"
+    },
+    "الكندي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$kindi #tribal",
+        "ITEM": "الكندي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "kindī",
+        "TYPE": "",
+        "URI": "الكندي"
+    },
+    "الكوفي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "الكوفي",
+        "KW": "",
+        "TOP_URI": "KUFA_443E320N_S",
+        "TRANSLIT": "kūfī",
+        "TYPE": "nisbaŧ",
+        "URI": "الكوفي"
+    },
+    "اللخمي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$lakhmi #tribal",
+        "ITEM": "اللخمي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "laḫmī",
+        "TYPE": "",
+        "URI": "اللخمي"
+    },
+    "اللغوي": {
+        "CLASSIFIERS": [
+            "language",
+            "knowledge",
+            "civilian"
+        ],
+        "COMMENT": "$lughawi #knowledge #civilian @lang",
+        "ITEM": "اللغوي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "luġawī",
+        "TYPE": "",
+        "URI": "اللغوي"
+    },
+    "الليثي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$laythi #tribal @arab",
+        "ITEM": "الليثي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "layṯī",
+        "TYPE": "",
+        "URI": "الليثي"
+    },
+    "المءدب": {
+        "CLASSIFIERS": [
+            "language",
+            "literature",
+            "knowledge",
+            "civilian"
+        ],
+        "COMMENT": "",
+        "ITEM": "المءدب",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "muʾaddib",
+        "TYPE": "nisbaŧ",
+        "URI": "المءدب"
+    },
+    "المءذن": {
+        "CLASSIFIERS": [
+            "general",
+            "position",
+            "religious",
+            "mosque"
+        ],
+        "COMMENT": "$m'adhdhin #religious #position @mosque",
+        "ITEM": "المءذن",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "muʾaḏḏin",
+        "TYPE": "",
+        "URI": "المءذن"
+    },
+    "المازني": {
+        "CLASSIFIERS": [
+            "?arab",
+            "tribal"
+        ],
+        "COMMENT": "$mazini #tribal",
+        "ITEM": "المازني",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "māzinī",
+        "TYPE": "",
+        "URI": "المازني"
+    },
+    "المالقي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$maliqi #toponymic",
+        "ITEM": "المالقي",
+        "KW": "",
+        "TOP_URI": "MALIQA_044W367N_S",
+        "TRANSLIT": "māliqī",
+        "TYPE": "",
+        "URI": "المالقي"
+    },
+    "المالكي": {
+        "CLASSIFIERS": [
+            "law",
+            "faction",
+            "knowledge",
+            "religious"
+        ],
+        "COMMENT": "",
+        "ITEM": "المالكي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "mālikī",
+        "TYPE": "nisbaŧ",
+        "URI": "المالكي"
+    },
+    "المتكلم": {
+        "CLASSIFIERS": [
+            "doctrinal",
+            "knowledge",
+            "religious"
+        ],
+        "COMMENT": "$mutakallim #religious #knowledge @theology",
+        "ITEM": "المتكلم",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "mutakallim",
+        "TYPE": "",
+        "URI": "المتكلم"
+    },
+    "المحتشم": {
+        "CLASSIFIERS": [
+            "piety",
+            "status",
+            "religious"
+        ],
+        "COMMENT": "$muhtashim #religious @piety #status",
+        "ITEM": "المحتشم",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "muḥtašim",
+        "TYPE": "",
+        "URI": "المحتشم"
+    },
+    "المحدث": {
+        "CLASSIFIERS": [
+            "hadith",
+            "knowledge",
+            "religious"
+        ],
+        "COMMENT": "",
+        "ITEM": "المحدث",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "muḥaddiṯ",
+        "TYPE": "nisbaŧ",
+        "URI": "المحدث"
+    },
+    "المخزومي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$makhzumi #tribal %arab",
+        "ITEM": "المخزومي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "maḫzūmī",
+        "TYPE": "",
+        "URI": "المخزومي"
+    },
+    "المدرس": {
+        "CLASSIFIERS": [
+            "general",
+            "position",
+            "religious",
+            "madrasa",
+            "waqf"
+        ],
+        "COMMENT": "$mudarris #religious #position @madrasa",
+        "ITEM": "المدرس",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "mudarris",
+        "TYPE": "",
+        "URI": "المدرس"
+    },
+    "المدني": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "المدني",
+        "KW": "",
+        "TOP_URI": "MADINA_396E244N_S",
+        "TRANSLIT": "madanī",
+        "TYPE": "nisbaŧ",
+        "URI": "المدني"
+    },
+    "المديني": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$madini #toponymic #review #topMulti",
+        "ITEM": "المديني",
+        "KW": "",
+        "TOP_URI": "MADINA_396E244N_S",
+        "TRANSLIT": "madīnī",
+        "TYPE": "",
+        "URI": "المديني"
+    },
+    "المرادي": {
+        "CLASSIFIERS": [
+            "?arab",
+            "tribal"
+        ],
+        "COMMENT": "$muradi #tribal #review %notInAnsab",
+        "ITEM": "المرادي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "murādī",
+        "TYPE": "",
+        "URI": "المرادي"
+    },
+    "المرسي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$mursi #toponymic",
+        "ITEM": "المرسي",
+        "KW": "",
+        "TOP_URI": "MURSIYA_011W379N_S",
+        "TRANSLIT": "mursī",
+        "TYPE": "",
+        "URI": "المرسي"
+    },
+    "المروزي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "المروزي",
+        "KW": "",
+        "TOP_URI": "MARW_621E376N_S",
+        "TRANSLIT": "marwazī",
+        "TYPE": "nisbaŧ",
+        "URI": "المروزي"
+    },
+    "المزني": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$muzani #tribal @arab",
+        "ITEM": "المزني",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "muzanī",
+        "TYPE": "",
+        "URI": "المزني"
+    },
+    "المصري": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "المصري",
+        "KW": "",
+        "TOP_URI": "Egypt",
+        "TRANSLIT": "miṣrī",
+        "TYPE": "nisbaŧ",
+        "URI": "المصري"
+    },
+    "المصيصي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$missisi #toponymic",
+        "ITEM": "المصيصي",
+        "KW": "",
+        "TOP_URI": "MISSISA_356E369N_S",
+        "TRANSLIT": "miṣṣīṣī",
+        "TYPE": "",
+        "URI": "المصيصي"
+    },
+    "المعافري": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "$ma`afiri #tribal",
+        "ITEM": "المعافري",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "maʿārifī",
+        "TYPE": "",
+        "URI": "المعافري"
+    },
+    "المعتزلي": {
+        "CLASSIFIERS": [
+            "doctrinal",
+            "knowledge",
+            "religious"
+        ],
+        "COMMENT": "$mu`tazili #knowledge #religious #faction @theology",
+        "ITEM": "المعتزلي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "muʿtazilī",
+        "TYPE": "",
+        "URI": "المعتزلي"
+    },
+    "المغربي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$maghribi #toponymic",
+        "ITEM": "المغربي",
+        "KW": "",
+        "TOP_URI": "Maghrib",
+        "TRANSLIT": "maġribī",
+        "TYPE": "",
+        "URI": "المغربي"
+    },
+    "المفتي": {
+        "CLASSIFIERS": [
+            "law",
+            "knowledge",
+            "position",
+            "religious"
+        ],
+        "COMMENT": "$mufti #religious #knowledge #position @law",
+        "ITEM": "المفتي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "muftī",
+        "TYPE": "",
+        "URI": "المفتي"
+    },
+    "المفسر": {
+        "CLASSIFIERS": [
+            "quran",
+            "knowledge",
+            "religious"
+        ],
+        "COMMENT": "$mufassir #religious #knowledge @quran",
+        "ITEM": "المفسر",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "mufassir",
+        "TYPE": "",
+        "URI": "المفسر"
+    },
+    "المفيد": {
+        "CLASSIFIERS": [
+            "education",
+            "position",
+            "religious",
+            "madrasa",
+            "waqf"
+        ],
+        "COMMENT": "$mufid #religious #position @madrasa %simToMuCidButNotPositionBerkey",
+        "ITEM": "المفيد",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "mufīd",
+        "TYPE": "",
+        "URI": "المفيد"
+    },
+    "المقدسي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "المقدسي",
+        "KW": "",
+        "TOP_URI": "BAYTMAQDIS_352E317N_S",
+        "TRANSLIT": "muqaddasī",
+        "TYPE": "nisbaŧ",
+        "URI": "المقدسي"
+    },
+    "المقرء": {
+        "CLASSIFIERS": [
+            "quran",
+            "knowledge",
+            "religious"
+        ],
+        "COMMENT": "",
+        "ITEM": "المقرء",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "muqriʾ",
+        "TYPE": "nisbaŧ",
+        "URI": "المقرء"
+    },
+    "المقريء": {
+        "CLASSIFIERS": [
+            "quran",
+            "knowledge",
+            "religious"
+        ],
+        "COMMENT": "$muqri' #religious #knowledge @quran",
+        "ITEM": "المقريء",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "muqriʾ",
+        "TYPE": "",
+        "URI": "المقريء"
+    },
+    "المكي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "المكي",
+        "KW": "",
+        "TOP_URI": "MAKKA_398E213N_S",
+        "TRANSLIT": "makkī",
+        "TYPE": "nisbaŧ",
+        "URI": "المكي"
+    },
+    "الموصلي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "الموصلي",
+        "KW": "",
+        "TOP_URI": "MAWSIL_431E363N_S",
+        "TRANSLIT": "mawṣilī",
+        "TYPE": "nisbaŧ",
+        "URI": "الموصلي"
+    },
+    "المولي": {
+        "CLASSIFIERS": [
+            "client",
+            "nonarab",
+            "tribal"
+        ],
+        "COMMENT": "",
+        "ITEM": "المولي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "mawlá",
+        "TYPE": "nisbaŧ",
+        "URI": "المولي"
+    },
+    "الناءب": {
+        "CLASSIFIERS": [
+            "general",
+            "position",
+            "administrative"
+        ],
+        "COMMENT": "$na'ib #administrative #position %viceroyDeputyPetry",
+        "ITEM": "الناءب",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "nāʾib",
+        "TYPE": "",
+        "URI": "الناءب"
+    },
+    "النحوي": {
+        "CLASSIFIERS": [
+            "language",
+            "knowledge",
+            "civilian"
+        ],
+        "COMMENT": "",
+        "ITEM": "النحوي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "naḥwī",
+        "TYPE": "nisbaŧ",
+        "URI": "النحوي"
+    },
+    "النخعي": {
+        "CLASSIFIERS": [
+            "?arab",
+            "tribal"
+        ],
+        "COMMENT": "$nakh`i #tribal",
+        "ITEM": "النخعي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "naḫʿī",
+        "TYPE": "",
+        "URI": "النخعي"
+    },
+    "النسفي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "$nasafi #toponymic",
+        "ITEM": "النسفي",
+        "KW": "",
+        "TOP_URI": "NASAF_658E388N_S",
+        "TRANSLIT": "nasafī",
+        "TYPE": "",
+        "URI": "النسفي"
+    },
+    "النقيب": {
+        "CLASSIFIERS": [
+            "?general",
+            "position",
+            "religious",
+            "administrative"
+        ],
+        "COMMENT": "$naqib #position #religious #military #administrative @shiCa #review #multi",
+        "ITEM": "النقيب",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "naqīb",
+        "TYPE": "",
+        "URI": "النقيب"
+    },
+    "النيسابوري": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "النيسابوري",
+        "KW": "",
+        "TOP_URI": "NAYSABUR_587E361N_S",
+        "TRANSLIT": "naysābūrī",
+        "TYPE": "nisbaŧ",
+        "URI": "النيسابوري"
+    },
+    "الهاشمي": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal",
+            "prophet"
+        ],
+        "COMMENT": "",
+        "ITEM": "الهاشمي",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "hāšimī",
+        "TYPE": "nisbaŧ",
+        "URI": "الهاشمي"
+    },
+    "الهروي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "الهروي",
+        "KW": "",
+        "TOP_URI": "HARA_621E343N_S",
+        "TRANSLIT": "harawī",
+        "TYPE": "nisbaŧ",
+        "URI": "الهروي"
+    },
+    "الهمداني": {
+        "CLASSIFIERS": [
+            "arab",
+            "tribal"
+        ],
+        "COMMENT": "",
+        "ITEM": "الهمداني",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "hamdānī",
+        "TYPE": "nisbaŧ",
+        "URI": "الهمداني"
+    },
+    "الهمذاني": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "الهمذاني",
+        "KW": "",
+        "TOP_URI": "HAMADHAN_485E347N_S",
+        "TRANSLIT": "hamaḏānī",
+        "TYPE": "nisbaŧ",
+        "URI": "الهمذاني"
+    },
+    "الواسطي": {
+        "CLASSIFIERS": [
+            "topo"
+        ],
+        "COMMENT": "",
+        "ITEM": "الواسطي",
+        "KW": "",
+        "TOP_URI": "WASIT_463E321N_S",
+        "TRANSLIT": "wāsiṭī",
+        "TYPE": "nisbaŧ",
+        "URI": "الواسطي"
+    },
+    "الواعظ": {
+        "CLASSIFIERS": [
+            "preaching",
+            "knowledge",
+            "position",
+            "religious"
+        ],
+        "COMMENT": "",
+        "ITEM": "الواعظ",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "wāʿiẓ",
+        "TYPE": "nisbaŧ",
+        "URI": "الواعظ"
+    },
+    "الوراق": {
+        "CLASSIFIERS": [
+            "paper",
+            "books",
+            "occupation",
+            "civilian"
+        ],
+        "COMMENT": "$warraq #trade #civilian @paper @books",
+        "ITEM": "الوراق",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "warrāq",
+        "TYPE": "",
+        "URI": "الوراق"
+    },
+    "الورع": {
+        "CLASSIFIERS": [
+            "piety",
+            "status",
+            "religious"
+        ],
+        "COMMENT": "$wari` #religious #status @piety",
+        "ITEM": "الورع",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "wariʿ",
+        "TYPE": "",
+        "URI": "الورع"
+    },
+    "الوزير": {
+        "CLASSIFIERS": [
+            "general",
+            "position",
+            "administrative"
+        ],
+        "COMMENT": "",
+        "ITEM": "الوزير",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "wazīr",
+        "TYPE": "nisbaŧ",
+        "URI": "الوزير"
+    },
+    "الوكيل": {
+        "CLASSIFIERS": [
+            "?finances",
+            "position",
+            "administrative"
+        ],
+        "COMMENT": "$wakil #administrative #position @finance %finAgentForGovernmentPetry",
+        "ITEM": "الوكيل",
+        "KW": "",
+        "TOP_URI": "",
+        "TRANSLIT": "wakīl",
+        "TYPE": "",
+        "URI": "الوكيل"
+    }
+}

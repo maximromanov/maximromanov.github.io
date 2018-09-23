@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "text": "Maxim Romanov",
+    "file": "https://mesana.org/mymesa/includes/images/mesa.gif",
+    "link": "http://mesana.org/"
+  },
+  "text": {
+    "title": "MESA Annual Meetings, 2009-2017",
+    "more":  "The Middle East Studies Association (MESA) is a private, non-profit, non-political learned society that brings together scholars, educators and those interested in the study of the region from all over the world. MESA is primarily concerned with the area encompassing Iran, Turkey, Afghanistan, Israel, Pakistan, and the countries of the Arab World from the seventh century to modern times. Other regions, including Spain, Southeastern Europe, China and the former Soviet Union, also are included for the periods in which their territories were parts of the Middle Eastern empires or were under the influence of Middle Eastern civilization. From its inception in 1966 with 50 founding members, MESA has increased its membership to more than 2,700 and now serves as an umbrella organization for more than sixty institutional members and thirty-nine affiliated organizations. The association is a constituent society of the American Council of Learned Societies, the National Council of Area Studies Associations, and a member of the National Humanities Alliance.\nAs part of its goal to advance learning, facilitate communication and promote cooperation, MESA sponsors an annual meeting that is a leading international forum for scholarship, intellectual exchange and pedagogical innovation. It is responsible for the International Journal of Middle East Studies, the premiere journal on the region, the MESA Review of Middle East Studies and a biannual newsletter. An awards program recognizes scholarly achievement, service to the profession and exemplary student mentoring. MESA is governed by an eight-member Board of Directors elected by the membership.<br><br><b>NB:</b>This network is based on the analysis of programs of annual meetings 2009–2017; the data was filtered to make major communities more discernable, but only slightly: the network thus includes 98.36% of 5,145 nodes, and 99.35% of 23,561 edges, where nodes are participating MESA members, and edges are shared panels, round tables, and thematic conversations. For a detailed report on each community, see <a href='https://alraqmiyyat.github.io/2017/11-12.html'>The Network of MESA (2009–2017)</a>.",
+    "intro": "The network is based on the analysis of programs of annual meetings 2009–2017; the data was filtered to make major communities more discernable, but only slightly: the network thus includes 98.36% of 5,145 nodes, and 99.35% of 23,561 edges, where nodes are participating MESA members, and edges are shared panels, round tables, and thematic conversations. For a detailed report on each community, see <a href='https://alraqmiyyat.github.io/2017/11-12.html'>The Network of MESA (2009–2017)</a>."
+  },
+  "legend": {
+    "edgeLabel": "Shared Panels, Round Tables, and Thematic Conversations",
+    "colorLabel": "Community",
+    "nodeLabel": "MESA Participant"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "Modularity Class",
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "imageAttribute": false,
+    "groupByEdgeDirection": false
+  },
+  "sigma": {
+    "graphProperties": {
+      "minEdgeSize": 0.1,
+      "maxNodeSize": 10,
+      "maxEdgeSize": 1,
+      "minNodeSize": 1
+    },
+    "drawingProperties": {
+      "labelThreshold": 6,
+      "hoverFontStyle": "bold",
+      "defaultEdgeType": "curve",
+      "defaultLabelColor": "#000",
+      "defaultLabelHoverColor": "#fff",
+      "defaultLabelSize": 14,
+      "activeFontStyle": "bold",
+      "fontStyle": "bold",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd"
+    },
+    "mouseProperties": {
+      "minRatio": 0.75,
+      "maxRatio": 20
+    }
+  }
+}

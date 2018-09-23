@@ -1,0 +1,22 @@
+# main links
+main:
+  - title: "Home"
+    url: ""
+  - title: "OpenITI"
+    url: "/OpenITI/"
+  #- title: "mARkdown"
+  #  url: "/mARkdown_old/"
+  - title: "OpenITI mARkdown"
+    url: "/mARkdown/"
+  - title: "<i>al-Ṯurayyā</i>"
+    url: "/althurayya/"
+  - title: "KITAB"
+    url: "http://kitab-project.org/"
+  - title: "About"
+    url: /about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
