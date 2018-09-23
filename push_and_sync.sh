@@ -7,6 +7,6 @@ git status
 echo "Pushing updates to alraqmiyyat.github.io has been completed..."
 
 echo "Syncing alraqmiyyat.github.io with maximromanov.github.io"
-cd ../maximromanov.github.io/ && ./sync.sh
+../maximromanov.github.io/sync.sh
 
 printf "\n\nDone!"
