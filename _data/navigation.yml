@@ -1,9 +1,11 @@
 # main links
 main:
   - title: "Home"
-    url: ""
+    url: "./index.html"
   - title: "OpenITI"
     url: "/OpenITI/"
+  - title: "Muṣawwarāt"
+    url: "/maktaba/"
   #- title: "mARkdown"
   #  url: "/mARkdown_old/"
   - title: "OpenITI mARkdown"
