@@ -1,4 +1,4 @@
-#####
+---
 excerpt:	"A Prototype Reader"
 header:
   overlay_image: /images/covers/07044u.jpg
