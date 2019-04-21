@@ -382,6 +382,22 @@ Above is a snapshot of a scheme that I used for tagging biographies of preachers
 
 It is vital to keep track of tags one introduces and avoid creating too many of them. Another useful strategy is to keep them short, for instance: `@MGR@WCZ_ed_fqh@` (it is your own decision, of course, how to balance brevity and readability).
 
+### Open Tagging Pattern -- for automatic tagging (*testing in progress*)
+
+These tags are conceptually similar to the ones described in the previous section, but used in automatic tagging of texts using relevant gazetteers of terms and keywords.
+
+The tag pattern is slightly different (*highlighted with different colors, depending on the last element of the tag*): `@[A-Z]{3}@[A-Z]{3,}@[A-Za-z]@-@[0tf][ftalmr]@`, where:
+
+* `@[A-Z]{3}` (*three capital letters* --- only letters from the ASCI range) is for scholar's initials or the abbreviation of the name of a project.
+* `@[A-Z]{3,}` (*at least three capital characters* --- only letters from the ASCII range) is for the class of a tagged item (for exapmle, `PERSON`, `TOPONYM`, `EVENT`, etc.)
+* `@[A-Za-z]+@` (*any number of letters* --- from the ASCII range only) is for the category of a tagged item (for example, the category would be @ProphetMuhammad@ for such tagged items as *rasūl Allãh*, *Muḥammad ṢLʿM*, *al-nabī ṢLʿM*, etc.)
+* `-@[0tf][ftalmr]@` (*two small letter characters from the list*) is for the review status of tagged items; for example, the first character implies: `0` --- review required; `t` --- most likely true; `f` --- most likely false; the second character implies: `0` --- review required; `t` --- true; `m` --- manually classified item; `a` --- automatically classified item; `l` --- logically classified item; `r` --- reviewed item;
+	* the review status element determines the color of the entire tag to facilitate tag review; the following combinations can be used:
+		* `-@00@` - element means that review is required; this is automatically inserted tag; this element highlights the entire tag in black.
+		* `-@tr@` and `-@fr@` - the element means that the item has been reviewed (`r`) and a given item has been confirmed to be either true (`t`) or false (`f`). The `-@tr@` element highlights the entire tag in light blue; the `-@fr@` element --- in red.
+		* `-@tt@`, `-@ta@`, `-@tm@`, `-@tl@` - most likely true matches that still require review; these are automatically inserted tags (only if a KWIC data list is used). These elements highlight the tag in yellow.
+		* `-@ff@`, `-@fa@`, `-@fm@`, `-@fl@` - most likely false matches that still require review; these are automatically inserted tags (only if a KWIC data list is used). These elements highlight the tag in orange.
+
 
 ## Morphological Patterns
 
