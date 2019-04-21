@@ -393,10 +393,20 @@ The tag pattern is slightly different (*highlighted with different colors, depen
 * `@[A-Za-z]+@` (*any number of letters* --- from the ASCII range only) is for the category of a tagged item (for example, the category would be @ProphetMuhammad@ for such tagged items as *rasūl Allãh*, *Muḥammad ṢLʿM*, *al-nabī ṢLʿM*, etc.)
 * `-@[0tf][ftalmr]@` (*two small letter characters from the list*) is for the review status of tagged items; for example, the first character implies: `0` --- review required; `t` --- most likely true; `f` --- most likely false; the second character implies: `0` --- review required; `t` --- true; `m` --- manually classified item; `a` --- automatically classified item; `l` --- logically classified item; `r` --- reviewed item;
 	* the review status element determines the color of the entire tag to facilitate tag review; the following combinations can be used:
-		* `-@00@` - element means that review is required; this is automatically inserted tag; this element highlights the entire tag in black.
-		* `-@tr@` and `-@fr@` - the element means that the item has been reviewed (`r`) and a given item has been confirmed to be either true (`t`) or false (`f`). The `-@tr@` element highlights the entire tag in light blue; the `-@fr@` element --- in red.
-		* `-@tt@`, `-@ta@`, `-@tm@`, `-@tl@` - most likely true matches that still require review; these are automatically inserted tags (only if a KWIC data list is used). These elements highlight the tag in yellow.
-		* `-@ff@`, `-@fa@`, `-@fm@`, `-@fl@` - most likely false matches that still require review; these are automatically inserted tags (only if a KWIC data list is used). These elements highlight the tag in orange.
+		* `-@00@` --- element means that review is required; this is automatically inserted tag; this element highlights the entire tag in black.
+		* `-@tr@` and `-@fr@` --- the element means that the item has been reviewed (`r`) and a given item has been confirmed to be either true (`t`) or false (`f`). The `-@tr@` element highlights the entire tag in light blue; the `-@fr@` element --- in red.
+		* `-@tt@`, `-@ta@`, `-@tm@`, `-@tl@` --- most likely true matches that still require review; these are automatically inserted tags (only if a KWIC data list is used). These elements highlight the tag in yellow.
+		* `-@ff@`, `-@fa@`, `-@fm@`, `-@fl@` --- most likely false matches that still require review; these are automatically inserted tags (only if a KWIC data list is used). These elements highlight the tag in orange.
+
+
+<figure class="fit">
+	<a href="{{ site.url }}/images/mARkdown/mARkdown_customtags.png" title="">
+	<img src="{{ site.url }}/images/mARkdown/mARkdown_customtags.png">
+	</a>
+	<figcaption>
+		<b>OpenArabic mARkdown</b>: color highlighting of custom entity tags. 
+	</figcaption>
+</figure>
 
 
 ## Morphological Patterns
