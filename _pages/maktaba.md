@@ -26,7 +26,9 @@ permalink: /maktaba/
 ## al-Ḏahabī (d. 748 AH)
 
 * **al-Ḏahabī. *Taʾrīḫ al-islām*.** Ed. Baššār ʿAwwād Maʿrūf. 1st Ed. Bayrūt: Dār al-Ġarb al-Islāmī, 1424/2003 [> OPEN >](https://historyofislam.github.io/?/0748Dhahabi/TarikhIslam/BY2003BCM01-ara1/V00P0000)
+	* Full text version of the text: [> OPEN >](https://0748dhahabi.github.io/TarikhIslam/BY2003BCM01-ara1/)
 	* *Search TAGS*: `dhahabi` `tarikh al-islam` `tarikh islam`
+
 * **al-Ḏahabī. *Taʾrīḫ al-islām*.** Ed. ʿUmar ʿAbd al-Salām Tadmuri. 1st Ed. Bayrūt: Dār al-Kitāb al-ʿArabī, 1410/1990 [> OPEN >](https://historyofislam.github.io/?/0748Dhahabi/TarikhIslam/BY1990TAD01-ara1/V00P0000)
 	* *Search TAGS*: `dhahabi` `tarikh al-islam` `tarikh islam`
 
