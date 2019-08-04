@@ -12,6 +12,8 @@ author_profile: true
 permalink: /maktaba/
 ---
 
+{% include toc icon="gears" title="Table of Contents" %}
+
 # 3rd Century AH
 
 * Ibn Saʿd. *al-Ṭabaqāt al-kubrá*. Ed. Muḥammad ʿAbd al-Qādir ʿAṭā. 1st ed. Bayrūt: Dār al-kutub al-ʿilmīyaŧ, 1410/1990 [> OPEN >](https://historyofislam.github.io/?/0230IbnSacd/TabaqatKubra/BY1990MQC01-ara1/)
