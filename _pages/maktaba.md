@@ -6,15 +6,26 @@ header:
   caption: "**Photo credit**: Damascus (Esh-Sham). Damascus and the Anti Lebanon. *Library of Congress*, [  LC-DIG-matpc-07044](http://www.loc.gov/pictures/item/mpc2004007427/PP/)"
 layout: single
 title: 'Maktabaŧ al-Muṣawwarāt'
-description: ""
+description: "a few digitized editions of historical texts"
 comments: true
 author_profile: true
 permalink: /maktaba/
 ---
 
-# A few digitized editions for personal research use
+# 3rd Century AH
 
-* al-Ḏahabī. *Taʾrīḫ al-islām*. Ed. Baššār ʿAwwād Maʿrūf. 1st Ed. Bayrūt: Dār al-Ġarb al-Islāmī, 1424/2003 [> OPEN >](https://historyofislam.github.io/data/0748Dhahabi/TarikhIslam/BY2003BCM01-ara1/)
-* al-Ḏahabī. *Taʾrīḫ al-islām*. Ed. ʿUmar ʿAbd al-Salām Tadmuri. 1st Ed. Bayrūt: Dār al-Kitāb al-ʿArabī, 1410/1990 [> OPEN >](https://historyofislam.github.io/data/0748Dhahabi/TarikhIslam/BY1990TAD01-ara1/)
-* Ibn al-ʿImād al-Ḥanbalī. Ed. Maḥmūd al-Arnaʾūṭ. 1st Ed. Dimašq-Bayrūt: Dār Ibn Kaṯīr, 1406/1986 [> OPEN >](https://historyofislam.github.io/data/1089IbnCimad/Shadharat/DM1986ARN01-ara1/)
+* Ibn Saʿd. *al-Ṭabaqāt al-kubrá*. Ed. Muḥammad ʿAbd al-Qādir ʿAṭā. 1st ed. Bayrūt: Dār al-kutub al-ʿilmīyaŧ, 1410/1990 [> OPEN >](https://historyofislam.github.io/?/0230IbnSacd/TabaqatKubra/BY1990MQC01-ara1/)
+	* *Search TAGS*: `ibn sad` `tabaqat kubra` `al-tabaqat al-kubra` `kitab al-tabaqat al-kabir`
+
+# 8th Century AH
+
+* al-Ḏahabī. *Taʾrīḫ al-islām*. Ed. Baššār ʿAwwād Maʿrūf. 1st Ed. Bayrūt: Dār al-Ġarb al-Islāmī, 1424/2003 [> OPEN >](https://historyofislam.github.io/?/0748Dhahabi/TarikhIslam/BY2003BCM01-ara1/)
+	* *Search TAGS*: `dhahabi` `tarikh al-islam` `tarikh islam`
+* al-Ḏahabī. *Taʾrīḫ al-islām*. Ed. ʿUmar ʿAbd al-Salām Tadmuri. 1st Ed. Bayrūt: Dār al-Kitāb al-ʿArabī, 1410/1990 [> OPEN >](https://historyofislam.github.io/?/0748Dhahabi/TarikhIslam/BY1990TAD01-ara1/)
+	* *Search TAGS*: `dhahabi` `tarikh al-islam` `tarikh islam`
+
+# 11th Century AH
+
+* Ibn al-ʿImād al-Ḥanbalī. Ed. Maḥmūd al-Arnaʾūṭ. 1st Ed. Dimašq-Bayrūt: Dār Ibn Kaṯīr, 1406/1986 [> OPEN >](https://historyofislam.github.io/?/1089IbnCimad/Shadharat/DM1986ARN01-ara1/)
+	* *Search TAGS*: `ibn imad` `ibn imad hanbali` `shadharat al-dhahab` `shadharat dhahab`
 
