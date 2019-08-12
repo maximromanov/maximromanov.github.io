@@ -517,6 +517,12 @@ The following regular expression can help to visually identify sections with *is
   
 <br><br>
 
+
+# Additional Tags (testing)
+
+* `......` - for lacunae in editions (when they are marked as such in editions: *naqaṣa fī-l-aṣl*, *saqaṭa min al-aṣl*, etc.). These will be highlighted in red.
+
+
 # Known issues with EditPad Pro
 
 ## Highlighting scheme running amok

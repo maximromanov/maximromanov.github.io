@@ -20,6 +20,7 @@ permalink: /maktaba/
 
 * **Ibn Saʿd. *al-Ṭabaqāt al-kubrá*.** Ed. Muḥammad ʿAbd al-Qādir ʿAṭā. 1st ed. Bayrūt: Dār al-kutub al-ʿilmīyaŧ, 1410/1990 [> OPEN >](https://historyofislam.github.io/?/0230IbnSacd/TabaqatKubra/BY1990MQC01-ara1/V00P0001)
 	* *Search TAGS*: `ibn sad` `tabaqat kubra` `al-tabaqat al-kubra` `kitab al-tabaqat al-kabir`
+	* *Another edition:* <https://archive.org/details/A66aba9at_>
 
 # 8th Century AH
 
