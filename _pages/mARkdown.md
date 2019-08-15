@@ -408,6 +408,11 @@ The tag pattern is slightly different (*highlighted with different colors, depen
 	</figcaption>
 </figure>
 
+#### Simplification
+
+* The classifier tail (e.g., `-@tt@`) is not really necessary when a result is disambiguated as `true positive`, so in fact it can be completely removed, making structure simpler.
+* `-@tt@` is tricky to remove, because of non-letter characters and the *chekhorda* they create; **Solution:** remove non-letter characters from the tail, simply stacking it to the tag like `@MGR@WCZ@Sermon@true`.
+
 
 ## Morphological Patterns
 
