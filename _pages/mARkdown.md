@@ -411,7 +411,7 @@ The tag pattern is slightly different (*highlighted with different colors, depen
 #### Simplification: *work in progress*
 
 * The classifier tail (e.g., `-@tt@`) is not really necessary when a result is disambiguated as `true positive`, so in fact it can be completely removed, making structure simpler.
-* `-@tt@` is tricky to remove, because of non-letter characters and the *chekhorda* they create; **Solution:** remove non-letter characters from the tail, simply stacking it to the tag like `@MGR@WCZ@Sermon@true`.
+* `-@tt@` is tricky to remove, because of non-letter characters and the mess that they create; **Solution:** remove non-letter characters from the tail, simply stacking it to the tag like `@MGR@WCZ@Sermon@true`.
 * Structure of the open tagging pattern for semantic annotation: it is beneficial to use a triple-like structure, i.e., SUBJECT-PREDICATE-OBJECT, since one can describe/code anything with this structure and it can be parsed into any other data format. One has to keep track of the tags, of course, but a simple frequency analysis can help to clean them up later.
 
 
