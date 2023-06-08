@@ -10,3 +10,6 @@ layout:		single
 author_profile: true
 permalink: /about/
 ---
+
+
+The CV is quite outdated... 
