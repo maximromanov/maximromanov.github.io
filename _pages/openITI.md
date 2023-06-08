@@ -14,7 +14,16 @@ permalink: /OpenITI/
 
 {% include toc icon="gears" title="Table of Contents" %}
 
-*Open Islamicate Texts Initiative* (**OpenITI**, see [iti-corpus.github.io/](http://iti-corpus.github.io/)) is a multi-institutional effort to construct the first machine-actionable scholarly corpus of premodern Islamicate texts. Led by researchers at the Aga Khan University (AKU), University of Vienna/Leipzig University (LU), and the Roshan Institute for Persian Studies at the University of Maryland (College Park) and an interdisciplinary advisory board of leading digital humanists and Islamic, Persian, and Arabic studies scholars, **OpenITI** aims to provide the essential textual infrastructure in Persian and Arabic for new forms of macro textual analysis and digital scholarship. In the process, **OpenITI** will enable new synergies between Digital Humanities and the inter-related Islamicate fields of Islamic, Persian, and Arabic Studies.
+
+**Important**: You can find the most recent information on both the OpenITI and the OpenITI mARkdown at the website of the KITAB project: <http://kitab-project.org/corpus-and-data>. Information below is of value mainly as a record on the history of the OpenITI initiative.
+
+
+- Description of the OpenITI: <https://maximromanov.github.io/OpenITI/>
+- Description of the OpenITI mARkdown (the earliest stable version): <https://maximromanov.github.io/mARkdown/> 
+
+
+
+*Open Islamicate Texts Initiative* (**OpenITI**) is a multi-institutional effort to construct the first machine-actionable scholarly corpus of premodern Islamicate texts. Led by researchers at the Aga Khan University (AKU), University of Vienna/Leipzig University (LU), and the Roshan Institute for Persian Studies at the University of Maryland (College Park) and an interdisciplinary advisory board of leading digital humanists and Islamic, Persian, and Arabic studies scholars, **OpenITI** aims to provide the essential textual infrastructure in Persian and Arabic for new forms of macro textual analysis and digital scholarship. In the process, **OpenITI** will enable new synergies between Digital Humanities and the inter-related Islamicate fields of Islamic, Persian, and Arabic Studies.
 
 Currently, **OpenITI** contains almost exclusively Arabic texts, which were put together into a corpus within the **OpenArabic** project, which was developed first at Tufts University (at *The Perseus Project*, 2013–2015) and then at Leipzig University (at the Alexander von Humboldt Chair for Digital Humanities, 2015–2017), in both cased with the support and under the patronage of Prof. Gregory Crane. 
 
