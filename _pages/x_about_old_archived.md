@@ -11,6 +11,8 @@ author_profile: true
 permalink: /about/
 ---
 
+<!--
+
 # curriculum vitæ
 
 {% include cv.html %}
@@ -32,3 +34,5 @@ The second part is on modeling. Extracted with digital methods, “big data” s
 The third part is an application of the devised method to the study of Islamic preaching. It focuses on an exploratory overview of all major forms of Islamic preaching as they feature on the electronic pages of my corpus that covers about 700 years of Islamic history. Partially determined by the current state of the development of computational reading, this part studies the major forms of Islamic preaching from chronological, geographical and social perspectives that have been largely overlooked in the academic treatment of this subject. The choice of establishing the overview, instead of trying to find answers to particular historical questions, was deliberate. Working with big data makes it abundantly clear that there are too many unknowns and that asking specific questions without knowing what is and what is not in the data only leads to wrong answers. At this stage, “exploratory analysis” is much more crucial than specific inquiries. One of the major goals of this part is also to demonstrate how exactly computational reading can contribute to the studies of specific phenomena and practices in the pre-modern Islamic world.
 
 The three parts of the dissertation build upon each other, but ultimately can be treated as separate studies.
+
+-->
