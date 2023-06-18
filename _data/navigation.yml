@@ -16,3 +16,5 @@ main:
   #  url: "/mARkdown/"
   - title: "KITAB"
     url: "http://kitab-project.org/"
+  - title: "About"
+    url: "./about/"
