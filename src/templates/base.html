@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta name="author" content="Maxim Romanov">
+<link rel="canonical" href="{{canonical}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="https://maximromanov.github.io/assets/img/rm-mark.png">
+<link rel="icon" href="/assets/img/rm-mark-500.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/rm-mark-500.png">
+<link rel="stylesheet" href="/assets/site.css?v={{build_id}}">
+<script>
+/* Apply a saved theme before first paint to avoid a flash. */
+try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}
+</script>
+{{extra_head}}
+</head>
+<body class="{{body_class}}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/" aria-label="Maxim Romanov, home">
+      <img class="mark" src="/assets/img/rm-mark.png" alt="" width="40" height="40">
+      <span class="brand-name">Maxim Romanov</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      {{nav}}
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm0 16V5a7 7 0 0 1 0 14z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main" class="wrap {{main_class}}">
+{{content}}
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-left">
+      <span class="foot-name">Maxim Romanov</span>
+      <span class="foot-ar" lang="ar" dir="rtl">{{old_name_ar}}</span>
+      <span class="foot-old">formerly <i>{{old_name}}</i></span>
+    </div>
+    <div class="foot-links">{{foot_links}}</div>
+    <p class="foot-note">© {{year}} Maxim Romanov. {{footer_note}}</p>
+  </div>
+</footer>
+<script src="/assets/theme.js?v={{build_id}}" defer></script>
+</body>
+</html>

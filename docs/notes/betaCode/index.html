@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BetaCode for Arabic · Maxim Romanov</title>
+<meta name="description" content="Although both Windows and Mac OS now support Arabic, it is still quite difficult to type and edit Arabic texts. It is particularly frustrating to edit and manipulate fully vocalized texts, since most fonts either render “short vowels” (ḥarakāt) invisible, or do not render them properly. Because of the “stacking,” i.e. “short vowels” being placed on top of letters and on top of each other, it becomes impossible to edit texts and one is often forced to go into delete-and-retype mode (and there is still no guarantee, because of visual issues, that all the letters and “short vowels” will actually be in the right order). betaCode can make it easy to type fully-vocalized Arabic texts on any machine through the use of simple character combinations and automatic rendering into various transliteration schemes and the Arabic script (scroll below for examples). ">
+<meta name="author" content="Maxim Romanov">
+<link rel="canonical" href="https://maximromanov.github.io/notes/betaCode/">
+<meta property="og:title" content="BetaCode for Arabic · Maxim Romanov">
+<meta property="og:description" content="Although both Windows and Mac OS now support Arabic, it is still quite difficult to type and edit Arabic texts. It is particularly frustrating to edit and manipulate fully vocalized texts, since most fonts either render “short vowels” (ḥarakāt) invisible, or do not render them properly. Because of the “stacking,” i.e. “short vowels” being placed on top of letters and on top of each other, it becomes impossible to edit texts and one is often forced to go into delete-and-retype mode (and there is still no guarantee, because of visual issues, that all the letters and “short vowels” will actually be in the right order). betaCode can make it easy to type fully-vocalized Arabic texts on any machine through the use of simple character combinations and automatic rendering into various transliteration schemes and the Arabic script (scroll below for examples). ">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://maximromanov.github.io/notes/betaCode/">
+<meta property="og:image" content="https://maximromanov.github.io/assets/img/rm-mark.png">
+<link rel="icon" href="/assets/img/rm-mark-500.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/rm-mark-500.png">
+<link rel="stylesheet" href="/assets/site.css?v=8d32db97">
+<script>
+/* Apply a saved theme before first paint to avoid a flash. */
+try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}
+</script>
+
+</head>
+<body class="page-note">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/" aria-label="Maxim Romanov, home">
+      <img class="mark" src="/assets/img/rm-mark.png" alt="" width="40" height="40">
+      <span class="brand-name">Maxim Romanov</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/research/"><span class="nav-num" aria-hidden="true">١</span>Research</a>
+      <a href="/publications/"><span class="nav-num" aria-hidden="true">٢</span>Publications</a>
+      <a href="/talks/"><span class="nav-num" aria-hidden="true">٣</span>Talks</a>
+      <a href="/teaching/"><span class="nav-num" aria-hidden="true">٤</span>Teaching</a>
+      <a href="/notes/" class="active"><span class="nav-num" aria-hidden="true">٥</span>Notes</a>
+      <a href="/cv/"><span class="nav-num" aria-hidden="true">٦</span>CV</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm0 16V5a7 7 0 0 1 0 14z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main" class="wrap ">
+<header class="page-head note-head"><p class="app"><a href="/notes/">Notes</a> · <time datetime="2015-02-07">February 7, 2015</time></p><h1>BetaCode for Arabic</h1></header><figure class="cover"><img src="/images/thematic/betaCode.jpg" alt="" loading="lazy"></figure><article class="prose note-body"><p>The latest version is on GitHub @ <a href="https://github.com/maximromanov/ArabicBetacode">github.com/maximromanov/ArabicBetacode</a></p>
+<h2 id="minor-update-to-the-scheme-2015-03-0910-21">Minor update to the scheme (2015-03-09:10-21)</h2>
+<p>Done to avoid issues with Alpheios translation alignment, which automatically splits supplied texts into words. Essentially, combinations with "." and ":" are replaced with "*" and "=" respectively.</p>
+<ul>
+<li><strong>=t</strong> is <em>tāʾ marbūṭaŧ</em></li>
+<li><strong>*s</strong> is <em>ṣād</em> (and the same for other letters transliterated with dots)</li>
+</ul>
+<h1 id="why-betacode">Why BetaCode?</h1>
+<p>Although both Windows and Mac OS now support Arabic, it is still quite difficult to type and edit Arabic texts. It is particularly frustrating to edit and manipulate fully vocalized texts, since most fonts either render “short vowels” (<em>ḥarakāt</em>) invisible, or do not render them properly. Because of the “stacking,” i.e. “short vowels” being placed on top of letters and on top of each other, it becomes impossible to <em>edit</em> texts and one is often forced to go into delete-and-retype mode (and there is still no guarantee, because of visual issues, that all the letters and “short vowels” will actually be in the right order). <strong>betaCode</strong> can make it easy to type fully-vocalized Arabic texts on any machine through the use of simple character combinations and automatic rendering into various transliteration schemes and the Arabic script (scroll below for examples). </p>
+<p><strong>betaCode</strong> is first converted into a one-to-one transliteration scheme, which combines conventions from various academic transliteration schemes. Such scheme is necessary, since none of the existing academic schemes (American/Library of Congress, British, French, German, etc.) allow representing Arabic text unambiguously for computational purposes. Arabic <strong>betaCode</strong> transliteration can be then converted into any transliteration convention. At the moment the following schemes are implemented:</p>
+<ul>
+<li>Library of Congress Romanization of Arabic</li>
+<li>Simplified transliteration (LOC without diacritics)</li>
+<li>Arabic script (the rules of <em>hamzaŧ</em> orthography are implemented, but may require some additional testing)</li>
+</ul>
+<p><strong>NB:</strong> The idea of <strong>betaCode</strong> is borrowed from the Classicists who developed <a href="http://en.wikipedia.org/wiki/Beta_Code">"a method of representing, using only ASCII characters, characters and formatting found in ancient Greek texts"</a>. The current <strong>betaCode</strong> is inspired by, and is therefore quite similar to, the <a href="http://www2.informatik.uni-stuttgart.de/ivi/bs/research/arab_e.htm">arabTex scheme</a>. Linguists working with Arabic are commonly using <a href="http://en.wikipedia.org/wiki/Buckwalter_transliteration">Buckwalter transliteration</a>, which is very similar to the current betaCode, but less readable. </p>
+<h2 id="betacode-and-one-to-one-transliteration">betaCode and One-To-One Transliteration</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">: betacode :</th>
+<th style="text-align: center;">: translit :</th>
+<th style="text-align: center;">: Arabic letter :</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>_a</strong></td>
+<td style="text-align: center;">ā</td>
+<td style="text-align: center;"><em>alif</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>b</strong></td>
+<td style="text-align: center;">b</td>
+<td style="text-align: center;"><em>bāʾ</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>t</strong></td>
+<td style="text-align: center;">t</td>
+<td style="text-align: center;"><em>tāʾ</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>_t</strong></td>
+<td style="text-align: center;">ṯ</td>
+<td style="text-align: center;"><em>thāʾ</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>^g, j</strong></td>
+<td style="text-align: center;">ǧ</td>
+<td style="text-align: center;"><em>jīm</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>*h</strong></td>
+<td style="text-align: center;">ḥ</td>
+<td style="text-align: center;"><em>ḥāʾ</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>_h</strong></td>
+<td style="text-align: center;">ḫ</td>
+<td style="text-align: center;"><em>khāʾ</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>d</strong></td>
+<td style="text-align: center;">d</td>
+<td style="text-align: center;"><em>dāl</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>_d</strong></td>
+<td style="text-align: center;">ḏ</td>
+<td style="text-align: center;"><em>dhāl</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>r</strong></td>
+<td style="text-align: center;">r</td>
+<td style="text-align: center;"><em>rā’</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>z</strong></td>
+<td style="text-align: center;">z</td>
+<td style="text-align: center;"><em>zayn</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>s</strong></td>
+<td style="text-align: center;">s</td>
+<td style="text-align: center;"><em>sīn</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>^s</strong></td>
+<td style="text-align: center;">š</td>
+<td style="text-align: center;"><em>shīn</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>*s</strong></td>
+<td style="text-align: center;">ṣ</td>
+<td style="text-align: center;"><em>ṣād</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>*d</strong></td>
+<td style="text-align: center;">ḍ</td>
+<td style="text-align: center;"><em>ḍād</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>*t</strong></td>
+<td style="text-align: center;">ṭ</td>
+<td style="text-align: center;"><em>ṭāʾ</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>*z</strong></td>
+<td style="text-align: center;">ẓ</td>
+<td style="text-align: center;"><em>ẓāʾ</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>`</strong></td>
+<td style="text-align: center;">ʿ</td>
+<td style="text-align: center;"><em>‘ayn</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>*g</strong></td>
+<td style="text-align: center;">ġ</td>
+<td style="text-align: center;"><em>ghayn</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>f</strong></td>
+<td style="text-align: center;">f</td>
+<td style="text-align: center;"><em>fāʾ</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>*k, q</strong></td>
+<td style="text-align: center;">ḳ</td>
+<td style="text-align: center;"><em>qāf</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>k</strong></td>
+<td style="text-align: center;">k</td>
+<td style="text-align: center;"><em>kāf</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>l</strong></td>
+<td style="text-align: center;">l</td>
+<td style="text-align: center;"><em>lām</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>m</strong></td>
+<td style="text-align: center;">m</td>
+<td style="text-align: center;"><em>mīm</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>n</strong></td>
+<td style="text-align: center;">n</td>
+<td style="text-align: center;"><em>nūn</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>h</strong></td>
+<td style="text-align: center;">h</td>
+<td style="text-align: center;"><em>hā’</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>w</strong></td>
+<td style="text-align: center;">w</td>
+<td style="text-align: center;"><em>wāw</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>_u</strong></td>
+<td style="text-align: center;">ū</td>
+<td style="text-align: center;"><em>wāw</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>y</strong></td>
+<td style="text-align: center;">y</td>
+<td style="text-align: center;"><em>yāʾ</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>_i</strong></td>
+<td style="text-align: center;">ī</td>
+<td style="text-align: center;"><em>yāʾ</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="non-alphabetic-letters">Non-alphabetic letters</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">: betacode :</th>
+<th style="text-align: center;">: translit :</th>
+<th style="text-align: center;">: Arabic :</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>'</strong></td>
+<td style="text-align: center;">ʾ</td>
+<td style="text-align: center;"><em>ḥamzaŧ</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>/a</strong></td>
+<td style="text-align: center;">á</td>
+<td style="text-align: center;"><em>alif maqṣūraŧ</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>=t</strong></td>
+<td style="text-align: center;">ŧ</td>
+<td style="text-align: center;"><em>tāʾ marbūṭaŧ</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="vowels">Vowels</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">: betacode :</th>
+<th style="text-align: center;">: translit :</th>
+<th style="text-align: center;">: Arabic :</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>~a</strong></td>
+<td style="text-align: center;">ã</td>
+<td style="text-align: center;"><em>dagger alif</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>u</strong></td>
+<td style="text-align: center;">u</td>
+<td style="text-align: center;"><em>ḍammaŧ</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>i</strong></td>
+<td style="text-align: center;">i</td>
+<td style="text-align: center;"><em>kasraŧ</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>a</strong></td>
+<td style="text-align: center;">a</td>
+<td style="text-align: center;"><em>fatḥaŧ</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>*n</strong></td>
+<td style="text-align: center;">ȵ</td>
+<td style="text-align: center;"><em>n</em> of <em>tanwīn</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>*a</strong></td>
+<td style="text-align: center;">å</td>
+<td style="text-align: center;"><em>silent alif</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>*w</strong></td>
+<td style="text-align: center;">ů</td>
+<td style="text-align: center;"><em>silent wāw</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>?u</strong></td>
+<td style="text-align: center;">ủ</td>
+<td style="text-align: center;">final <em>ḍammaŧ</em> *</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>?i</strong></td>
+<td style="text-align: center;">ỉ</td>
+<td style="text-align: center;">final <em>kasraŧ</em> *</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>?a</strong></td>
+<td style="text-align: center;">ả</td>
+<td style="text-align: center;">final <em>fatḥaŧ</em> *</td>
+</tr>
+</tbody>
+</table>
+<h2 id="basic-principles">Basic principles:</h2>
+<p>Every Arabic letter is betaCoded with its one-letter equivalent,
+preceded (if necessary) with a technical character that is similar to a diacritical mark in the transliterated version. Thus, most common symbols are as follows:</p>
+<h4 id="general"><em>General</em></h4>
+<ul>
+<li><strong>_</strong> (underscore), if a letter can be transliterated with <em>macron</em>/<em>breve</em> below or above (<em>ā</em>, <em>ṯ</em>, <em>ḫ</em>, <em>ḏ</em>, <em>ū</em>, <em>ī</em>)</li>
+<li><strong>.</strong> (period), or  <b>*</b> (asterisk), if a letter can be transliterated transliterated with <em>dot</em> below or above (<em>ḥ</em>, <em>ṣ</em>, <em>ḍ</em>, <em>ṭ</em>, <em>ẓ</em>, <em>ġ</em>, <em>ḳ</em>)</li>
+<li><strong>^</strong> (caret), if a letter can be transliterated with <em>caron</em> (<em>ǧ</em>, <em>š</em>)</li>
+</ul>
+<h4 id="specifics"><em>Specifics</em></h4>
+<ul>
+<li>attached prepositions/conjunctions and pronominal suffixes must be separated with “-” (mostly relevant for text alignment, treebanking,  and general readability):<ul>
+<li><code>bi-Llah?i</code></li>
+<li><code>fa-_dahaba</code></li>
+</ul>
+</li>
+<li>add “?” before “optional” final vowels that are usually dropped in transliteration and pronounciation (mostly relevant  for transliteration):<ul>
+<li><code>bi-Llah?i</code>, but not:</li>
+<li><code>fa-_dahaba</code>    </li>
+</ul>
+</li>
+<li><em>tāʾ marbūṭaŧ</em>: add “+” after <em>tāʾ marbūṭaŧ</em>, if the first word of <em>iḏāfaŧ</em> (mostly relevant for transliteration):<ul>
+<li><code>`_amma:t+u Ba.gd_ada</code>, but:</li>
+<li><code>al-`_amma:tu f_i Ba.gd_ada</code></li>
+</ul>
+</li>
+<li>transliterating <em>tanwīn</em>:<ul>
+<li><code>.n</code><ul>
+<li><code>?u.n</code></li>
+<li><code>?i.n</code></li>
+<li><code>?a.n</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>silent <em>wāw</em> and <em>alif</em>:<ul>
+<li><code>.w</code> (<code>Amr?u.n.w</code>, for <span="arabic">عَمْرٌو</span>)</li>
+<li><code>.a</code> (<code>wa-fa`al_u.a</code>, for <span="arabic">وَفَعَلُوا</span>)</li>
+</ul>
+</li>
+</ul>
+<h2 id="running-the-converter">Running the converter</h2>
+<ul>
+<li>(Python 3.xx must be installed on the machine)</li>
+<li>clone git repository @ <a href="https://github.com/maximromanov/ArabicBetacode">github.com/maximromanov/ArabicBetacode</a></li>
+<li>save texts that must be transliterated (i.e., the text is in English, but has some Arabic terms that must be transliterated) into <code>./to_translit/</code> (follow the format given in the example file).</li>
+<li>save texts that must be fully transliterated or/and converted into Arabic script (i.e., the entire texts is in Arabic) into <code>./to_arabic/</code> (follow the format given in the example file).</li>
+<li>run the script <code>_generateBetaCode.py</code> (in Mac terminal: <code>python3 _generateBetaCode.py</code>; on Windows: double-click on the script should work).</li>
+<li>converted texts (in all available modes of conversion) will be appended to the file.</li>
+<li>if you need to make any changes, edit your initial betaCode text and run the script again, converted results will be replaced with relevant updated versions.</li>
+</ul>
+<h1 id="examples">Examples</h1>
+<h3 id="betacode-example">betaCode Example</h3>
+<p><strong>NB</strong>: These are examples of converting betaCode to full transliteration and Arabic script. The very last paragraph showcases conversion of <em>hamzaŧ</em> in different positions.</p>
+<p>q_ala 'ab_u Mas`_ud?i.n :: 'an_a qad sami`tu h~a_d_a min ras_ul?i All~ah?i ( .sl`m )</p>
+<p>.hadda_ta-n_a `Amr?u.w bn?u R_afi`?i.n , .hadda_ta-n_a `Abd?u All~ah?i bn?u al-Mub_arak?i , `an Mu.hammad?i bn?i 'Is.h_aq?a , `an Mu.hammad?i bn?i ^Ga`far?i.n , `an `Ubayd?i All~ah?i bn?i `Abd?i All~ah?i bn?i `Umar?a , `an 'Ab_i-hi , `an?i al-Nabiyy?i ( .sl`m ) na.hwa-hu</p>
+<p>'a_hbara-n_a Qutayba:t?u q_ala , .hadda_ta-n_a Sufy_an?u , `an Ya.hy/a bn?i Sa`_id?i.n , `an 'Ab_i Bakr?i bn?i Mu.hammad?i.n , `an `Umar?a bn?i `Abd?i al-`Az_iz?i , `an 'Ab_i Bakr?i bn?i `Abd?i al-Ra.hm~an?i bn?i al-.H_ari_t?i bn?i Hi^s_am?i.n , `an 'Ab_i Hurayra:t?a mi_tla-hu</p>
+<p><strong>Ta.hw_il?u al-hamza:t?i ( kalim_at?u.n mufrada:t?u.n )</strong></p>
+<p>'amr?u.n 'uns?u.n 'ins?u.n '_im_an?u.n
+'_aya:t?u.n '_amana mas'ala:t?u.n sa'ala ra's?u.n qur'_an?u.n ta'_amara
+_di'b?u.n as'ila:t?u.n q_ari'i-hi su'l?u.n mas'_ul?u.n
+tak_afu'u-hu su'ila q_ari'i-hi _di'_ab?u.n ra'_is?u.n
+bu'isa ru'_uf?u.n ra'_uf?u.n su'_al?u.n mu'arri_h?u.n
+abn_a'a-hu abn_a'u-hu abn_a'i-hi ^say'?a.n _ha.t_i'a:t?u.n
+.daw'u-hu .d_u'u-hu .daw'a-hu .daw'i-hi mur_u'a:t?u.n
+'abn_a'i-hi bar_i'u-hu s_u'ila f_il?u.n f_ann?u.n f_unn?u.n
+s_a'ala fu'_ad?u.n ^surak_a'u-hu ri'_asa:t?u.n tahni'a:t?u.n
+daf_a'a:t?u.n .taff_a'a:t?u.n ta'r_i_h?u.n fa'r?u.n
+^say'?u.n ^say'?i.n ^say'?a.n  .daw'?u.n .daw'?i.n .daw'?a.n
+juz'?u.n  juz'?i.n  juz'?a.n mabda'?u.n mabda'?i.n mabda'?a.n
+naba'a q_ari'?u.n tak_afu'?u.n tak_afu'?i.n tak_afu'?a.n
+abn_a'u abn_a'i abn_a'a jar_i'?u.n maqr_u'?u.n .daw'?u.n ^say'?u.n juz'?u.n
+`ulam_a'u al-`ulam_a'i al-`ulam_a'a `Amr?u.n.w wa-fa`al_u.a</p>
+<h2 id="betacode-converted-into-one-to-one-translit">betaCode converted into one-to-one translit</h2>
+<p>ḳāla ʾabū Masʿūdỉȵ :: ʾanā ḳad samiʿtu hãḏā min rasūlỉ Allãhỉ ( ṣlʿm )</p>
+<p>ḥaddaṯa-nā ʿAmrủů bnủ Rāfiʿỉȵ , ḥaddaṯa-nā ʿAbdủ Allãhỉ bnủ al-Mubārakỉ , ʿan Muḥammadỉ bnỉ ʾIsḥāḳả , ʿan Muḥammadỉ bnỉ Ǧaʿfarỉȵ , ʿan ʿUbaydỉ Allãhỉ bnỉ ʿAbdỉ Allãhỉ bnỉ ʿUmarả , ʿan ʾAbī-hi , ʿanỉ al-Nabiyyỉ ( ṣlʿm ) naḥwa-hu</p>
+<p>ʾaḫbara-nā Ḳutaybaŧủ ḳāla , ḥaddaṯa-nā Sufyānủ , ʿan Yaḥyá bnỉ Saʿīdỉȵ , ʿan ʾAbī Bakrỉ bnỉ Muḥammadỉȵ , ʿan ʿUmarả bnỉ ʿAbdỉ al-ʿAzīzỉ , ʿan ʾAbī Bakrỉ bnỉ ʿAbdỉ al-Raḥmãnỉ bnỉ al-Ḥāriṯỉ bnỉ Hišāmỉȵ , ʿan ʾAbī Hurayraŧả miṯla-hu</p>
+<p><strong>Taḥwīlủ al-hamzaŧỉ ( kalimātủȵ mufradaŧủȵ )</strong></p>
+<p>ʾamrủȵ ʾunsủȵ ʾinsủȵ ʾīmānủȵ
+ʾāyaŧủȵ ʾāmana masʾalaŧủȵ saʾala raʾsủȵ ḳurʾānủȵ taʾāmara
+ḏiʾbủȵ asʾilaŧủȵ ḳāriʾi-hi suʾlủȵ masʾūlủȵ
+takāfuʾu-hu suʾila ḳāriʾi-hi ḏiʾābủȵ raʾīsủȵ
+buʾisa ruʾūfủȵ raʾūfủȵ suʾālủȵ muʾarriḫủȵ
+abnāʾa-hu abnāʾu-hu abnāʾi-hi šayʾảȵ ḫaṭīʾaŧủȵ
+ḍawʾu-hu ḍūʾu-hu ḍawʾa-hu ḍawʾi-hi murūʾaŧủȵ
+ʾabnāʾi-hi barīʾu-hu sūʾila fīlủȵ fānnủȵ fūnnủȵ
+sāʾala fuʾādủȵ šurakāʾu-hu riʾāsaŧủȵ tahniʾaŧủȵ
+dafāʾaŧủȵ ṭaffāʾaŧủȵ taʾrīḫủȵ faʾrủȵ
+šayʾủȵ šayʾỉȵ šayʾảȵ  ḍawʾủȵ ḍawʾỉȵ ḍawʾảȵ
+ǧuzʾủȵ  ǧuzʾỉȵ  ǧuzʾảȵ mabdaʾủȵ mabdaʾỉȵ mabdaʾảȵ
+nabaʾa ḳāriʾủȵ takāfuʾủȵ takāfuʾỉȵ takāfuʾảȵ
+abnāʾu abnāʾi abnāʾa ǧarīʾủȵ maḳrūʾủȵ ḍawʾủȵ šayʾủȵ ǧuzʾủȵ
+ʿulamāʾu al-ʿulamāʾi al-ʿulamāʾa ʿAmrủȵů wa-faʿalūå</p>
+<h3 id="betacode-converted-into-arabic-script">betaCode converted into Arabic script</h3>
+<p class="arabic">
+
+قَالَ أَبُو مَسْعُودٍ :: أَنَا قَدْ سَمِعْتُ هٰذَا مِنْ رَسُولِ الـلّٰـهِ ( صْلْعْمْ )
+
+</p>
+<p class="arabic">
+حَدَّثَنَا عَمْرُو بْنُ رَافِعٍ ، حَدَّثَنَا عَبْدُ الـلّٰـهِ بْنُ الْمُبَارَكِ ، عَنْ مُحَمَّدِ بْنِ إِسْحَاقَ ، عَنْ مُحَمَّدِ بْنِ جَعْفَرٍ ، عَنْ عُبَيْدِ الـلّٰـهِ بْنِ عَبْدِ الـلّٰـهِ بْنِ عُمَرَ ، عَنْ أَبِيهِ ، عَنِ النَّبِيِّ ( صْلْعْمْ ) نَحْوَهُ
+</p>
+<p class="arabic">
+أَخْبَرَنَا قُتَيْبَةُ قَالَ ، حَدَّثَنَا سُفْيَانُ ، عَنْ يَحْيٰى بْنِ سَعِيدٍ ، عَنْ أَبِي بَكْرِ بْنِ مُحَمَّدٍ ، عَنْ عُمَرَ بْنِ عَبْدِ الْعَزِيزِ ، عَنْ أَبِي بَكْرِ بْنِ عَبْدِ الرَّحْمٰنِ بْنِ الْحَارِثِ بْنِ هِشَامٍ ، عَنْ أَبِي هُرَيْرَةَ مِثْلَهُ
+</p>
+<p class="arabic">
+<b>
+تَحْوِيلُ الْهَمْزَةِ ( كَلِمَاتٌ مُفْرَدَةٌ )
+</b>
+</p>
+<p class="arabic">
+أَمْرٌ أُنْسٌ إِنْسٌ إِيمَانٌ
+آيَةٌ آمَنَ مَسْأَلَةٌ سَأَلَ رَأْسٌ قُرْآنٌ تَآمَرَ
+ذِئْبٌ أَسْئِلَةٌ قَارِئِهِ سُؤْلٌ مَسْؤُولٌ
+تَكَافُؤُهُ سُئِلَ قَارِئِهِ ذِئَابٌ رَئِيسٌ
+بُئِسَ رُؤُوفٌ رَؤُوفٌ سُؤَالٌ مُؤَرِّخٌ
+أَبْنَاءَهُ أَبْناؤُهُ أَبْنائِهِ شَيْئًا خَطِيئَةٌ
+ضَوْءُهُ ضُوؤُهُ ضَوْءَهُ ضَوْئِهِ مُرُوءَةٌ
+أَبْنائِهِ بَرِيؤُهُ سُوئِلَ فِيلٌ فَانٌّ فُونٌّ
+سَاءَلَ فُؤَادٌ شُرَكاؤُهُ رِئَاسَةٌ تَهْنِئَةٌ
+دَفَاءَةٌ طَفّاءَةٌ تَأْرِيخٌ فَأْرٌ
+شَيْءٌ شَيْءٍ شَيْئًا  ضَوْءٌ ضَوْءٍ ضَوْءًا
+جُزْءٌ  جُزْءٍ  جُزْءًا مَبْدَأٌ مَبْدَأٍ مَبْدَأً
+نَبَأَ قَارِئٌ تَكَافُؤٌ تَكَافُؤٍ تَكَافُؤًا
+أَبْناءُ أَبْناءِ أَبْناءَ جَريءٌ مَقْروءٌ ضَوْءٌ شَيْءٌ جُزْءٌ
+عُلَماءُ الْعُلَماءِ الْعُلَماءَ عَمْرٌو وَفَعَلُوا
+</p>
+
+<h2 id="betacode-into-translit">betaCode into Translit</h2>
+<h3 id="betacode-in-english-text">betaCode in English text</h3>
+<p>NB: This is an example of the English text with terms, names and toponyms given in betaCode and automatically converted into different transliteration flavors (exerpts are from Brill’s <em>Encyclopaedia of Islam</em>).</p>
+<p>Dima^s.k, Dima^s.k al-^S_am or simply al-^S_am , (Lat. Damascus, Fr. Damas) is the largest city of Syria. It is situated ... very much at the same latitude as Ba.gd_ad and F_as, at an altitude of nearly 700 metres, on the edge of the desert at the foot of ^Gabal .K_asiy_un.</p>
+<p>al-_Dahab_i, ^Sams al-D_in Ab_u `Abd All~ah Mu.hammad b. `U_tm_an b. .K_aym_a.z b. `Abd All~ah al-Turkum_an_i al-F_ari.k_i al-Dima^s.k_i al-^S_afi`_i, an Arab historian and theologian, was born at Damascus or at Mayy_afari.k_in on 1 or 3 Rab_i` II (according to al-Kutub_i, in Rab_i` I) 673/5 or 7 October 1274, and died at Damascus, according to al-Subk_i and al-Suy_u.t_i, in the night of Sunday-Monday on 3 _D_u al-.Ka`da:t 748/4 February 1348, or, according to A.hmad b. `Iy_as, in 753/1352-3. He was buried at the B_ab al-.Sa.g_ir.</p>
+<h3 id="betacode-converted-into-one-to-one-translit_1">betaCode converted into one-to-one translit</h3>
+<p>Dimašḳ, Dimašḳ al-Šām or simply al-Šām , (Lat. Damascus, Fr. Damas) is the largest city of Syria. It is situated ... very much at the same latitude as Baġdād and Fās, at an altitude of nearly 700 metres, on the edge of the desert at the foot of Ǧabal Ḳāsiyūn.</p>
+<p>al-Ḏahabī, Šams al-Dīn Abū ʿAbd Allãh Muḥammad b. ʿUṯmān b. Ḳāymāẓ b. ʿAbd Allãh al-Turkumānī al-Fāriḳī al-Dimašḳī al-Šāfiʿī, an Arab historian and theologian, was born at Damascus or at Mayyāfariḳīn on 1 or 3 Rabīʿ II (according to al-Kutubī, in Rabīʿ I) 673/5 or 7 October 1274, and died at Damascus, according to al-Subkī and al-Suyūṭī, in the night of Sunday-Monday on 3 Ḏū al-Ḳaʿdaŧ 748/4 February 1348, or, according to Aḥmad b. ʿIyās, in 753/1352-3. He was buried at the Bāb al-Ṣaġīr.</p>
+<h3 id="betacode-converted-into-the-library-of-congress-scheme">betaCode converted into the Library of Congress scheme</h3>
+<p>Dimashq, Dimashq al-Shām or simply al-Shām , (Lat. Damascus, Fr. Damas) is the largest city of Syria. It is situated ... very much at the same latitude as Baghdād and Fās, at an altitude of nearly 700 metres, on the edge of the desert at the foot of Jabal Qāsiyūn.</p>
+<p>al-Dhahabī, Shams al-Dīn Abū ʿAbd Allāh Muḥammad b. ʿUthmān b. Qāymāẓ b. ʿAbd Allāh al-Turkumānī al-Fāriqī al-Dimashqī al-Shāfiʿī, an Arab historian and theologian, was born at Damascus or at Mayyāfariqīn on 1 or 3 Rabīʿ II (according to al-Kutubī, in Rabīʿ I) 673/5 or 7 October 1274, and died at Damascus, according to al-Subkī and al-Suyūṭī, in the night of Sunday-Monday on 3 Dhū al-Qaʿda 748/4 February 1348, or, according to Aḥmad b. ʿIyās, in 753/1352-3. He was buried at the Bāb al-Ṣaghīr.</p>
+<h3 id="betacode-converted-into-a-searcheable-string-diacritics-removed">betaCode converted into a searcheable string (diacritics removed)</h3>
+<p>Dimashq, Dimashq al-Sham or simply al-Sham , (Lat. Damascus, Fr. Damas) is the largest city of Syria. It is situated ... very much at the same latitude as Baghdad and Fas, at an altitude of nearly 700 metres, on the edge of the desert at the foot of Jabal Qasiyun.</p>
+<p>al-Dhahabi, Shams al-Din Abu Abd Allah Muhammad b. Uthman b. Qaymaz b. Abd Allah al-Turkumani al-Fariqi al-Dimashqi al-Shafii, an Arab historian and theologian, was born at Damascus or at Mayyafariqin on 1 or 3 Rabi II (according to al-Kutubi, in Rabi I) 673/5 or 7 October 1274, and died at Damascus, according to al-Subki and al-Suyuti, in the night of Sunday-Monday on 3 Dhu al-Qada 748/4 February 1348, or, according to Ahmad b. Iyas, in 753/1352-3. He was buried at the Bab al-Saghir.</p></article><p class="tags"><span class="tag">Coding</span><span class="tag">Arabic</span></p>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-left">
+      <span class="foot-name">Maxim Romanov</span>
+      <span class="foot-ar" lang="ar" dir="rtl">الرقميّات</span>
+      <span class="foot-old">formerly <i>al-Raqmiyyāt</i></span>
+    </div>
+    <div class="foot-links"><a href="mailto:maxim.romanov@uni-hamburg.de">Email</a> · <a href="https://github.com/maximromanov">GitHub</a> · <a href="https://eis1600.aai.uni-hamburg.de/">EIS1600</a> · <a href="https://univie.academia.edu/MaximRomanov">Academia.edu</a></div>
+    <p class="foot-note">© 2026 Maxim Romanov. Hand-built static site; no cookies, no trackers. Text is licensed CC BY-NC-SA 4.0 unless noted.</p>
+  </div>
+</footer>
+<script src="/assets/theme.js?v=8d32db97" defer></script>
+</body>
+</html>

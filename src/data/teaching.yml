@@ -1,0 +1,203 @@
+# Teaching: courses, workshops and summer schools taught, and supervision.
+# Inline Markdown is allowed in title, note, and thesis titles.
+
+courses:
+  - years: 2023–2024
+    area: "Historical methods · DH"
+    title: "Computational Analysis of Data from Audition Certificates, with R"
+    institution: "Universität Hamburg"
+    terms: "Winter 2023/24"
+    note: "Co-taught in tandem with Konrad Hirschler’s course, using data from the [Audition Certificates Platform](https://www.audition-certificates-platform.org/)."
+    links:
+      - {label: Course site, url: "https://eis1600.aai.uni-hamburg.de/hdis-ac/"}
+  - years: 2023
+    area: "Historical methods · DH"
+    title: "Digital Humanities in African-Asian Studies: Analysis of Prosopographical Data with R"
+    institution: "Universität Hamburg"
+    terms: "Summer 2023"
+    note: "Built around the *Prosopografía de ulemas de al-Andalus* ([eea.csic.es/pua](https://www.eea.csic.es/pua/))."
+    links:
+      - {label: Course site, url: "https://eis1600.aai.uni-hamburg.de/hdis-pua/"}
+  - years: 2022
+    area: "Historical methods · DH"
+    title: "Text Analysis in R"
+    institution: "Universität Hamburg"
+    terms: "Summer 2022"
+    links:
+      - {label: Course site, url: "https://eis1600.github.io/course_TA_R_2022S/"}
+  - years: 2022
+    area: "Historical methods · DH"
+    title: "Digital Humanities in Middle Eastern Studies"
+    institution: "Universität Hamburg"
+    terms: "Winter 2021/22"
+    links:
+      - {label: Course site, url: "https://maximromanov.github.io/dh_in_mes/"}
+  - years: 2021
+    area: "GIS · DH"
+    title: "GIS Inquiries with R"
+    institution: "University of Vienna"
+    terms: "Summer 2021 (SE seminar, PM 3)"
+    links:
+      - {label: Course site, url: "https://maximromanov.github.io/rgis_univie2021/"}
+  - years: 2017–2020
+    area: "Historical methods · DH"
+    title: "DH Methods: Historical Inquiries with R"
+    institution: "University of Vienna"
+    terms: "Summer 2020 (text analysis module), Summer 2019, Winter 2017/18 (SE seminar, PM 3)"
+    links:
+      - {label: "Course site (2020)", url: "https://maximromanov.github.io/univie2020/"}
+  - years: 2018–2020
+    area: "DH"
+    title: "Tools and Techniques for Digital Humanities"
+    institution: "University of Vienna"
+    terms: "Winter 2020, Summer 2019, Summer 2018 (KU Methodenkurs)"
+  - years: 2018
+    area: "History"
+    title: "Of Arabs, Persians and Turks: Patterns of Dynastic Rule in the Islamic World (c. 600–1600 CE)"
+    institution: "University of Vienna"
+    terms: "Summer 2018 (MA Proseminar)"
+  - years: 2017–2018
+    area: "History"
+    title: "The Near East at the Time of the First Crusade, 1045–1144"
+    institution: "University of Vienna"
+    terms: "Winter 2017/18 (BA Proseminar), co-taught with Tara Andrews"
+  - years: 2017–2018
+    area: "History"
+    title: "The Medieval Near East and Europe according to Muslims, Christians, and Jews: Comparative Perspectives"
+    institution: "University of Vienna"
+    terms: "Winter 2017/18 (seminar), co-taught with Tara Andrews"
+  - years: 2016–2017
+    area: "Islamicate texts · DH"
+    title: "Islamicate World 2.0: Studying Islamic Cultures through Computational Textual Analysis"
+    institution: "University of Maryland (College Park) and Leipzig University"
+    terms: "Winter 2016/17, co-taught with Matthew Thomas Miller"
+  - years: 2015
+    area: "Classical Arabic · DH"
+    title: "Classical Arabic Through the Words of the Prophet"
+    institution: "Tufts University"
+    terms: "Spring 2015"
+    note: "An introduction to classical Arabic through the corpus of Ḥadīṯ, taught from a [frequency-based reader](/files/Romanov_CATWOP.pdf) generated for the course."
+  - years: 2014–2015
+    area: "Text analysis · DH"
+    title: "Introduction to Text Mining for Students of the Humanities"
+    institution: "Tufts University"
+    terms: "2014–2015"
+  - years: 2014
+    area: "History · DH"
+    title: "Mapping the Classical Islamic World"
+    institution: "Tufts University"
+    terms: "Winter 2014"
+    note: "Digital project: mapping data from al-Muqaddasī’s geographical treatise (10th century CE)."
+  - years: 2012
+    area: "History · DH"
+    title: "The First Millennium of the Islamic Near East, 600–1600 CE"
+    institution: "University of Michigan"
+    terms: "Fall 2012, as teaching assistant for Michael Bonner"
+  - years: 2010–2011
+    area: "Religion · History"
+    title: "Introduction to Islam"
+    institution: "University of Michigan"
+    terms: "Spring 2011, Winter 2011 (as teaching assistant for Sherman Jackson), Spring 2010"
+  - years: 2007–2010
+    area: "Language"
+    title: "Elementary Modern Standard Arabic"
+    institution: "University of Michigan"
+    terms: "2007–2010"
+  - years: 2006–2007
+    area: "Classical language"
+    title: "Elementary Classical Arabic"
+    institution: "University of Michigan"
+    terms: "2006–2007"
+
+workshops:
+  - date: September 2025
+    year: 2025
+    month: 9
+    country: Switzerland
+    title: Summer School on Digital Humanities for Islamic Studies
+    detail: "University of Bern, September 1–4, 2025. Organizers: Tobias Hodel and Serena Tolino"
+  - date: July 2025
+    year: 2025
+    month: 7
+    country: Germany
+    title: "From Classical ML to AI in Arabic and Islamic Studies: A Hands-On Workshop"
+    detail: "A 4-day workshop at the Asien-Afrika-Institut, Universität Hamburg, organized within EIS1600 with Tariq Yousef, Ryan Muther, and Alicia González Martínez"
+  - date: September 2024
+    year: 2024
+    month: 9
+    country: Germany
+    title: "Introduction to Digital Humanities in Islamic Studies: A Hands-On Training"
+    detail: "A 1-day workshop at the Seminar für Arabistik/Islamwissenschaft, Universität Göttingen, with Jens Scheiner, September 25, 2024"
+  - date: September 2024
+    year: 2024
+    month: 9
+    country: Spain
+    title: Computational Analysis of Andalusian Prosopography
+    detail: "A 5-day workshop on the *Prosopografía de ulemas de al-Andalus* ([eea.csic.es/pua](https://www.eea.csic.es/pua/)) at the Escuela de Estudios Árabes, Granada, with Mayte Penelas and Maribel Fierro, as part of the project *Al-Andalus y el Magrib en el Oriente islámico: movilidad, migración y memoria* (AMOI-II)"
+  - date: December 2023
+    year: 2023
+    month: 12
+    country: Japan
+    title: Intensive Workshop in Islamic Digital Humanities
+    detail: "A 2-day workshop organized with Wakako Kumakura, Tokyo University of Foreign Studies, December 16–17, 2023"
+  - date: July 2018
+    year: 2018
+    month: 7
+    country: Belgium
+    title: "Digital Islamic Humanities: A 3-Day Intensive Course"
+    detail: "Ghent University, July 2–4, 2018, in collaboration with the Ghent Centre for Digital Humanities. Plan and materials: [dih-sms2018-ughent.github.io](https://dih-sms2018-ughent.github.io/)"
+  - date: November 2017
+    year: 2017
+    month: 11
+    country: Netherlands
+    title: Workshop on Digital Humanities in Islamic and Arabic Studies
+    detail: "SENSIS ERC Project (PI Christian Lange), Utrecht University, November 30–December 1, 2017"
+  - date: July 2016
+    year: 2016
+    month: 7
+    country: Germany
+    title: From Text to Map
+    detail: "A two-week intensive introduction (32 contact hours) to working with humanities data in digital mapping environments, co-taught with David J. Wrisley (American University of Beirut) at *Culture & Technology*, the European Summer University in Digital Humanities, Leipzig University"
+  - date: February 2015
+    year: 2015
+    month: 2
+    country: USA
+    title: Digital Humanities & Islamic Studies
+    detail: "University of California, Los Angeles. Organized by Asma Sayeed and the Gustav E. von Grunebaum Center for Near Eastern Studies"
+  - date: October 2014
+    year: 2014
+    month: 10
+    country: USA
+    title: Textual Corpora and the Digital Islamic Humanities
+    detail: "Brown University; session leader together with Elli Mylonas, organized by Elias Muhanna ([details](http://islamichumanities.org/workshop-2014/))"
+
+supervision:
+  - years: 2025–
+    level: Ph.D.
+    student: Hamid Reza Hakimi
+    title: "*Patterns in the Financial History of the Islamic World (1–1000 AH / 600–1600 CE): Computational Analysis of Data from Chronicles*"
+    institution: "Universität Hamburg, African and Asian Studies"
+    role: main advisor
+  - years: 2022
+    level: M.A.
+    student: Lisa Mischer
+    title: "*A Digital Humanities Approach to Biographical Dictionaries from the Arabic Written Tradition: Extraction and Enrichment of Historical Data*"
+    institution: "Universität Leipzig, Digital Humanities"
+    role: external advisor
+  - years: 2022
+    level: B.A.
+    student: M. Xenia Kudela
+    title: "*Measuring Style: Stylometric Analysis of Collaborative Authorship between Ṭāhā Ḥusayn and Tawfīq al-Ḥakīm in “The Enchanted Castle” (al-Qaṣr al-masḥūr)*"
+    institution: "Freie Universität Berlin, Arabic Studies"
+    role: external advisor
+  - years: 2022
+    level: Ph.D.
+    student: Masoumeh Seydi
+    title: "*Geospatial Analysis and Modeling of Textual Descriptions of Pre-modern Geography*"
+    institution: "Universität Leipzig, Computer Science / Digital Humanities"
+    role: external advisor
+  - years: 2015
+    level: B.A. Honors
+    student: Cameron Jackson
+    title: "*An Interactive Map of the Classical Islamic World*"
+    institution: "Tufts University, Computer Science and Arabic Studies"

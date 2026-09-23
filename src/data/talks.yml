@@ -1,0 +1,738 @@
+invited:
+- date: April 2025
+  year: 2025
+  month: 4
+  country: Turkey
+  title: 'Islamicate Digital Humanities: What is it and Why Bother?'
+  detail: Invited Lecture in the course “Special Topics in Digital History”, invited by Hasan Umut, April 14, Boğaziçi University, Turkey
+  online: true
+- date: November 2024
+  year: 2024
+  month: 11
+  country: Germany
+  title: 'Future in the Past: Constructing the Social History of the Premodern Islamic World with Modern Computational Methods'
+  detail: 'at *Digital Humanities and Medieval Middle Eastern Texts: Assessments and Perspectives*, November 8, University of Tübingen. Invited by Federico Montinaro'
+- date: July 2024
+  year: 2024
+  month: 7
+  country: Germany
+  title: 'A Corpus-Driven Approach in Religious Studies: A Case Of Islam'
+  detail: University of Bochum, July 12, 2024
+- date: July 2024
+  year: 2024
+  month: 7
+  country: Germany
+  title: Digital Humanities in the context of Religious Studies
+  detail: University of Bochum, July 12, 2024
+- date: November 2023
+  year: 2023
+  month: 11
+  country: Spain
+  title: Teaching Computational Analysis with the ‘Prosopografía de ulemas de al-Andalus’
+  detail: at Remembering al-Andalus and the Maghrib in the Mashriq, 23–24 November 2023, Escuela de Estudios Árabes, CSIC, Granada (Spain)
+- date: October 2023
+  year: 2023
+  month: 10
+  country: Germany
+  title: Arabic biographical collections as a source for modeling social transformations, cultural production, and demography
+  detail: at Demography, Economy and Law in (Post-)Imperial Worlds 800 to 1600 – Latin Europe and the Western Islamic World in Comparison, Workshop, at RomanIslam Center, Universität Hamburg, October 17, 2023
+- date: April 2022
+  year: 2022
+  month: 4
+  country: Germany
+  title: 'Made by People, Tied by People: Modeling Islamic Urban Networks from Biographical Data (ca. 600–1300 CE)'
+  detail: Invited Lecture at RomanIslam Center, April 20, 2022
+- date: April 2022
+  year: 2022
+  month: 4
+  country: USA
+  title: 'To DB or not to DB: LOD-like Approach and Algorithmic Analysis'
+  detail: at Digital Praxis in the Humanities (lecture series), Yale University, April 11, 2022
+- date: September 2021
+  year: 2021
+  month: 9
+  country: Germany
+  title: Prospects of Middle Eastern Studies in the Context of Digital Humanities
+  detail: at Third Summer School in Islamicate Digital Humanities for Scholars in Manuscript Studies, August 30 – September 10, 2021
+  kind: keynote
+- date: December 2020
+  year: 2020
+  month: 12
+  country: France
+  title: 'OpenITI mARkdown: Between Method and Standard'
+  detail: at Étudier et publier les textes arabes avec le numérique, GIS Asie, études africaines et Moyen-Orient et mondes musulmans. December 8–10, 2020.
+  online: true
+- date: November 2020
+  year: 2020
+  month: 11
+  country: Austria
+  title: Computational History and Historiography of the Medieval Islamic World
+  detail: an invited lecture in *070227–1 Introduction to Digital Humanities (2020W)*, taught by Tara Andrews, University of Vienna, November 24, 2020
+- date: November 2020
+  year: 2020
+  month: 11
+  country: Austria
+  title: 'Data Science & Digital Humanities: Modeling Arabic Written Tradition'
+  detail: an invited lecture in *040172 VU Doing Data Science (MA) (2020W)*, taught by Jan Fabian Ehmke & Yllka Velaj, University of Vienna, January 7, 2020
+- date: January 2020
+  year: 2020
+  month: 1
+  country: Austria
+  title: 'Algorithmic Analysis into Social History: A Case of Medieval Islamic History'
+  detail: an invited lecture in *070227 VO Introduction to Digital Humanities (2019W)*, taught by Tara Andrews, University of Vienna, January 7, 2020
+- date: September 2019
+  year: 2019
+  month: 9
+  country: Spain
+  title: '“The Marvels of Old in the Digital World”: Toward the Methodological Turn in Middle Eastern Studies'
+  detail: '*Knowledge and Power Seminar Series*, Centro de Ciencias Humanas y Sociales, CSIC, Madrid, September 12, 2019'
+- date: May 2019
+  year: 2019
+  month: 5
+  country: Lebanon
+  title: '“Digital Dust of the Arabic Past”: Corpus-Based Research in Arabic & Islamic Studies'
+  detail: Keynote at Digital Humanities Institute 2019, Beirut, May 3–5, 2019
+  kind: keynote
+- date: April 2019
+  year: 2019
+  month: 4
+  country: Russia
+  title: Arabic History & Historiography in the Digital Age
+  detail: '*invited lecture* at Higher School of Economics, St.Petersburg'
+- date: February 2019
+  year: 2019
+  month: 2
+  country: Hungary
+  title: Arabic History & Historiography in the Digital Age
+  detail: '*invited lecture* at Center for Eastern Mediterranean Studies and OTTOCONFESSIONS, ERC-funded Project (PI Dr. Tijana Krstic), Central European University, Budapest'
+- date: April 2018
+  year: 2018
+  month: 4
+  country: Qatar
+  title: “Iftaḥ Yā Simsim!” Finding Digital Keys to the Treasures of the Arabic Written Tradition
+  detail: Keynote at “Research Data Management in Digital Humanities”, International Conference, University College London—Doha, April 17–18, 2018
+  kind: keynote
+- date: February 2018
+  year: 2018
+  month: 2
+  country: Austria
+  title: '“Open Sesame!” Digital Analysis of the Arabic Written Tradition: Part I—On Social History'
+  detail: Austrian Academy of Sciences, Vienna, February 6, 2018
+- date: May 2017
+  year: 2017
+  month: 5
+  country: Netherlands
+  title: The Corpus, The Network, & The Book Continuum
+  detail: the fifth lecture of the KITAB LUCIS lectures (others given by Sarah Savant), Leiden University Centre for the Study of Islam and Society, Leiden University
+- date: May 2017
+  year: 2017
+  month: 5
+  country: Netherlands
+  title: Computational Reading of Arabic Biographical Collections
+  detail: '*Invited Lecture* at The Leiden University Centre for Digital Humanities (LUCDH), Leiden University'
+- date: February 2017
+  year: 2017
+  month: 2
+  country: USA
+  title: 'Premodern Arabic Biographical Collections: A Digital Approach'
+  detail: '*Invited Lecture* at University of Pennsylvania'
+- date: '2017'
+  year: 2017
+  month: 0
+  country: Germany
+  title: Arabic Written Tradition & the Digital Humanities
+  detail: Invited lecture, given at Universität Hamburg (April 24, 2017) and Goethe-Universität Frankfurt am Main (March 24, 2017)
+- date: November 2016
+  year: 2016
+  month: 11
+  country: USA
+  title: 'From Text to Map: Arabic Biographical Collections and Geospatial Analysis'
+  detail: '*Invited Lecture*, at Center for Geographic Analysis, Harvard University'
+- date: June 2016
+  year: 2016
+  month: 6
+  country: Germany
+  title: 'Future in the Past: Using Modern Computational Methods for the Analysis of Premodern Arabic Texts'
+  detail: '*guest lecture* at “Society and Religion in the Arab World” (an introductory Arabic and Islamic Studies seminar taught by Marie Hakenberg), Leipzig University'
+- date: May 2016
+  year: 2016
+  month: 5
+  country: Germany
+  title: Annotation of Geographical Data
+  detail: With Chiara Palladino; Session 14 of Sunoikisis Digital Classics 2016
+- date: April 2016
+  year: 2016
+  month: 4
+  country: Germany/USA
+  title: Discovering Spatial and Chronological Patterns in Historical Texts
+  detail: '*invited lecture* at Unlocking the Digital Humanities, A Seminar organized by Leipzig University & Tufts University, Spring 2016'
+- date: '2016'
+  year: 2016
+  month: 0
+  country: USA
+  title: 'Writing a 50-volume book in 14th-century Damascus: Algorithmic Analysis, Text Reuse & the Arabic Written Tradition'
+  detail: Invited lecture, given at Davidson College (November 9, 2016) and the University of Michigan (March 10, 2016)
+- date: December 2015
+  year: 2015
+  month: 12
+  country: USA/Netherlands
+  title: Arabic and Islamic Studies and the Digital Humanities
+  detail: The Brill Workshop on the Digital Humanities, Leiden (December 2–3) and Boston (May 1–2)
+- date: February 2015
+  year: 2015
+  month: 2
+  country: USA
+  title: 'Digital Humanities & the Premodern Islamic World: Of Graphs, Maps, and 30,000 Muslims'
+  detail: Invited public lecture, The Gustav E. von Grunebaum Center for Near Eastern Studies, University of California—Los Angeles, February 25, 2015
+- date: 2015–2016
+  year: 2015
+  month: 0
+  country: USA/Germany/UK
+  title: 'Of Graphs, Maps, and 30,000 Muslims: Premodern Arabic Texts & the Digital Humanities'
+  detail: Invited lecture, given in different versions at the Center for Digital Humanities / Department of History, University of South Carolina (November 14, 2016); Duke University (November 11, 2016); University of Tübingen (May 11, 2016); MITH, University of Maryland (March 2, 2016); University of St Andrews (November 27, 2015); University of Manchester (November 25, 2015); SOAS, University of London (November 23, 2015)
+- date: August 2014
+  year: 2014
+  month: 8
+  country: USA
+  title: 'The Social Geography of the Islamic World (661–1300 CE): on the Method'
+  detail: '*invited talk* at PROSOP Workshop, Florida State University, Tallahassee, FL (August 15, 2014)'
+- date: April 2014
+  year: 2014
+  month: 4
+  country: USA
+  title: Distant Reading of Arabic Biographical Collections
+  detail: '*guest lecture* at “Saints and Sinners in Muslim Literature” (Mimi Hanaoka) at the University of Richmond, Richmond, VA (April 10, 2014)'
+- date: April 2014
+  year: 2014
+  month: 4
+  country: USA
+  title: The Social Geography of the Islamic World (661–1300 CE)
+  detail: '*invited talk* at the University of Richmond, Richmond, VA (April 10, 2014)'
+- date: April 2014
+  year: 2014
+  month: 4
+  country: USA
+  title: 'Future in the Past: Using Digital Methods to Study Medieval Arabic Texts'
+  detail: '*brown bag lecture* at Tufts University (April 7, 2014).'
+- date: April 2014
+  year: 2014
+  month: 4
+  country: USA
+  title: 'Classical Arabic through the Words of the Prophet: Teaching Classical Arabic in the Digital Age'
+  detail: '*brown bag lecture* at Tufts University (April 2, 2014).'
+- date: March 2014
+  year: 2014
+  month: 3
+  country: USA
+  title: 'Studying Classical Arabic Sources in the Digital Age: Social Geography & Social History'
+  detail: '*invited talk* at Holy Cross Manuscripts, Inscriptions and Documents Club the College of the Holy Cross, Worcester, MA (March 14, 2014)'
+- date: February 2014
+  year: 2014
+  month: 2
+  country: USA
+  title: Building a Historical Gazetteer
+  detail: '*Guest Lecture* at “Computational methods in the humanities,” An honors course (Prof. David J. Birnbaum) at the University of Pittsburgh, Pittsburgh, PA (February, 21, 2014)'
+- date: February 2014
+  year: 2014
+  month: 2
+  country: USA
+  title: Connectedness of the Islamic World (661–1300 CE)
+  detail: '*invited talk* at the European Union Center of Excellence & European Studies Center, the University of Pittsburgh, Pittsburgh, PA (February, 20, 2014)'
+- date: '2014'
+  year: 2014
+  month: 0
+  country: USA
+  title: 'Computational Reading of Classical Arabic Sources: the Case of Biographical Collections'
+  detail: Invited talk, given at the Department of Classics, Tufts University (March 10, 2014); Bard College, Annandale-on-Hudson, NY (February 11, 2014); and the Center for Digital Research in the Humanities, University of Nebraska–Lincoln (January 30, 2014)
+papers:
+- date: October 2024
+  year: 2024
+  month: 10
+  country: UK
+  title: 'Navigating Seas of Biographies: A Computational Pipeline for Biography Identification in Historical Corpora (EIS1600 Project Paper)'
+  detail: 'together with Alicia González Martínez (*delivered the presentation*), Tariq Yousef, and Hamid Reza Hakimi, at the *Arabic Pasts 2024: Histories and Historiographies*, October 3–5, 2024, at Aga Khan University, Institute for the Study of Muslim Civilizations.'
+  coauthored: true
+- date: September 2024
+  year: 2024
+  month: 9
+  country: Germany
+  title: Data-Driven Periodization of Classical Arabic and the Arabic Written Tradition
+  detail: 'at the *Societies in Transition: Law, Culture and Politics in the Middle East (30th International DAVO Congress)*, University of Göttingen, September 26–28, 2024'
+- date: September 2024
+  year: 2024
+  month: 9
+  country: Germany
+  title: 'A Book of 30,000 Biographies: Computational Analysis of Sources of “The History of Islam” of al-Ḏahabī (d. 748/1348)'
+  detail: 'at *Textual Transmission in the Islamic Manuscript Age: On the Variance, Reception, and Usage of Arabic and Persian Works from the Middle East to the Indian Subcontinent*, German-Japanese Bilateral Conference, University of Münster, September 5–7, 2024'
+- date: August 2024
+  year: 2024
+  month: 8
+  country: Armenia
+  title: 'Digital Humanities for Arabic and Islamic Studies: what is it and why bother?'
+  detail: at *Texts, Interpretations, and Entanglements in the Study of Islamicate History*, International Conference at the Yerevan State University, August 28–30, 2024
+- date: June 2024
+  year: 2024
+  month: 6
+  country: USA
+  title: 'Modeling Social History: A Deep Learning Approach to Arabic Historical Tradition'
+  detail: 'together with Alicia González Martínez, Tariq Yousef (*delivered the presentation*), and Hamid Reza Hakimi, at *DH 2024: Reinvention & Responsibility*, the annual conference of the Alliance of Digital Humanities Organizations, at The Roy Rosenzweig Center for History and New Media, Arlington, VA / Washington, D.C., August 6–9, 2024, Published: <https://tinyurl.com/DH2024-MSH>.'
+  kind: poster
+  coauthored: true
+- date: June 2024
+  year: 2024
+  month: 6
+  country: Germany
+  title: 'Text Reuse in the Arabic Written Tradition: A Case of Biographical Collections'
+  detail: 'at *Making of a Sage: Corpora of Wise Sayings in a Religio-Historical Perspective*, International Workshop at Göttingen University, organized by Ute Pietruschka, June 28–29, 2024'
+- date: March 2024
+  year: 2024
+  month: 3
+  country: UAE
+  title: Computational typology of texts as a means of modeling the development of the Arabic written tradition
+  detail: 'at *The Praxis of Digital Humanities: Expanding Horizons and Transforming Scholarship in the Arab/Islamic world*, a symposium, March 6–7, 2024, Department of Arabic and Translation Studies (ATS), American University of Sharjah (AUS)'
+- date: December 2023
+  year: 2023
+  month: 12
+  country: Japan
+  title: 'Ṣundūq al-ġarāʾib fī-l-ʿaṣr al-raqāʾim: Reading Medieval Texts in the Digital Age'
+  detail: at The Middle East and Europe, 1097–1517, Waseda University, Tokyo, 9–10 December, 2023
+- date: October 2023
+  year: 2023
+  month: 10
+  country: UK
+  title: Modelling the Development of Premodern Islamic Societies from Biographical and Historical Data
+  detail: '(together with: Hamid Reza Hakimi, Lisa Mischer, and Tariq Yousef), at Arabic Pasts 2023, 5–6 October 2023, Aga Khan University—London'
+  coauthored: true
+- date: September 2023
+  year: 2023
+  month: 9
+  country: Bulgaria
+  title: Enhancing State-of-the-Art NLP Models for Classical Arabic
+  detail: together with Tariq Yousef, Lisa Mischer (*delivered presentation*), and Hamid Reza Hakimi, at Ancient Language Processing Workshop, at Recent Advances in Natural Language Processing, September 8, Varna, Bulgaria
+  coauthored: true
+- date: June 2023
+  year: 2023
+  month: 6
+  country: USA
+  title: 'OpenITI `mARkdown`: Balancing Between a Standard and a Research Method'
+  detail: at Digital Publication of Right-to-Left Script Corpora, June 29–30, 2023; The University of Maryland, College Park, MD, USA
+- date: June 2023
+  year: 2023
+  month: 6
+  country: Germany
+  title: Finding and Linking Information in Arabic Historical Texts
+  detail: '(together with Lisa Mischer, Hamid Reza Hakimi, Tariq Yousef), at Data Linking Workshop 2023: Computer Vision and Natural Language Processing – Challenges in the Humanities, Center for the Study of Manuscript Cultures, Universität Hamburg, June 27–28, 2023'
+  coauthored: true
+- date: March 2023
+  year: 2023
+  month: 3
+  country: Germany
+  title: Algorithmic Analysis into Social History
+  detail: at LOOP Workshop, Ruhr Universität Bochum, March, 9–10, 2023
+- date: September 2022
+  year: 2022
+  month: 9
+  country: Germany
+  title: Similarity-Based Networks for Islamicate Digital Humanities
+  detail: at “Computational Contributions to the Social and Cultural Histories of the Islamicate World”, *a Panel*, co-organized with Till Grallert, at 34. Deutscher Orientalistentag 12.-17.09.2022, Freie Universität Berlin (100 Jahre DOT)
+- date: July 2022
+  year: 2022
+  month: 7
+  country: Germany
+  title: Modeling the Development of Premodern Islamic Societies through Computational Analysis of Written Sources
+  detail: at Linked Open Tafsir Conference 2022, July 18 -20, 2022, Bad Homburg, Germany
+- date: October 2021
+  year: 2021
+  month: 10
+  country: Germany
+  title: 'Being Pragmatic: Data and Authority Files in the OpenITI Corpus'
+  detail: 'at &lt;AUTHOR&gt;&lt;TITLE&gt;&lt;PLACE&gt;: Authority Records and Manuscripts in Libraries and Research (hybrid workshop), a workshop co-organised by the “Orient-Digital” project at Berlin State Library and “Bibliotheca Arabica” (Saxon Academy of Sciences and Humanities, Leipzig) October 27–29, 2021'
+- date: October 2021
+  year: 2021
+  month: 10
+  country: online
+  title: 'OpenITI: The Corpus for The Field'
+  detail: at “Digitalizing Humanities. Humanizing digitalization”, online congress, organized by Enrique Capdevila (*Petrifying Wealth*-IH) and Arturo Guerrero (*EuQu*-ILC), October 20–21, 2021
+- date: October 2020
+  year: 2020
+  month: 10
+  country: USA
+  title: 'One Source to Rule Them All: Constructing the Master Chronicle for Islamic History'
+  detail: at Middle East Studies Association 54th Annual Meeting (online), October 5–17, 2020
+  online: true
+- date: October 2020
+  year: 2020
+  month: 10
+  country: USA
+  title: 'Big Data and Mega Corpora in the Middle East Studies: The Case of Arabic Written Tradition'
+  detail: at Middle East Studies Association 54th Annual Meeting (online), October 5–17, 2020
+  online: true
+- date: August 2020
+  year: 2020
+  month: 8
+  country: Germany
+  title: 'Digital Humanities with non-European sources: The Case of Arabic'
+  detail: 'at “Hack the Middle East”: an Introduction to Digital Humanities, an Online Workshop, *Die Junge Akademie*, August 11–12, 2020'
+  online: true
+- date: July 2020
+  year: 2020
+  month: 7
+  country: Germany
+  title: OpenITI
+  detail: at Digitalisierungsworkshop der orientalistischen Fächer BA/ER (Workshop on Digital Tools in Oriental Studies BA/ER), Universität Bamberg & Universität Erlangen, July 4, 2020
+  online: true
+- date: October 2019
+  year: 2019
+  month: 10
+  country: USA/UK
+  title: 'Something Old, Something New, Something Borrowed: Computational Analysis of Writing Practices of Islamic Scholars'
+  detail: 'at: • Middle East Studies Association 53rd Annual Meeting, November 14–17, New Orleans, LA, USA; • Arabic Pasts: Histories and Historiography, 17–19 October 2019, Aga Khan University, London'
+- date: July 2019
+  year: 2019
+  month: 7
+  country: Netherlands
+  title: 'Open Islamicate Texts Initiative: A Machine-Readable Corpus of Texts Produced in the Premodern Islamicate World'
+  detail: 'at Digital Humanities 2019, Utrecht University, July 9–12 (In collaboration with: Matthew Thomas Miller, Sarah Bowen Savant, and Masoumeh Seydi)'
+  kind: poster
+- date: July 2019
+  year: 2019
+  month: 7
+  country: Netherlands
+  title: al-Ṯurayyā, the Gazetteer and the Geo-Spatial Model of the Early Islamic World
+  detail: 'at Digital Humanities 2019, Utrecht University, July 9–12 (In collaboration with: Masoumeh Seydi, who also presented)'
+- date: July 2019
+  year: 2019
+  month: 7
+  country: Netherlands
+  title: 'Orbis-in-a-box (OIB): Modeling Historical Geographical Networks'
+  detail: 'at Digital Humanities 2019, Utrecht University, July 9–12 (In collaboration with: Masoumeh Seydi, James Ballie, Karl Grossner, and Rainer Simon)'
+  kind: poster
+- date: June 2019
+  year: 2019
+  month: 6
+  country: Japan
+  title: 'Computational Historiography: al-Ḏahabī’s *Taʾrīḫ al-islām* and His Sources'
+  detail: at the Sixth Conference of the *School of Mamluk Studies*, Tokyo, Japan, June 15–17 2019
+  online: true
+- date: April 2019
+  year: 2019
+  month: 4
+  country: Russia
+  title: Interconnectedness of Texts and Computational Modeling of the Arabic Written tradition
+  detail: '(*in Russian*: “Преемственность текстов и компьютерное моделирование арабской письменной традиции”), at The 41st Annual Session of St Petersburg Arabists, The Institute of Oriental Manuscripts of the Russian Academy of Sciences. April 8–10, 2019.'
+- date: February 2019
+  year: 2019
+  month: 2
+  country: UK
+  title: 'Modeling Society from Text: a Method in Arabic Studies'
+  detail: at Decoding the Past. Digital Tools for the Analysis of Historical Data, *a Workshop*, University of London, February 21–22, 2019
+- date: December 2018
+  year: 2018
+  month: 12
+  country: Spain
+  title: 'al-Ḏahabī’s treatment of his Andalusi sources: toward understanding of compilation methods of medieval historians'
+  detail: 'at *The Maghrib in the Mashriq* (i.e.: *Islamic West in Islamic East*), a congress, Consejo Superior de Investigaciones Científicas, Madrid, 20–21 December 2018'
+- date: December 2018
+  year: 2018
+  month: 12
+  country: Netherlands
+  title: 'Prospects of Corpus-Based Research: Computational Methods and the OpenITI Corpus'
+  detail: at *Whither Islamicate Digital Humanities*, Academy Colloquium, The Royal Netherlands Academy of Arts and Sciences, Amsterdam, 13–15 December 2018 (organized by Christian Lange & Melle Lyklema, Utrecht University)
+- date: May 2018
+  year: 2018
+  month: 5
+  country: Italy
+  title: 'Modeling Arabic Written Tradition: Enhancing Traditional Text analysis with Computational Techniques'
+  detail: 'at *Launching RASCIO: Reader, Author, Scholar in Context of Information Overflow*, a Workshop organized by Dr. Élise Franssen, Università Ca’ Foscari Venezia, May 24, 2018'
+- date: November 2017
+  year: 2017
+  month: 11
+  country: USA
+  title: 'Looking for the author behind the words: Stylometric Analysis of al-Ḏahabī’s (d. 1347) Writings'
+  detail: at *A New Corpus for the Islamicate World and Methods for Its Exploration*, a Panel co-organized by Sarah Savant and Matthew Miller, at Middle East Studies Association (MESA) Annual Meeting, Washington, D.C.
+- date: October 2017
+  year: 2017
+  month: 10
+  country: Austria
+  title: Modeling Social History of the Premodern Islamic World
+  detail: at Evolution of Social Complexity, a Workshop organized by Complexity Science Hub Vienna, October 2–3, 2017
+- date: September 2017
+  year: 2017
+  month: 9
+  country: Spain
+  title: Digital Humanities in the field of Islamic studies
+  detail: 'at Digital Humanities & the History of al-Andalus and the Maghreb: Challenges and Opportunities, a Research Seminar at Escuela de Estudios Árabes—Consejo Superior de Investigaciones Científicas (CSIC), Cuesta del Chapiz, 22, Granada'
+- date: May 2017
+  year: 2017
+  month: 5
+  country: Italy
+  title: Why do we need a corpus and computational methods?
+  detail: 'at Navigating the House of Wisdom: How to write a good book in the medieval Middle East, a Workshop at the University of Milan, May 25th-26th 2017.'
+- date: April 2017
+  year: 2017
+  month: 4
+  country: United Arab Emirates
+  title: 'Algorithmic Analysis of Premodern Arabic Biographical Collections: Approach, Infrastructure, Open Data'
+  detail: at Digital Humanities Abu Dhabi—DHAD, a Workshop at New York University Abu Dhabi, United Arab Emirates, 10–12 April 2017
+- date: January 2017
+  year: 2017
+  month: 1
+  country: Germany
+  title: '80/20: Facilitating Computational Analysis with Named-Entities Recognition'
+  detail: at Digital Infrastructure for Named Entities Data, a Workshop, Leipzig University, January 11–13, 2017
+- date: December 2016
+  year: 2016
+  month: 12
+  country: Spain
+  title: 'An Accidental Gazetteer: Linked Data for Historical Geography of the Classical Islamic World'
+  detail: 'at Linked Pasts 2016, a symposium series dedicated to facilitating practical and pragmatic developments in Linked Open Data in History, Classics, Geography and Archaeology, December 15–16, 2016 (hosted at: Universidad Nacional de Educación a Distancia, Madrid)'
+- date: November 2016
+  year: 2016
+  month: 11
+  country: USA
+  title: 'Of A Network and A Node: ‘The History of Islam’ of al-Ḏahabī (d. 1348) and its place in the Premodern Arabic Textual Tradition'
+  detail: 'at *Networked Texts: New Ways of Seeing the Arabic Textual Tradition (750–1500)*, a Panel co-organized by Sarah Savant and Maxim Romanov, at Middle East Studies Association (MESA) Annual Meeting, Boston, MA'
+- date: September 2016
+  year: 2016
+  month: 9
+  country: USA
+  title: Presentation on Islamic[ate] DH Projects at Leipzig University
+  detail: 'at Activism, Advocacy, and Scholarship on Islam in the Digital Realm: Prospects, Progress, and Challenges, a workshop organized by the Institute for the Study of Muslim Societies & Civilizations, Boston University (September 16 & 17, 2016)'
+- date: October 2015
+  year: 2015
+  month: 10
+  country: USA
+  title: '“al-Ḏahabī’s Monster”: Dissecting a 50-Volume Arabic Chronicle-cum-Biographical Collection from the 14th Century CE'
+  detail: at *Distant Reading & the Islamic Archive*, Conference at Brown University, October 16, 2015
+- date: September 2015
+  year: 2015
+  month: 9
+  country: UK
+  title: 'The *Taʾrīḫ al-islām* of al-Ḏahabī (d. 748/1347 CE): Computational Exploration of the Life-Cycle of a 50-Volume Arabic Chronicle-cum-Biographical Collection'
+  detail: 'at Arabic Pasts: Histories and Historiographies: Research Workshop, co-hosted by the Aga Khan University, Institute for the Study of Muslim Civilisations and SOAS, University of London (September 25–26, 2015)'
+- date: July 2015
+  year: 2015
+  month: 7
+  country: USA
+  title: 'Cultural Production in the Islamic World (600–1900 CE): mining an Ottoman bibliographical collection from the early 20th century'
+  detail: at The Keystone Digital Humanities Conference, University of Pennsylvania, Philadelphia, PA (July 22–24, 2015)
+- date: May 2015
+  year: 2015
+  month: 5
+  country: USA
+  title: Analyzing Arabic Biographical Collections at Scale
+  detail: at Digital Ottoman Platform Workshop, Institute for Advanced Study, Princeton, NJ (June 8–12, 2015)
+- date: May 2015
+  year: 2015
+  month: 5
+  country: USA
+  title: The Writing Culture of Nīshāpūr in the 11th Century
+  detail: '[In collaboration with Sarah Savant, Aga Khan University, London; paper delivered by Sarah Savant], at Iranian Cities from the Arab Conquest to the Early Modern Period, Harvard University, Cambridge, MA (May 1–2).'
+- date: November 2014
+  year: 2014
+  month: 11
+  country: USA
+  title: 'Exploring Islamic Written Legacy: Computational Reading of *Hadiyyaŧ al-ʿārifīn*'
+  detail: at Middle East Studies Association (MESA) Annual Meeting, Washington, D.C.
+- date: March 2014
+  year: 2014
+  month: 3
+  country: USA
+  title: Computational Processing of Toponymic Data from classical Arabic Sources
+  detail: at Working with Text in a Digital Age, A Workshop at Tufts University (the Perseus Project) (March 29, 2014).
+- date: February 2014
+  year: 2014
+  month: 2
+  country: USA
+  title: Visualizing Islamic Geography at Scale
+  detail: 'at Data Big and Small: Computer Science, the Humanities and Social Science: Conversations between representatives from Leipzig, Northeastern, Princeton & Tufts, a workshop at Tufts University (the Perseus Project) (February 3–4, 2014).'
+- date: October 2013
+  year: 2013
+  month: 10
+  country: USA
+  title: Abstract Models for Islamic History
+  detail: at Digital Humanities and Islamic & Middle Eastern Studies, Brown University, Providence, RI (October 24–25, 2013).
+- date: October 2013
+  year: 2013
+  month: 10
+  country: USA
+  title: Islamic World Connected (661–1300 CE)
+  detail: at Middle East Studies Association (MESA) Annual Meeting, New Orleans, LA.
+- date: April 2013
+  year: 2013
+  month: 4
+  country: USA
+  title: Toward Abstract Models for Islamic History
+  detail: 'Poster at *Word, Space, Time: Digital Perspectives on the Classical World*, an interdisciplinary conference organized by the Digital Classics Association, University at Buffalo, SUNY, April 5–6, 2013'
+  kind: poster
+- date: March 2013
+  year: 2013
+  month: 3
+  country: USA
+  title: 'Exploratory Analysis of Arabic Biographical Collections: the Case of al-Ḏahabī''s (d. 1347 CE) *Taʾrīḫ al-islām*'
+  detail: 'at: • the 223rd Meeting of the American Oriental Society (AOS), Portland, OR; • the 8th Annual Pearl Kibre Medieval Study Conference: “New Media and the Middle Ages”, The Graduate Center, CUNY, New York, NY.'
+- date: February 2013
+  year: 2013
+  month: 2
+  country: USA
+  title: «Connectedness» of the Islamic World (600–1300 CE)
+  detail: at 7th Annual Near Eastern Studies Graduate Student Colloquium, U of Michigan, Ann Arbor, MI.
+- date: November 2012
+  year: 2012
+  month: 11
+  country: USA
+  title: 'Social History of the Muslim World in the Digital Age: Making Sense of 29,000 Biographies from al-Ḏahabī''s «History of Islam»'
+  detail: at Middle East Studies Association (MESA) Annual Meeting, Denver, CO.
+- date: November 2012
+  year: 2012
+  month: 11
+  country: USA
+  title: 'Social History of the Muslim World in the Digital Age: Making Sense of 29,000 Biographies from al-Ḏahabī''s «History of Islam»'
+  detail: 'at Cyberinfrastructure Days, University of Michigan, November 7–8, 2012. Received: “People''s Choice Award Winner”'
+  kind: poster
+- date: October 2012
+  year: 2012
+  month: 10
+  country: USA
+  title: 'Writing the Digital History of the Premodern Muslim World, 670–1300 CE: Exploratory Analysis of Primary Sources'
+  detail: at Interdisciplinary Workshop under the rubric “Forum on Research in Medieval Studies” (FoRMS), the Medieval Lunch Series, University of Michigan.
+- date: August 2012
+  year: 2012
+  month: 8
+  country: USA
+  title: Mining pre-Modern Islamic Sources
+  detail: at “Working with Text in a Digital Age,” the summer institute at Tufts U, Medford, MA.
+- date: April 2012
+  year: 2012
+  month: 4
+  country: Russia
+  title: 'Dreaming Ḥanbalites: Dream-Tales in Prosopographical Dictionaries'
+  detail: (in Russian), at the 34th Annual Session of St. Petersburg Arabists, SPbIOS/IOM of RAS.
+- date: April 2012
+  year: 2012
+  month: 4
+  country: Belgium
+  title: 'Digital History of the Muslim World: Computer-Aided Analysis of Biographical Dictionaries'
+  detail: at Methods and means for digital analysis of ancient and medieval texts and manuscripts, a workshop at the Katholieke Universiteit, Leuven & the Royal Flemish Academy of Belgium (KVAB), Brussels.
+- date: November 2010
+  year: 2010
+  month: 11
+  country: USA
+  title: «Popular» Preaching in the Sunnī Context and the Legitimization of *Waʿẓ* in the Late 12th Century CE
+  detail: at Middle East Studies Association (MESA) Annual Meeting, San Diego, CA.
+- date: November 2009
+  year: 2009
+  month: 11
+  country: USA
+  title: Aḥmad b. Ḥanbal's (d. 241/855) Argumentative Strategies
+  detail: at Middle East Studies Association (MESA) Annual Meeting, Boston, MA.
+- date: April 2009
+  year: 2009
+  month: 4
+  country: USA
+  title: Dreaming Ḥanbalites
+  detail: at Dreams and Visions in Islamic Societies, conference, University of Michigan.
+- date: March 2004
+  year: 2004
+  month: 3
+  country: Russia
+  title: The Origins of the Term *Ṣūfī*
+  detail: (in Russian), at the 26th Annual Session of St. Petersburg Arabists, SPbIOS/IOM of RAS.
+- date: December 2003
+  year: 2003
+  month: 12
+  country: Russia
+  title: The Paradigm of the Science of Ḥadīṯ (*ʿilm al-ḥadīṯ*)
+  detail: (in Russian), at the Annual Academic Session, SPbIOS/IOM of RAS.
+- date: April 2003
+  year: 2003
+  month: 4
+  country: Russia
+  title: Argumentation with *Ḥadīṯ* Reports in Ibn al-Jawzī’s *Talbīs Iblīs* (“Devil’s Delusions”)
+  detail: (in Russian), at the 25th Annual Session of St. Petersburg Arabists, SPbIOS/IOM of RAS
+- date: April 2002
+  year: 2002
+  month: 4
+  country: Russia
+  title: Ibn al-Jawzī’s Image in the Western Scholarship
+  detail: (in Russian), at the 24th Annual Session of St. Petersburg Arabists, SPbIOS/IOM of RAS.
+organizing:
+- date: July 2025
+  year: 2025
+  month: 7
+  country: Germany
+  title: 'From Classical ML to AI in Arabic and Islamic Studies: A Hands-On Workshop'
+  detail: '(part of EIS1600 project activities), a 4-day workshop at *Afrika-Asien Institut*, Universität Hamburg (EIS1600 Project), with Tariq Yousef, Ryan Muther, and Alicia González Martínez. Funding: DFG, EIS1600 Emmy Noether Project'
+- date: September 2024
+  year: 2024
+  month: 9
+  country: Germany
+  title: 'Stylometry and the Digital Humanities: Unraveling Authorship and Periodization in Arabic Textual Traditions'
+  detail: '*a panel* co-organized with Till Grallert and Maroussia Bednarkiewicz at the 30th International Congress of Deutsche Arbeitsgemeinschaft Vorderer Orient (DAVO), Göttingen, 26–28 September 2024'
+- date: September 2022
+  year: 2022
+  month: 9
+  country: Germany
+  title: Computational Contributions to the Social and Cultural Histories of the Islamicate World
+  detail: '*a panel* co-organized with Till Grallert, at: 34. Deutscher Orientalistentag 12.-17.09.2022, Freie Universität Berlin (100 Jahre DOT)'
+- date: July 2020
+  year: 2020
+  month: 7
+  country: Austria/UK
+  title: Stylometry Workshop with Maciej Eder
+  detail: Department of History, University of Vienna & The KITAB Project, Aga Khan University, London. July 1–3, 2020.
+  online: true
+- date: June 2019
+  year: 2019
+  month: 6
+  country: Japan
+  title: 'Approaching Mamlūk Historiography: Narratologically, Literarily, Computationally'
+  detail: a panel at the Sixth Conference of the School of Mamlūk Studies, Waseda University, Tokyo, June 15–17, 2019
+- date: July 2018
+  year: 2018
+  month: 7
+  country: Austria
+  title: ORBIS-esque Hackathon
+  detail: 'Department of History, University of Vienna (co-organized with Tara Andrews and Mária Varga); planning document: [tinyurl.com/orbis-esque](https://tinyurl.com/orbis-esque).'
+- date: November 2017
+  year: 2017
+  month: 11
+  country: USA
+  title: A New Corpus for the Islamicate World and Methods for Its Exploration
+  detail: '*a panel* co-organized with Dr. Sarah Savant (AKU–London) and Dr. Matthew Thomas Miller (UMD) at MESA, Washington, DC–2017'
+- date: November 2016
+  year: 2016
+  month: 11
+  country: USA
+  title: 'Networked Texts: New Ways of Seeing the Arabic Textual Tradition (750–1500)'
+  detail: '*a panel* co-organized with Dr. Sarah Savant (AKU–London), MESA, Boston–2016'
+- date: November 2016
+  year: 2016
+  month: 11
+  country: USA
+  title: Non-traditional methods for Teaching Traditional Languages
+  detail: '*a roundtable* at the annual meeting of the Middle East Studies Association (MESA), Boston 2016'
+- date: December 2015
+  year: 2015
+  month: 12
+  country: Germany
+  title: Analyzing Text Reuse at Scale / Working with Big Humanities Data
+  detail: at Leipzig University, organized by Thomas Köntges & Maxim Romanov (within the framework of Leipzig Workshop Week, 14–18 December 2015).
+- date: December 2015
+  year: 2015
+  month: 12
+  country: Germany
+  title: Digital Arabic and Digital Persian Research Workshop
+  detail: at Leipzig University, organized by Maxim Romanov (within the framework of Leipzig Workshop Week, 14–18 December 2015).
+- date: November 2013
+  year: 2013
+  month: 11
+  country: USA
+  title: Digital Humanities in Middle East Studies
+  detail: '(organized together with Børre Ludvigsen and Will Hanley), a series of two panels and a roundtable: “Traditional Sources, Nontraditional Methods,” “Digital Communication,” and Roundtable at the annual meeting of the Middle East Studies Association (MESA), New Orleans 2013.'
+- date: November 2010
+  year: 2010
+  month: 11
+  country: USA
+  title: Islamic Preaching
+  detail: '*a panel* at the annual meeting of the Middle East Studies Association (MESA), San Diego, 2010'

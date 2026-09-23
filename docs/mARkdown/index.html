@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenITI mARkdown · Maxim Romanov</title>
+<meta name="description" content="OpenITI mARkdown: a light-weight annotation scheme for Arabic-script texts by Maxim Romanov, used across the OpenITI corpus.">
+<meta name="author" content="Maxim Romanov">
+<link rel="canonical" href="https://maximromanov.github.io/mARkdown/">
+<meta property="og:title" content="OpenITI mARkdown · Maxim Romanov">
+<meta property="og:description" content="OpenITI mARkdown: a light-weight annotation scheme for Arabic-script texts by Maxim Romanov, used across the OpenITI corpus.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://maximromanov.github.io/mARkdown/">
+<meta property="og:image" content="https://maximromanov.github.io/assets/img/rm-mark.png">
+<link rel="icon" href="/assets/img/rm-mark-500.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/rm-mark-500.png">
+<link rel="stylesheet" href="/assets/site.css?v=8d32db97">
+<script>
+/* Apply a saved theme before first paint to avoid a flash. */
+try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}
+</script>
+
+</head>
+<body class="page-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/" aria-label="Maxim Romanov, home">
+      <img class="mark" src="/assets/img/rm-mark.png" alt="" width="40" height="40">
+      <span class="brand-name">Maxim Romanov</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/research/"><span class="nav-num" aria-hidden="true">١</span>Research</a>
+      <a href="/publications/"><span class="nav-num" aria-hidden="true">٢</span>Publications</a>
+      <a href="/talks/"><span class="nav-num" aria-hidden="true">٣</span>Talks</a>
+      <a href="/teaching/"><span class="nav-num" aria-hidden="true">٤</span>Teaching</a>
+      <a href="/notes/"><span class="nav-num" aria-hidden="true">٥</span>Notes</a>
+      <a href="/cv/"><span class="nav-num" aria-hidden="true">٦</span>CV</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm0 16V5a7 7 0 0 1 0 14z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main" class="wrap ">
+<header class="page-head"><p class="app">Annotation Scheme</p><h1>OpenITI mARkdown</h1><p class="lede">A light-weight scheme for tagging structural, morphological, and semantic elements in Arabic-script texts, designed as a research method rather than an exchange format. This is the reference description; the corpus that uses it is OpenITI.</p></header><nav class="toc" aria-label="Contents"><p class="app">Contents</p><div class="toc">
+<ul>
+<li><a href="#brief-description">Brief Description</a></li>
+<li><a href="#detailed-description">Detailed Description</a></li>
+<li><a href="#file-structure">File structure</a><ul>
+<li><a href="#magic-value">Magic value</a></li>
+<li><a href="#non-machine-readable-metadata-header">Non-machine-readable metadata header</a></li>
+<li><a href="#text-of-the-book">Text of the book</a></li>
+</ul>
+</li>
+<li><a href="#text-structure">Text structure</a></li>
+<li><a href="#structural-patterns">Structural Patterns</a><ul>
+<li><a href="#basic-structural-elements">Basic structural elements</a></li>
+<li><a href="#paragraphs-and-lines">— Paragraphs and lines</a></li>
+<li><a href="#page-numbers">— Page numbers</a></li>
+<li><a href="#verses-of-poetry">— Verses of poetry</a></li>
+<li><a href="#milestones">— Milestones</a></li>
+<li><a href="#logical-unit-patterns">Logical unit patterns</a></li>
+<li><a href="#section-headers">— Section headers</a></li>
+<li><a href="#editorial-sections">—&gt; Editorial sections</a></li>
+<li><a href="#main-information-units">Main information units</a></li>
+<li><a href="#doxographical-items">— Doxographical items</a></li>
+</ul>
+</li>
+<li><a href="#analytical-patterns">Analytical patterns</a><ul>
+<li><a href="#semantic-patterns">Semantic Patterns</a></li>
+<li><a href="#named-entities">— Named Entities</a></li>
+<li><a href="#open-tagging-pattern">— Open Tagging Pattern</a></li>
+<li><a href="#morphological-patterns">Morphological Patterns</a></li>
+<li><a href="#custom-analytical-patterns">Custom Analytical Patterns</a></li>
+<li><a href="#geographical-units">— Geographical units</a></li>
+<li><a href="#riwayat-units">— Riwāyāt units</a></li>
+</ul>
+</li>
+<li><a href="#additional-tags-testing">Additional Tags (testing)</a></li>
+<li><a href="#known-issues-with-editpad-pro">Known issues with EditPad Pro</a><ul>
+<li><a href="#highlighting-scheme-running-amok">Highlighting scheme running amok</a></li>
+<li><a href="#folding-scheme-does-not-seem-to-work">Folding scheme does not seem to work</a></li>
+</ul>
+</li>
+<li><a href="#work-in-progress">Work in progress</a><ul>
+<li><a href="#issues-with-pagination">Issues with pagination</a></li>
+<li><a href="#simplification-of-markdown">Simplification of mARkdown</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav><article class="prose prose-wide"><p>The main goal of <strong>OpenITI mARkdown</strong> is to provide a simple system for tagging structural, morphological and semantic elements in premodern and early modern Islamicate texts of the <a href="https://github.com/OpenITI">OpenITI corpus</a>. The use of <strong>OpenITI mARkdown</strong> will allow one to engage in the computational analysis of texts in the same way as allowed by the more complex and time-consuming tagging schemes such as TEI XML; <strong>OpenITI mARkdown</strong> will also facilitate the conversion of the large volume of Islamicate texts into TEI XML, which is now the standard format for digital editions. In principle, <strong>OpenITI mARkdown</strong> does not require any special editor, but the current implementation relies on <a href="https://www.editpadpro.com/">EditPad Pro</a>, which supports right-to-left languages, Unicode, and large files. However, it is the support of custom highlighting and navigation schemes that makes this text editor particularly convenient for <strong>OpenITI mARkdown</strong>.</p>
+<p><strong>OpenITI mARkdown</strong> is not meant to be a comprehensive standard, but rather a light-weight tagging scheme that renders texts machine readable and can be adapted to specific research tasks. The scheme consists of a set of unified patterns, but also includes custom patterns that facilitate analysis of specific types of data. These patterns can be divided into structural (unified), morphological (unified, customizable) and semantic (unified customizable, but also custom). The scheme currently accommodates a variety of research inquiries. </p>
+<h2 id="brief-description">Brief Description</h2>
+<ol>
+<li>Texts in <strong>OpenITI</strong> are automatically converted into <strong>OpenITI mARkdown</strong>, and in most cases, only structural tagging is required—in other words, tagging headers of chapters, sections,  subsections and and other logical units. </li>
+<li>Download and install <a href="http://www.editpadpro.com/">EditPad Pro</a>. <strong>EditPad Pro</strong> works on Windows only; if you are using Mac or Linux, you can still use it with some virtualization option; the combination of <strong>Parallels</strong>, <strong>Windows 10</strong> and <strong>EditPad Pro</strong> works well on Macs (The size of the virtual machine with <strong>Windows 10</strong> is only about 10-15Gb).</li>
+<li>Download <strong>OpenITI mARkdown</strong> schemes from GitHub (<a href="https://github.com/OpenITI/mARkdown_scheme">https://github.com/OpenITI/mARkdown_scheme</a>), and unzip, and copy all the files into <code>%APPDATA%\JGsoft\EditPad Pro 7</code> (<em>Note</em>: make sure that EditPad Pro in not running: you need to do <code>File &gt; Exit</code> to completely close it).</li>
+<li>The scheme is automatically activated in EditPad Pro by the first line in the file, which must be: <code>#####OpenITI#</code> (called <em>magic value</em> in EditPad Pro).</li>
+<li>Texts in the repositories of the <a href="https://github.com/OpenITI">OpenITI Project</a> have already been preprocessed and basic structural tags should already be implemented. Opening any of these texts in EditPad Pro should automatically activate <strong>OpenITI mARkdown</strong> scheme. <strong>NB:</strong> Since the corpus is work in progress and many texts have not yet been manually edited, tags that may appear in texts do not necessarily correspond to proper <strong>OpenITI mARkdown</strong> tags!</li>
+<li>The tagging of structural elements of the text boils down to collating the electronic text with the paper edition it is based on, and tagging the main logical units in the electronic text:<ol>
+<li>the headers of chapters (<code>### |</code>), sections (<code>### ||</code>), subsections (<code>### |||</code>), etc. The entire text of a header must be on the same line (the entire text of the header will be highlighted, if everything is correct).</li>
+<li>and information units: biographies (<code>### $</code>), descriptions of events (<code>### @</code>), and dictionary entries (also <code>### $</code>)</li>
+<li>If a logical unit is tagged correctly, the color of a tagged unit's header will change accordingly.</li>
+</ol>
+</li>
+</ol>
+<p><strong>NB:</strong> Tagging must be done through the collation of the electronic text of a book with the printed edition on which the electronic text is based. Most editions can be easily found online as PDF files (‘googling’ the title—in the original language—usually brings up a lot of results; PDFs are most likely to be on <a href="https://archive.org/">Archive.org</a>)</p>
+<h2 id="detailed-description">Detailed Description</h2>
+<h2 id="file-structure">File structure</h2>
+<p><strong>NB:</strong> On the general organization of <strong>OpenITI</strong>, see the <a href="../OpenITI/">relevant section</a>.</p>
+<p>An <strong>OpenITI mARkdown</strong> file includes three main sections, which are shown on the screenshot above. They are 1) <em>magic value</em>; 2) non-machine readable metadata header; 3) text of the book proper.</p>
+<h3 id="magic-value"><em>Magic value</em></h3>
+<p><em>Magic value</em> is the first line of text in the file that that activates the <strong>OpenITI mARkdown</strong>  scheme in <strong>EditPad Pro</strong>. This value is  <code>######OpenITI#</code> (nothing else should be on the first line of the file, otherwise the scheme will not be activated).</p>
+<h3 id="non-machine-readable-metadata-header">Non-machine-readable metadata header</h3>
+<p>This data presents the description of a text salvaged from the original collections. These are the lines that start with <code>#META# ...</code>. Since most of metadata in existing collections suffers from a variety of inconsistencies, these lines are not machine readable, yet they often contain all necessary information for a bibliographical reference. Machine-readable metadata will be gradually collected into corresponding <code>*.yml</code> files; see below for more details);</p>
+<h3 id="text-of-the-book">Text of the book</h3>
+<p>After these two elements, the text of an edition begins. The first two elements are separated from the text of an edition with the line that contains the following: <code>#META#Header#End#</code> (Again, this is the only element that must be on the line).</p>
+<p>The screenshot below shows all thee main elements at the top of a <strong>OpenITI mARkdown</strong> file.</p>
+<figure class="fit">
+    <a href="/images/mARkdown/mARkdown01.png" title="">
+    <img src="/images/mARkdown/mARkdown01.png">
+    </a>
+    <figcaption>
+        <b>OpenITI mARkdown</b>: the three main sections of a document.
+    </figcaption>
+</figure>
+
+<h2 id="text-structure">Text structure</h2>
+<p>Tagging patterns in a text fall into two main groups: 1) structural patterns, which include basic structural patterns <em>&amp;</em> logical unit patterns; and 2) analytical patterns, which include morphological patterns, semantic patterns <em>&amp;</em> a small numbers of custom analytical patterns.</p>
+<p>The main difference between these two groups can be described as follows. Elements of the first group can be found in printed versions of texts, and thus, the tagging of these elements can be performed by anyone who has basic familiarity with Arabic script and has an ability to collate digital text with its printed original. Elements of the second group can be inserted in a text only by those who are well acquainted with that specific text, and thus, tagging with analytical patterns is to be performed by scholars for specific research purposes. In terms of the workflow, tagging of structural patterns must precede tagging with analytical patterns.</p>
+<h2 id="structural-patterns">Structural Patterns</h2>
+<h3 id="basic-structural-elements">Basic structural elements</h3>
+<p><em>Basic structural elements</em> include the following. <em>Basic structural elements</em> have been automatically implemented in all the texts of the <em>OpenITI</em>, although, because of the inconsistencies in initial formatting of these texts some issues remain. Basic structural elements include 1) paragraphs; 2) page numbers (whenever applicable); 3) verses of poetry, and 4) milestones.</p>
+<h3 id="paragraphs-and-lines">— Paragraphs and lines</h3>
+<p>In premodern Arabic texts paragraphs as units are not particularly reliable. Yet, if a certain electronic text reproduces a printed edition, it is worth preserving its division into paragraphs. Each paragraph begins with a hashtag, <code>#</code>.</p>
+<p>While EditPad Pro handles large files very well, it has problems with long paragraphs (or, more correctly, lines). For this reason, long paragraphs are split into shorter lines, where each line starts with <code>~~</code> (two tildas).</p>
+<figure class="fit">
+    <a href="/images/md/mARkdown_par.gif" title="">
+    <img src="/images/md/mARkdown_par.gif">
+    </a>
+    <figcaption>
+        <b>OpenITI mARkdown</b>: Example of paragraphs.
+    </figcaption>
+</figure>
+
+<h3 id="page-numbers">— Page numbers</h3>
+<p>Most of electronic texts preserve pagination. <strong>OpenITI mARkdown</strong> supports the following format <code>PageV##P###</code>, where <code>V##</code> is the volume number, and <code>P###</code> is the page number. Volume number must be two digits, page number—three (padded with zeros when necessary). Thus, <code>PageV05P022</code> stands for Vol. 5, p.22. Page number tags are inserted at the end of the corresponding page. In some texts this is not properly implemented yet. For an illustration, see "Milestones" section below. </p>
+<h3 id="verses-of-poetry">— Verses of poetry</h3>
+<p>Each verse must be on its own line (beginning with a paragraph tag <code>#</code>), and hemistichs divided with <code>%~%</code> (when not applicable this tag can be places either at the beginning of the end of a line). Verses are not tagged consistently through out all the texts, since the tagging of verses was not consistently implemented in the initial versions of texts. </p>
+<figure class="fit">
+    <a href="/images/mARkdown/mARkdown_verses.png" title="">
+    <img src="/images/mARkdown/mARkdown_verses.png">
+    </a>
+    <figcaption>
+        <b>OpenITI mARkdown</b>: Verses of poetry (lines 856-858).
+    </figcaption>
+</figure>
+
+<h3 id="milestones">— Milestones</h3>
+<p>Milestones (<code>Milestone300</code>) are automatically inserted tags that split texts into 300-word units. Having an ability to split text into equal chunks is helpful for a variety of analytical approaches. These tags should not be moved or removed. </p>
+<figure class="fit">
+    <a href="/images/mARkdown/mARkdown_page_milestone.png" title="">
+    <img src="/images/mARkdown/mARkdown_page_milestone.png">
+    </a>
+    <figcaption>
+        <b>OpenITI mARkdown</b>: A pagination tag and a milestone tag. 
+    </figcaption>
+</figure>
+
+<h3 id="logical-unit-patterns">Logical unit patterns</h3>
+<p>Logical units are the main units into which a specific text is divided, i.e. chapters, sections, lexical entries, biographies etc.</p>
+<h3 id="section-headers">— Section headers</h3>
+<p>All major sections of a text usually have headers. Headers of sections are tagged in the following manner:  1) <code>###</code> — three hashtags at the very beginning of the line; 2) which are followed by the pipe symbols—<code>|</code> —whose number corresponds to the level of a header; 3) the pipes are then followed by the text of the <code>header</code>, which must be on this line entirely (i.e., followed by <code>\n</code>, “new line” character). If there is no text header, the line may remain empty (after the pipes).</p>
+<pre><code>### | First Level Header (red)
+
+### || Second Level Header (orange)
+
+### ||| Third Level Header (yellow)
+
+### |||| Fourth Level Header (green)
+
+### ||||| Fifth Level Header (blue)
+</code></pre>
+<p>The animated image below demonstrates the tagging of headers. Each level has its own color (following the rainbow colors), if tagged correctly.</p>
+<figure class="fit">
+    <a href="/images/mARkdown/mARkdown_headers.gif" title="">
+    <img src="/images/mARkdown/mARkdown_headers.gif">
+    </a>
+    <figcaption>
+        <b>OpenITI mARkdown</b>: Chapters, sections, subsections, subsubsections, etc. 
+    </figcaption>
+</figure>
+
+<h3 id="editorial-sections">—&gt; Editorial sections</h3>
+<p>Editorial sections are tagged with <code>### |EDITOR|</code>, which also must be on a separate line.</p>
+<figure class="fit">
+    <a href="/images/mARkdown/mARkdown_editor.png" title="">
+    <img src="/images/mARkdown/mARkdown_editor.png">
+    </a>
+    <figcaption>
+        <b>OpenITI mARkdown</b>: Editorial sections. 
+    </figcaption>
+</figure>
+
+<h3 id="main-information-units">Main information units</h3>
+<p>For sources that are made of serial units of information—for example, biographies in biographical collections; lexical, onomastic and toponymic entries in dictionaries; descriptions of events in chronicles and the like—there is a series of tagging patterns which classify those units of information. Current patterns do not cover all relevant cases and will be added on as-needed basis.</p>
+<p>Using <strong>OpenArabic mARkdown</strong>, one needs only to mark the beginning of each information unit. Each unit can be marked with either a simplified or full tag. Simplified tags are short, which makes them ideal for manual tagging. Simplified tags are, however, ambiguous. Full tags are more readable and source independent. Full tags are particularly important when information from multiple sources are processed at the same time.</p>
+<h4 id="dictionary-units">— Dictionary units</h4>
+<p>Arabic dictionaries usually include information units of the same types, so one simplified tag—<code>### $ [a dictionary item]</code>—is sufficient. The full tags depend on the nature of each dictionary and at the moment include “descriptive names” (<em>nisbaŧ</em>s), toponyms, lexical items, and book titles. Tags for them are as follows:</p>
+<pre><code>### $DIC_NIS$ [a descriptive name entry]
+
+### $DIC_TOP$ [a toponym entry]
+
+### $DIC_LEX$ [a lexical entry]
+
+### $DIC_BIB$ [a book title]
+</code></pre>
+<h4 id="biographies-and-events">— Biographies and Events</h4>
+<p><strong>RE</strong>: <em><em>multiple</em></em></p>
+<p>Biographical collections often include several types of information units. Moreover, there are plenty of sources that combine features of both biographical collections and chronicles (“obituary chronicles”), so one often has to deal with a variety of information units in the same text. For this reason, the main simplified tags are as follows:</p>
+<pre><code>### $ [a biography of a man]
+
+### $$ [a biography of a woman]
+
+### $$$ [a cross-reference and/or repetition, for both men and women]
+
+### $$$$ [a list of names]
+
+### @ [a historical event]
+
+### @ RAW [a batch of historical events]
+
+</code></pre>
+<figure class="fit">
+    <a href="/images/md/mARkdown_bio1.gif" title="">
+    <img src="/images/md/mARkdown_bio1.gif">
+    </a>
+    <figcaption>
+        <b>OpenArabic mARkdown</b>: Tagging biographical units with simplified tags
+    </figcaption>
+</figure>
+
+<p><strong>NB</strong>: <code>### @ RAW</code> can be used to tag blocks of historical events when it is not immediately clear when one information unit ends and another begins. With these tags in place, one can return to an unfinished batch later, read it more carefully, and split properly into single units. There is also, of course, a conceptual and methodological issue with regard to what constitutes an ‘event’. For the purposes of algorithmic analysis, [the “description of an] event” is a structurally and thematically complete unit of text that describes an entity that has 5 properties: subject, predicate, object, time and place. In other words, it is something that can be grouped into categories, graphed across time, and mapped in space.</p>
+<p>Full tags are as follows:</p>
+<pre><code>### $BIO_MAN$ [a biography of a man]
+
+### $BIO_WOM$ [a biography of a woman]
+
+### $BIO_REF$ [a cross-reference, for both men and women]
+
+### $BIO_NLI$ [a list of names]
+
+### $CHR_EVE$ [a historical event]
+
+### $CHR_RAW$ [a batch of historical events]
+</code></pre>
+<figure class="fit">
+    <a href="/images/md/mARkdown_bio2.gif" title="">
+    <img src="/images/md/mARkdown_bio2.gif">
+    </a>
+    <figcaption>
+        <b>OpenArabic mARkdown</b>: Tagging biographical units with full tags. You can see here how first the unit is not highlighted because of a typo. You can also see one of the common problems that come from combining RTL and LTR text—visually the tags look like they were not typed properly (<b>BIO_MAN$</b>, instead <b>$BIO_MAN$</b>). 
+    </figcaption>
+</figure>
+
+<h3 id="doxographical-items">— Doxographical items</h3>
+<p><strong>NB:</strong> David Bennet; added: September 23, 2016</p>
+<p>The following tags are section tags to be places at the beginning of a relevant section: (1) <code>### $DOX_POS$</code> for sections dealing with doxographical/theological positions; (2) <code>### $DOX_SEC$</code> for descriptions of religious groups (“sects”). These can be used doxographical texts where information is presented in a serial fashion (i.e., the entire text is made of doxographical units of these kinds); in texts that address doxographical issues on top of other things, morphological pattern should be used. </p>
+<h2 id="analytical-patterns">Analytical patterns</h2>
+<p>Analytical patterns are meant to provide scaffolding for tagging complex entities in such a way that would allow for complex automatic manipulation of tagged data for the purposes of computational analysis. The analytical patterns are meant to be adjustable for specific research questions and include semantic and morphological patterns. Semantic patterns are used to tag specific types of named entities (e.g., toponyms, individuals, date statements, sources, etc.), semantic contexts (see, <em>Open Tagging Pattern</em>), and morphological units, or thematic text passages. </p>
+<h3 id="semantic-patterns">Semantic Patterns</h3>
+<h3 id="named-entities">— Named Entities</h3>
+<p>These tags are used to provide relevant metadata to specific words and phrases. In other words, you use these to identify certain words or phrases as references to toponyms, individuals, date statements, sources, and social/onomastic descriptors. The list of taggable named entities will be expanded.</p>
+<p>All tags have similar structure <code>@</code> + <code>CODE</code> + two numbers. <code>CODE</code>s have two variations: 1) long (three letters) and 2) short (one letter). Triliteral <code>CODE</code>s are used for automatic tagging with scripts and entity lists; one-letter short <code>CODE</code>s are used for manual tagging and disambiguation of automatic tags.</p>
+<p><code>XX</code>, two numbers, indicate:</p>
+<ol>
+<li>the length of an attached prefix. For example, if <code>wa-</code> or <code>bi-</code> are attached to an entity, the first number must be <code>1</code>, which means that 1 character from the beginning must be removed)</li>
+<li>the length of the entity. If the entity is a bigram (<em>Madīnaŧ al-Salām</em>), number <code>2</code> must be used (both words will be automatically highlighted).</li>
+</ol>
+<p><strong>NB</strong>: The tags have two varieties: a long one and a short one. The long one will be used for automatic tagging (<em>the automatic tagger is in progress</em>), while the short one will be reserved for manual tagging, as shorter tags are easier to type in manually; additionally, the conversion of an automatic tag into a manual one in the process of edition and disambiguating is more efficient by deleting two characters, rather than adding them. </p>
+<h4 id="biographical-characteristics">—&gt; Biographical characteristics</h4>
+<ul>
+<li>Automatic long tag: <code>@SOCXX</code></li>
+<li>Manual short tag: <code>@SXX</code></li>
+</ul>
+<figure class="fit">
+    <a href="/images/mARkdown/named_entities_04.png" title="">
+    <img src="/images/mARkdown/named_entities_04.png">
+    </a>
+    <figcaption>
+        <b>OpenArabic mARkdown</b>: Biographical characteristics. 
+    </figcaption>
+</figure>
+
+<h4 id="years-ah">—&gt; Years AH</h4>
+<p>Years AH can be tagged in the following manner (where <code>#</code> is a digit; there must be spaces on both sides of the year tag):</p>
+<ul>
+<li><code>YB####</code> — a year of birth, as mentioned in a biography; for example, <code>@YB510</code> means that a biographee was born in the year 510 of the Islamic <em>hijrī</em> calendar.</li>
+<li><code>YD####</code>—a year of death, as mentioned in a biography; for example, <code>@YD597</code> means that a biographee died in the year 597 of the Islamic <em>hijrī</em> calendar.</li>
+<li><code>YY####</code>—any other type of year references mentioned in a text.</li>
+<li><code>YA####</code> — age in years.</li>
+</ul>
+<figure class="fit">
+    <a href="/images/mARkdown/named_entities_03.png" title="">
+    <img src="/images/mARkdown/named_entities_03.png">
+    </a>
+    <figcaption>
+        <b>OpenArabic mARkdown</b>: Years AH (here, years of birth). 
+    </figcaption>
+</figure>
+
+<h4 id="toponyms">—&gt; Toponyms</h4>
+<ul>
+<li>Automatic long tag: <code>@TOPXX</code></li>
+<li>Manual short tag: <code>@TXX</code></li>
+</ul>
+<figure class="fit">
+    <a href="/images/md/md_top_tag.gif" title="">
+    <img src="/images/md/md_top_tag.gif">
+    </a>
+    <figcaption>
+        <b>OpenArabic mARkdown</b> Toponyms.
+    </figcaption>
+</figure>
+
+<h4 id="individuals-persons">—&gt; Individuals (Persons)</h4>
+<ul>
+<li>Automatic long tag: <code>@PERXX</code></li>
+<li>Manual short tag: <code>@PXX</code></li>
+</ul>
+<figure class="fit">
+    <a href="/images/mARkdown/named_entities_02.png" title="">
+    <img src="/images/mARkdown/named_entities_02.png">
+    </a>
+    <figcaption>
+        <b>OpenArabic mARkdown</b>: Individuals (persons). 
+    </figcaption>
+</figure>
+
+<h4 id="sources">—&gt; ‘Sources’</h4>
+<p>This pattern is to tag ‘sources’ of information (for statements such as <em>qāla fulān b. fulān</em>). These are tagged in the following manner:</p>
+<ul>
+<li>Automatic long tag: <em>no pattern</em></li>
+<li>Manual short tag: <code>@SRCXX</code></li>
+</ul>
+<figure class="fit">
+    <a href="/images/mARkdown/named_entities_01.png" title="">
+    <img src="/images/mARkdown/named_entities_01.png">
+    </a>
+    <figcaption>
+        <b>OpenArabic mARkdown</b>: ‘Sources’ and toponyms. 
+    </figcaption>
+</figure>
+
+<h3 id="open-tagging-pattern">— Open Tagging Pattern</h3>
+<p>[<em>NB:</em> accidentally, the highlighting is dropped from the current scheme; it will be added in the next version.] This pattern is easily adjustable for tagging specific semantic contexts. Unlike the named entities tags above, these serve only as pointers to a relevant context, and are not meant to be connected to specific vocabulary in a text.</p>
+<p>The overall pattern is <code>@USER@CAT_SUBCAT_SUBSUBCAT@</code>, where <code>USER</code> is an alias of a researcher introducing a pattern (three-letter initials is an option—<code>MGR</code> in my case); <code>CAT_SUBCAT...</code> represents categorical branching, where categories are defined by a researcher for specific purposes.</p>
+<pre><code>MGR
+├── WACZ
+│   ├── education
+│   │   ├── quran
+│   │   ├── hadith
+│   │   └── fiqh
+│   └── sermons
+│       ├── hell
+│       ├── paradise
+│       └── love
+├── KHUTBA
+│   ├── education
+│   │   ├── punishment
+│   │   ├── hadith
+│   │   └── fiqh
+│   └── sermons
+│       ├── hell
+│       ├── paradise
+│       └── love
+└ etc.
+</code></pre>
+<p>Above is a snapshot of a scheme that I used for tagging biographies of preachers. In this example, I am looking into individuals involved into two different forms of preaching—<em>waʿẓ</em> and <em>ḫuṭbaŧ</em>, their education backgrounds and topics of their sermons. Thus, my tag in the case of a <em>wāʿiẓ</em> who had training in <em>fiqh</em> will look as follows: <code>@MGR@WACZ_education_fiqh@</code>. In combination with chronological, geographical and social information (derived from <em>nisbaŧ</em>s), one can get a perspective on how many individuals involved in <em>waʿẓ</em> had training in <em>fiqh</em> and if there are any chronological, geographical and social peculiarities to this information.</p>
+<p>It is vital to keep track of tags one introduces and avoid creating too many of them. Another useful strategy is to keep them short, for instance: <code>@MGR@WCZ_ed_fqh@</code> (it is your own decision, of course, how to balance brevity and readability).</p>
+<h4 id="open-tagging-pattern-for-automatic-tagging-testing-in-progress">Open Tagging Pattern -- for automatic tagging (<em>testing in progress</em>)</h4>
+<p>These tags are conceptually similar to the ones described in the previous section, but used in automatic tagging of texts using relevant gazetteers of terms and keywords.</p>
+<p>The tag pattern is slightly different (<em>highlighted with different colors, depending on the last element of the tag</em>): <code>@[A-Z]{3}@[A-Z]{3,}@[A-Za-z]@-@[0tf][ftalmr]@</code>, where:</p>
+<ul>
+<li><code>@[A-Z]{3}</code> (<em>three capital letters</em> --- only letters from the ASCI range) is for scholar's initials or the abbreviation of the name of a project.</li>
+<li><code>@[A-Z]{3,}</code> (<em>at least three capital characters</em> --- only letters from the ASCII range) is for the class of a tagged item (for exapmle, <code>PERSON</code>, <code>TOPONYM</code>, <code>EVENT</code>, etc.)</li>
+<li><code>@[A-Za-z]+@</code> (<em>any number of letters</em> --- from the ASCII range only) is for the category of a tagged item (for example, the category would be @ProphetMuhammad@ for such tagged items as <em>rasūl Allãh</em>, <em>Muḥammad ṢLʿM</em>, <em>al-nabī ṢLʿM</em>, etc.)</li>
+<li><code>-@[0tf][ftalmr]@</code> (<em>two small letter characters from the list</em>) is for the review status of tagged items; for example, the first character implies: <code>0</code> --- review required; <code>t</code> --- most likely true; <code>f</code> --- most likely false; the second character implies: <code>0</code> --- review required; <code>t</code> --- true; <code>m</code> --- manually classified item; <code>a</code> --- automatically classified item; <code>l</code> --- logically classified item; <code>r</code> --- reviewed item;<ul>
+<li>the review status element determines the color of the entire tag to facilitate tag review; the following combinations can be used:<ul>
+<li><code>-@00@</code> --- element means that review is required; this is automatically inserted tag; this element highlights the entire tag in black.</li>
+<li><code>-@tr@</code> and <code>-@fr@</code> --- the element means that the item has been reviewed (<code>r</code>) and a given item has been confirmed to be either true (<code>t</code>) or false (<code>f</code>). The <code>-@tr@</code> element highlights the entire tag in light blue; the <code>-@fr@</code> element --- in red.</li>
+<li><code>-@tt@</code>, <code>-@ta@</code>, <code>-@tm@</code>, <code>-@tl@</code> --- most likely true matches that still require review; these are automatically inserted tags (only if a KWIC data list is used). These elements highlight the tag in yellow.</li>
+<li><code>-@ff@</code>, <code>-@fa@</code>, <code>-@fm@</code>, <code>-@fl@</code> --- most likely false matches that still require review; these are automatically inserted tags (only if a KWIC data list is used). These elements highlight the tag in orange.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="fit">
+    <a href="/images/mARkdown/mARkdown_customtags.png" title="">
+    <img src="/images/mARkdown/mARkdown_customtags.png">
+    </a>
+    <figcaption>
+        <b>OpenArabic mARkdown</b>: color highlighting of custom entity tags. 
+    </figcaption>
+</figure>
+
+<h5 id="simplification-work-in-progress">Simplification: <em>work in progress</em></h5>
+<ul>
+<li>The classifier tail (e.g., <code>-@tt@</code>) is not really necessary when a result is disambiguated as <code>true positive</code>, so in fact it can be completely removed, making structure simpler.</li>
+<li><code>-@tt@</code> is tricky to remove, because of non-letter characters and the mess that they create; <strong>Solution:</strong> remove non-letter characters from the tail, simply stacking it to the tag like <code>@MGR@WCZ@Sermon@true</code>.</li>
+<li>Structure of the open tagging pattern for semantic annotation: it is beneficial to use a triple-like structure, i.e., SUBJECT-PREDICATE-OBJECT, since one can describe/code anything with this structure and it can be parsed into any other data format. One has to keep track of the tags, of course, but a simple frequency analysis can help to clean them up later.</li>
+</ul>
+<h3 id="morphological-patterns">Morphological Patterns</h3>
+<p>Morphological patterns are designed to tag passages of text that can be categorized thematically. The tag is inserted on a separate line before the beginning of a passage. There is no closing tag proper; the tag for the next thematic passage serves as a closing tag for the previous passage. The pattern is as follows:</p>
+<ul>
+<li><code>#~:category:</code> , where <code>category</code> is defined by a scholar for relevant research questions. </li>
+<li><code>#~:undefined:</code> can be used to tag the beginning of a passage without assigning a category.<ul>
+<li>While starting to work with a new text, it makes sense to use only <code>#~:undefined:</code>, until categories start to flesh out from tagged examples.</li>
+<li><code>#~:undefined:</code> can also be used as a pseudo closing tag, when only specific morphological elements need to be tagged (Let’s say, you are interested in tagging only <em>letters</em> in a vast text: you add <code>#~:letter:</code> in the beginning of the relevant passage, and <code>#~:undefined:</code>—at the end; both go on separate lines between morphological passages).</li>
+</ul>
+</li>
+</ul>
+<p>The tag can be followed by semantic keywords, following the format of the <em>Open Tagging Pattern</em> (see above). </p>
+<figure class="fit">
+    <a href="/images/mARkdown/morphological_01.png" title="">
+    <img src="/images/mARkdown/morphological_01.png">
+    </a>
+    <figcaption><b>OpenArabic mARkdown</b>: An example of a biography tagged morphologically and semantically. </figcaption>
+</figure>
+
+<h3 id="custom-analytical-patterns">Custom Analytical Patterns</h3>
+<p>These patterns are designed to tag very specific structures in texts and for the moment there are only two main patterns that are used in particular research projects. The point of these tagging patterns is to provide <em>just the bare minimum of structure</em> into a natural text so that is could be parsed with a script and converted into machine-readable data. </p>
+<h3 id="geographical-units">— Geographical units</h3>
+<p>Geographical texts—such as comprehensive geographies—contain a lot of data that can be used for modeling historical processes in space. Of particular importance are administrative divisions and trade routes, which often come with distances. Data tagged with these patterns can be computationally manipulated. For example, see geographical divisions from al-Muqaddasī’s <em>Aḥsan al-taqāsīm fī maʿrifaŧ al-aqālīm</em> visualized in <a href="http://bl.ocks.org/Masoumeh/raw/81efcad2961fc03da0e00fe8d4938dab/">a sunburst graph</a>, or <a href="http://bl.ocks.org/Masoumeh/raw/12ad86d233b93a7c29c8dffb6fd3b377/">this comparison</a> of al-Muqaddasī’s data with that of Cornu (<em>Credits</em>: Masoumeh Seydi, Leipzig University). </p>
+<h4 id="administrative-divisions">—&gt; Administrative Divisions</h4>
+<p><strong>RE:</strong> <code>#\$#(PROV|REG\d)# .*? #\$#TYPE .*? #\$#(REG\d|STTL) ([\w# ]+) $</code></p>
+<p>Most descriptions fit into the following scheme <code>WORLD: PROVINCE &gt; TYPE &gt; (REGION) &gt; TYPE &gt; SETTLEMENT</code>. In the actual text, relevant information is tagged essentially as ‘triples’ of <code>SUBJECT &gt; PREDICATE &gt; OBJECT</code> (with multiple OBJECTs that will be parsed out at a later stage):</p>
+<pre><code>#$#PROV toponym #$#TYPE type_of_region #$#REG1 (toponym #)+
+
+#$#REGX toponym #$#TYPE type_of_region #$#REGX (toponym #)+
+
+#$#REGX toponym #$#TYPE type_of_settlement #$#STTL (toponym #)+ 
+</code></pre>
+<p><strong>Note</strong>: <em>Clip collection</em> can be used to insert relevant patterns into the text.</p>
+<figure class="fit">
+    <a href="/images/md/analytical_divisions.png" title="">
+    <img src="/images/md/analytical_divisions.png">
+    </a>
+    <figcaption>
+        <b>OpenArabic mARkdown</b> pattern for describing administrative divisions; using Clip Collection (on the left) one can insert a relevant pattern into the text and fill it in 
+    </figcaption>
+</figure>
+
+<h4 id="routes-and-distances">—&gt; Routes and distances</h4>
+<p><strong>RE:</strong> <code>#$#FROM .*? #$#TOWA .*? #$#DIST .*</code></p>
+<p>Route sections with distances are tagged in the following manner:</p>
+<pre><code>#$#FROM toponym #$#TOWA toponym #$#DIST distance_as_recorded
+</code></pre>
+<figure class="fit">
+    <a href="/images/md/analytical_distances.png" title="">
+    <img src="/images/md/analytical_distances.png">
+    </a>
+    <figcaption>
+        <b>OpenArabic mARkdown</b> pattern for describing routes and distances
+    </figcaption>
+</figure>
+
+<h3 id="riwayat-units">— <em>Riwāyāt</em> units</h3>
+<p><strong>NB</strong>: developed for U Frankfurt Islamic Studies Team; <em>added</em>: August 12, 2016; <em>updated</em>: March 31, 2017</p>
+<p>Each <em>riwāyaŧ</em>/<em>ḥadīṯ</em> report should be treated as a separate paragraph: <code>new line + # $RWY$</code>; in order to mark the boundary between <em>isnād</em> and <em>matn</em>, <code>@MATN@</code> tag is to be inserted between <em>isnād</em> and <em>matn</em>. Since it is not uncommon to have an evaluation of reported material, tag <code>@HUKM@</code> can be used to tag the beginning of the <em>ḥukm</em>-statement. All three elements of a <em>riwāyaŧ/ḥadīṯ</em> must remain the part of the same <code>paragraph</code>.</p>
+<pre><code># $RWY$ this section contains isnād @MATN@ this section
+contains matn @HUKM@ this section contains ḥukm .
+</code></pre>
+<p>It is not uncommon that either <em>isnād</em> or <em>matn</em> is missing. In such cases <code>@MATN@</code> tag still must be inserted: in the case of missing <em>isnād</em>, <code>@MATN@</code> directly follows <code># $RWY$</code>; in the case of missing <em>matn</em>, <code>@MATN@</code> becomes the last element in the <em>ḥadīṯ</em> paragraph. <code>@HUKM@</code> is optional and inserted only when there is a <em>ḥukm</em>-statement.</p>
+<figure class="fit">
+    <a href="/images/md/riwayat_tagging.png" title="">
+    <img src="/images/md/riwayat_tagging.png">
+    </a>
+    <figcaption>
+        <b>OpenArabic mARkdown</b>: An example of tagging <i>riwāyāt</i> in Ibn al-Jawzī’s <i>Talbīs Iblīs</i>.
+    </figcaption>
+</figure>
+
+<p>The following regular expression can help to visually identify sections with <em>isnād</em>s (copy-paste it into the search window of <strong>EditPad Pro</strong>). The screenshot below demonstrates how a passage of text with lots of transmission terms becomes visible in the sea of text.</p>
+<pre><code>\bو?(عن|حدث(نا|ني|ت)|[اأ]نبأ(نا|ني|ت)|[اأ]خبر(نا|ني|ت)|[اأ]?نا|ث?نا|ثني)(( |\n~~)(\w+( |\n~~|\b)){1,3})
+</code></pre>
+<figure class="fit">
+    <a href="/images/mARkdown/RWY_re.png" title="">
+    <img src="/images/mARkdown/RWY_re.png">
+    </a>
+    <figcaption><b>OpenArabic mARkdown</b>: Passages with transmission terms automatically highlighted with the regular expression (<b>Text</b>: al-Ḏahabī’s <i>Taʾrīḫ al-islām</i>).</figcaption>
+</figure>
+
+<h2 id="additional-tags-testing">Additional Tags (testing)</h2>
+<ul>
+<li><code>......</code> - for lacunae in editions (when they are marked as such in editions: <em>naqaṣa fī-l-aṣl</em>, <em>saqaṭa min al-aṣl</em>, etc.). These will be highlighted in red.</li>
+</ul>
+<h2 id="known-issues-with-editpad-pro">Known issues with EditPad Pro</h2>
+<h3 id="highlighting-scheme-running-amok">Highlighting scheme running amok</h3>
+<p>Occasionally it happens that highlighting scheme loses its track and gets shifted, highlighting wrong elements. One of the things that may trigger this behavior is a long regular expression in a search field, but sometimes it happens for some other reasons. This can be fixed through refreshing the highlighting scheme by going through the following steps: <code>[Options &gt;] Configure File Types... &gt; Color Syntax &gt; Refresh</code> (<code>Ok</code>).</p>
+<h3 id="folding-scheme-does-not-seem-to-work">Folding scheme does not seem to work</h3>
+<p>Folding lines is a very convenient tool, but it seems to take a while before for it to load when one opens <strong>EditPad Pro</strong>. This can be fixed by going through the following steps: <code>[Options &gt;] Configure File Types... &gt; Navigation &gt; Refresh</code> (<code>Ok</code>).</p>
+<h2 id="work-in-progress">Work in progress</h2>
+<h3 id="issues-with-pagination">Issues with pagination</h3>
+<p>Pagination in multivolume texts is sometimes problematic in the following manner: in some volumes page numbers are given at the beginning of a page, while in others—at the end; this is not a major issue, but needs to be fixed eventually; a solution may incude an introduction of more specified tags <code>PageBegV00P0000</code> and <code>PageEndV00P0000</code>. These tags can be then automatically unified (or, perhaps, preserving both page 'margins' which would mark the end of one page and the beginning of the next: e.g., <code>PageEndV05P0456 PageBegV05P0457</code>).</p>
+<h3 id="simplification-of-markdown">Simplification of mARkdown</h3>
+<p>In general <code>mARkdown</code> can be simplified at least in the following manner:</p>
+<ol>
+<li><code>~~</code> and <code>#</code> can be dropped and <code>\n\n</code> to be added between logical units (headers, paragraphs), as in the original <code>markdown</code>; this will make it easier to edit texts and there will be less mistakes.</li>
+<li>...</li>
+</ol></article>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-left">
+      <span class="foot-name">Maxim Romanov</span>
+      <span class="foot-ar" lang="ar" dir="rtl">الرقميّات</span>
+      <span class="foot-old">formerly <i>al-Raqmiyyāt</i></span>
+    </div>
+    <div class="foot-links"><a href="mailto:maxim.romanov@uni-hamburg.de">Email</a> · <a href="https://github.com/maximromanov">GitHub</a> · <a href="https://eis1600.aai.uni-hamburg.de/">EIS1600</a> · <a href="https://univie.academia.edu/MaximRomanov">Academia.edu</a></div>
+    <p class="foot-note">© 2026 Maxim Romanov. Hand-built static site; no cookies, no trackers. Text is licensed CC BY-NC-SA 4.0 unless noted.</p>
+  </div>
+</footer>
+<script src="/assets/theme.js?v=8d32db97" defer></script>
+</body>
+</html>

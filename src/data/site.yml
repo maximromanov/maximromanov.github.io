@@ -1,0 +1,38 @@
+name: Maxim Romanov
+url: https://maximromanov.github.io
+description: "Maxim Romanov: historian of the premodern Islamic world and the Arabic written tradition; digital humanities; EIS1600, OpenITI, al-Ṯurayyā, mARkdown."
+old_name: al-Raqmiyyāt
+old_name_ar: الرقميّات
+
+# Main navigation, in order. `num` is the Arabic-Indic numeral shown before the label.
+nav:
+  - {label: Research, url: /research/, num: "١"}
+  - {label: Publications, url: /publications/, num: "٢"}
+  - {label: Talks, url: /talks/, num: "٣"}
+  - {label: Teaching, url: /teaching/, num: "٤"}
+  - {label: Notes, url: /notes/, num: "٥"}
+  - {label: CV, url: /cv/, num: "٦"}
+
+# Contact and profile links (home page and footer).
+links:
+  - {label: Email, url: "mailto:maxim.romanov@uni-hamburg.de"}
+  - {label: GitHub, url: "https://github.com/maximromanov"}
+  - {label: EIS1600, url: "https://eis1600.aai.uni-hamburg.de/"}
+  - {label: Academia.edu, url: "https://univie.academia.edu/MaximRomanov"}
+
+# Affiliated projects shown in the header rail on the home page.
+projects_rail:
+  - {abbr: EIS1600, label: "The Evolution of Islamic Societies", url: "/research/#eis1600"}
+  - {abbr: OpenITI, label: "Open Islamicate Texts Initiative", url: "/research/#openiti"}
+  - {abbr: "al-Ṯurayyā", label: "Gazetteer and Geospatial Model", url: "/research/#althurayya"}
+  - {abbr: mARkdown, label: "Annotation Scheme for Arabic Texts", url: "/mARkdown/"}
+
+# Old URLs that must keep working. Each becomes a small HTML page that redirects.
+redirects:
+  - {from: /about/, to: /}
+  - {from: /openarabic/, to: /OpenITI/}
+  - {from: /year-archive/, to: /notes/}
+  - {from: /categories/, to: /notes/}
+  - {from: /tags/, to: /notes/}
+
+footer_note: "Hand-built static site; no cookies, no trackers. Text is licensed CC BY-NC-SA 4.0 unless noted."

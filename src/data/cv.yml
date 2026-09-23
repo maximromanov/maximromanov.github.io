@@ -1,0 +1,101 @@
+# Curriculum vitae: the sections that are not covered by the other data files.
+# Publications, talks, teaching, and supervision are pulled from publications.yml,
+# talks.yml, and teaching.yml when the CV page is built.
+# Inline Markdown is allowed in `text` fields.
+
+top:
+  - label: Position
+    text: "*Emmy Noether Junior Research Group Leader*, DFG project “The Evolution of Islamic Societies (c. 600–1600 CE): Algorithmic Analysis into Social History” (**EIS1600**), Universität Hamburg, Asien-Afrika-Institut"
+  - label: Email
+    text: "[maxim.romanov@uni-hamburg.de](mailto:maxim.romanov@uni-hamburg.de)"
+  - label: Websites
+    text: "[eis1600.aai.uni-hamburg.de](https://eis1600.aai.uni-hamburg.de/) · [maximromanov.github.io](https://maximromanov.github.io)"
+  - label: PDF
+    text: "[Download this CV as PDF](/files/Romanov_CV.pdf) (generated from this page) · [typeset long version, June 2025](/files/Romanov_CV_2025.pdf)"
+
+employment:
+  - years: 2021–2027
+    text: "*Emmy Noether Junior Research Group Leader*, DFG project “The Evolution of Islamic Societies (c. 600–1600 CE): Algorithmic Analysis into Social History” (EIS1600), Universität Hamburg, Asien-Afrika-Institut"
+  - years: 2018–2021
+    text: "*Senior Research Fellow*, ERC project “Knowledge, Information Technology, & the Arabic Book” (KITAB), PI Prof. Dr. Sarah Bowen Savant, Aga Khan University–London, Institute for the Study of Muslim Civilisations"
+  - years: 2017–2021
+    text: "*Universitätsassistent für Digital Humanities*, Universität Wien, Institut für Geschichte"
+  - years: 2015–2017
+    text: "*Research Fellow*, Universität Leipzig, Institut für Informatik, Lehrstuhl für Digital Humanities"
+  - years: 2013–2015
+    text: "*Postdoctoral Associate*, Tufts University, Department of Classics & Perseus Project"
+  - years: 2006–2012
+    text: "*Graduate Student Instructor*, University of Michigan, Department of Near Eastern Studies"
+  - years: 2004–2006
+    text: "*Junior Researcher*, Institute of Oriental Manuscripts of the Russian Academy of Sciences (formerly St. Petersburg Branch of the Institute of Oriental Studies), St. Petersburg ([IOM RAS](http://www.orientalstudies.ru/eng/))"
+
+education:
+  - years: 2006–2013
+    text: "Ph.D. (December 2013) and M.A. (April 2010) in Near Eastern Studies (Arabic & Islamic Studies), University of Michigan, Ann Arbor ([official record](https://ro.umich.edu/graduation/diplomas/degree-verification?dvid=1S9AT32P))"
+  - years: 2001–2004
+    text: "Post-graduate program in Islamic Studies, Institute of Oriental Manuscripts of the Russian Academy of Sciences, St. Petersburg"
+  - years: 1999–2001
+    text: "St. Petersburg State University, Faculty of Oriental Studies (History of the Arab Countries)"
+  - years: 1998–2001
+    text: "Specialist in Sociology (B.A. & M.A. equivalent), St. Petersburg State University, Faculty of Sociology"
+  - years: 1999–2001
+    text: "Baltic State Technical University, Faculty of Humanities (Political Science), St. Petersburg"
+
+# Short project list for the CV; the full descriptions are on the Research page.
+projects:
+  - years: 2021–2027
+    text: "**EIS1600: The Evolution of Islamic Societies (c. 600–1600 CE): Algorithmic Analysis into Social History.** Emmy Noether Junior Research Group, DFG (#445975300), Universität Hamburg. Principal investigator. [Project page](/research/#eis1600) · [eis1600.aai.uni-hamburg.de](https://eis1600.aai.uni-hamburg.de/)"
+  - years: 2014–
+    text: "**OpenITI: Open Islamicate Texts Initiative** (2014–2016: OpenArabic). Co-PI with Matthew T. Miller (University of Maryland) and Sarah Bowen Savant (Aga Khan University–London). About 8,700 titles by over 3,300 authors, some 861 million words. [Project page](/research/#openiti) · [github.com/OpenITI](https://github.com/OpenITI)"
+  - years: 2014–
+    text: "**OpenITI mARkdown.** A light-weight annotation scheme for Arabic-script texts: structural, morphological, and semantic tagging designed as a research method rather than an exchange format. [Description](/mARkdown/)"
+  - years: 2014–
+    text: "**al-Ṯurayyā Project.** A gazetteer (over 2,000 toponyms) and a geospatial model of the early Islamic world, with Masoumeh Seydi. [Project page](/research/#althurayya) · [althurayya.github.io](https://althurayya.github.io/)"
+  - years: 2025
+    text: "**OpenITI NgramReader** and **M10 Book Classification.** Two online applications published as appendices to *Digital Humanities for Arabic and Islamic Studies* (Brill, 2026). [Project page](/research/#adhfais-apps)"
+  - years: 2019–
+    text: "**OpenITI AOCP: Arabic-script OCR Catalyst Project.** Co-led with Matthew T. Miller, Sarah Bowen Savant, David Smith, and Raffaele Viglianti; funded by the Andrew W. Mellon Foundation. [openiti.org](https://openiti.org)"
+  - years: 2018–2021
+    text: "**KITAB: Knowledge, Information Technology, and the Arabic Book.** ERC project (PI Sarah Bowen Savant); senior research fellow responsible for corpus development and text-reuse analysis. [kitab-project.org](https://kitab-project.org/)"
+  - years: 2015
+    text: "**Classical Arabic Through the Words of the Prophet: A Frequency-Based Ḥadīṯ Reader.** Computationally generated teaching materials (Perseus Project & Department of Classics, Tufts University). [PDF](/files/Romanov_CATWOP.pdf)"
+
+funding:
+  - years: 2021–2027
+    text: "Emmy Noether Programme Grant, German Research Foundation (DFG). About €1,900,000"
+  - years: 2012–2013
+    text: "Charlotte W. Newcombe Doctoral Dissertation Fellowship, Woodrow Wilson National Fellowship Foundation. $24,000"
+  - years: 2012
+    text: "Rackham Research Fellowship, University of Michigan. $3,000"
+
+awards:
+  - years: 2015–2016
+    text: "Research Fellowship (Visiting Fellow), Islamic Legal Studies Program, Harvard Law School (declined)"
+  - years: 2013
+    text: "Hajja Razia Sharif Sheikh Scholarship Award in Islamic Studies, University of Michigan"
+
+service:
+  - years: 2021, 2023, 2025
+    text: "Panel member (SH5 “Cultures and Cultural Production”), ERC Consolidator Grant calls, European Research Council"
+  - years: 2015–
+    text: "Reviewer for journals and funding bodies at the intersection of digital humanities, Arabic and Islamic studies, and history. Recent reviews for *Journal of Abbasid Studies*, *Journal of Digital Islamicate Research*, *Digital Scholarship in the Humanities*, *Temenos*, *Journal of Law and Religion*"
+  - years: 2013–
+    text: "Regular consultation on the design of digital projects in the historical study of the Islamic world, including over a dozen ERC-funded and academy projects in the US, Canada, the UK, the Netherlands, Belgium, Spain, Italy, Israel, Japan, Austria, and Germany"
+
+membership:
+  - years: 2024–
+    text: "Union Européenne des Arabisants et Islamisants (UEAI)"
+  - years: 2023–
+    text: "School of Abbasid Studies (SAS)"
+  - years: 2016–
+    text: "Middle East Medievalists (MEM)"
+  - years: 2012–
+    text: "American Oriental Society (AOS)"
+  - years: 2008–
+    text: "Middle East Studies Association (MESA)"
+
+skills:
+  - years: Languages
+    text: "Russian (native) · Arabic (advanced, modern standard and classical) · English (near-native) · German (B1) · French (reading)"
+  - years: Computing
+    text: "R, Python, QGIS, LaTeX; cluster computing; machine learning"

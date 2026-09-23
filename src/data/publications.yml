@@ -1,0 +1,402 @@
+# Publications. Each item belongs to one `group`; groups are displayed in the order below.
+# Inline Markdown is allowed in title, authors, venue, note, abstract.
+# tags: key = key contribution to DH in the field; pr = peer-reviewed; oa = open access; eis1600 = EIS1600 project output.
+# Local PDFs live in docs/publications/ (URL /publications/...) or docs/files/ (URL /files/...).
+
+groups:
+  - id: books
+    title: Books
+  - id: articles
+    title: Articles and Book Chapters
+  - id: proceedings
+    title: Conference Papers, Proceedings, and Posters
+  - id: dissertation
+    title: Dissertation
+  - id: working
+    title: Working Papers, Preprints, and Teaching Materials
+    blurb: Author versions and unpublished texts; cite the published versions where they exist.
+  - id: data
+    title: Data, Software, and Digital Publications
+    blurb: Corpora, tools, and online applications with citable releases.
+
+items:
+  # ------------------------------------------------------------------ books
+  - id: romanov-2026-dhais
+    group: books
+    year: 2026
+    status: forthcoming
+    title: "*Digital Humanities for Arabic and Islamic Studies: A Proposition to the Field*"
+    venue: "Handbook of Oriental Studies, Section 1: The Near and Middle East, vol. 199. Leiden: Brill, 2026"
+    tags: [key, pr]
+    links:
+      - {label: Publisher, url: "https://brill.com/display/title/74416"}
+      - {label: "Appendix 1: NgramReader", url: "https://eis1600.aai.uni-hamburg.de/shiny/OpenITI_NgramReader/"}
+      - {label: "Appendix 2: Book Classification", url: "https://eis1600.aai.uni-hamburg.de/shiny/t10BookClassifier/"}
+    abstract: |
+      In *Digital Humanities for Arabic and Islamic Studies*, Maxim Romanov proposes a bold vision for bringing Arabic and Islamic Studies fully into the digital age. Building on the vast OpenITI corpus—over a billion words spanning 1,400 years—Romanov demonstrates how computational tools can illuminate long-term cultural and linguistic developments across the Islamic world. Through accessible case studies on terminology tracing, genre modeling, and linguistic change, the book shows how digital methods expand rather than replace traditional scholarship. Romanov argues that the field’s digital transformation must be led from within—by scholars who understand its texts, traditions, and questions. This book provides both a roadmap and an invitation to rethink how the Arabic and Islamic heritage can be studied in the twenty-first century.
+
+  # ------------------------------------------------------------------ articles and chapters
+  - id: romanov-2019-1001mp
+    group: articles
+    year: 2019
+    title: "1001 Morphological Patterns: Algorithmically Generated Materials for Teaching Classical Arabic"
+    venue: "In *Innovations and Traditions in Arabic and Islamic Studies: A Festschrift in Honor of Professor Oleg I. Red’kin*, 262–274. St. Petersburg: St. Petersburg University Press, 2019"
+    tags: [pr]
+    links:
+      - {label: PDF, url: /publications/Romanov_2019_1001MP_RedkinFestschrift.pdf}
+      - {label: Publisher, url: "https://publishing.spbu.ru/catalog/novinki/innovatsii_i_traditsii_v_arabistike_i_islamovedenii_sb_statey_v_chest_professora_o_i_redkina/"}
+
+  - id: belinkov-2019-lrev
+    group: articles
+    year: 2019
+    title: "Studying the History of the Arabic Language: Language Technology and a Large-Scale Historical Corpus"
+    authors: "Yonatan Belinkov\\*, Alexander Magidow\\*, Alberto Barrón-Cedeño, Avi Shmidman, and **Maxim Romanov** (\\* equal contribution)"
+    venue: "*Language Resources and Evaluation* 53 (2019): 771–805. Springer"
+    tags: [pr]
+    links:
+      - {label: DOI, url: "https://doi.org/10.1007/s10579-019-09460-w"}
+      - {label: "PDF (author version)", url: /publications/LREV.pdf}
+
+  - id: romanov-2018-dhpih
+    group: articles
+    year: 2018
+    title: "A Digital Humanities for Premodern Islamic History"
+    venue: "Roundtable on Digital Humanities, *International Journal of Middle East Studies* 50, no. 1 (2018): 129–134. Cambridge University Press"
+    tags: [key, pr]
+    links:
+      - {label: DOI, url: "https://doi.org/10.1017/S0020743817001015"}
+      - {label: PDF, url: /publications/Romanov_2018_DHFPIM.pdf}
+      - {label: "Read as a note", url: /notes/DigitalHumanities/}
+
+  - id: miller-2018-digitizing
+    group: articles
+    year: 2018
+    title: "Digitizing the Textual Heritage of the Premodern Islamicate World: Principles and Plans"
+    authors: "Matthew Thomas Miller, **Maxim G. Romanov**, and Sarah Bowen Savant (alphabetically)"
+    venue: "Roundtable on Digital Humanities, *International Journal of Middle East Studies* 50, no. 1 (2018): 103–109. Cambridge University Press"
+    tags: [key, pr]
+    links:
+      - {label: DOI, url: "https://doi.org/10.1017/S0020743817000964"}
+      - {label: PDF, url: /publications/Romanov_2018_DTHPIW_CollectiveArticle.pdf}
+
+  - id: romanov-2017-speculum
+    group: articles
+    year: 2017
+    title: "Algorithmic Analysis of Medieval Arabic Biographical Collections"
+    venue: "*Speculum* 92, no. S1 (2017): S226–S246"
+    tags: [key, pr, oa]
+    links:
+      - {label: DOI, url: "https://doi.org/10.1086/693970"}
+      - {label: PDF, url: /publications/Romanov_2017_AAMABC.pdf}
+
+  - id: romanov-2017-derislam
+    group: articles
+    year: 2017
+    title: "Observations of a Medieval Quantitative Historian?"
+    venue: "*Der Islam* 94, no. 2 (2017): 462–495"
+    tags: [key, pr]
+    links:
+      - {label: DOI, url: "https://doi.org/10.1515/islam-2017-0028"}
+      - {label: PDF, url: /publications/Romanov_2017_OMQH.pdf}
+
+  - id: kiessling-2017-ocr
+    group: articles
+    year: 2017
+    title: "Important New Developments in Arabographic Optical Character Recognition (OCR)"
+    authors: "Benjamin Kiessling, Matthew Thomas Miller, **Maxim Romanov**, and Sarah Bowen Savant (alphabetically)"
+    venue: "*al-ʿUṣūr al-Wusṭá: The Journal of Middle East Medievalists* 25 (2017): 1–13"
+    tags: [key, pr, oa]
+    links:
+      - {label: PDF, url: /publications/Romanov_2017_INDIAOCR_CollectiveArticle.pdf}
+      - {label: "Read as a note", url: /notes/OCR/}
+
+  - id: romanov-2016-acw
+    group: articles
+    year: 2016
+    title: "After the Classical World: The Social Geography of Islam (c. 600–1300 CE)"
+    venue: "In *Ars Islamica: Festschrift in Honor of Stanislav Mikhailovich Prozorov*, edited by Mikhail Piotrovsky and Alikber Alikberov, 247–277. Moscow: Vostochnaya Literatura (Russian Academy of Sciences, Institute of Oriental Studies), 2016"
+    tags: [key, pr]
+    links:
+      - {label: PDF, url: /publications/Romanov_2016_ACW_ProzorovFestschrift.pdf}
+
+  - id: romanov-2016-dadm
+    group: articles
+    year: 2016
+    title: "Digital Age, Digital Methods"
+    venue: "In *Ars Islamica: Festschrift in Honor of Stanislav Mikhailovich Prozorov*, edited by Mikhail Piotrovsky and Alikber Alikberov, 129–156. Moscow: Vostochnaya Literatura (Russian Academy of Sciences, Institute of Oriental Studies), 2016"
+    tags: [pr]
+    links:
+      - {label: PDF, url: /publications/Romanov_2016_DADM_ProzorovFestschrift.pdf}
+
+  - id: romanov-2016-tamfih
+    group: articles
+    year: 2016
+    title: "Toward Abstract Models for Islamic History"
+    venue: "In *The Digital Humanities and Islamic & Middle East Studies*, edited by Elias Muhanna, 117–149. Berlin: De Gruyter, 2016. ISBN 978-3-11-037454-4"
+    tags: [key, pr]
+    links:
+      - {label: PDF, url: /publications/Romanov_2016_TAMFIH.pdf}
+      - {label: DOI, url: "https://doi.org/10.1515/9783110376517-007"}
+
+  - id: romanov-2014-brepols
+    group: articles
+    year: 2014
+    title: "Toward the Digital History of the Pre-Modern Muslim World: Developing Text-Mining Techniques for the Study of Arabic Biographical Collections"
+    venue: "In *Analysis of Ancient and Medieval Texts and Manuscripts: Digital Approaches*, edited by Tara L. Andrews and Caroline Macé, 229–244. Turnhout: Brepols, 2014"
+    tags: [pr]
+    links:
+      - {label: DOI, url: "https://doi.org/10.1484/M.LECTIO-EB.5.102573"}
+      - {label: PDF, url: /publications/Romanov_2013_TDHPMIW.pdf}
+
+  - id: romanov-2012-dreaming
+    group: articles
+    year: 2012
+    title: "Dreaming Ḥanbalites: Dream-Tales in Prosopographical Dictionaries"
+    venue: "In *Dreams and Visions in Islamic Societies*, edited by Özgen Felek and Alexander Knysh, 31–50. Albany: SUNY Press, 2012. ISBN 978-1-4384-3993-8"
+    tags: [pr]
+    links:
+      - {label: PDF, url: /publications/Romanov_2011_DHDTPD.pdf}
+
+  - id: romanov-2007-sufi
+    group: articles
+    year: 2007
+    title: "The Term *Ṣūfī*: Spiritualizing Simple Words"
+    venue: "*Pismennyie Pamyatniki Vostoka / Written Monuments of the Orient* 5 (2007): 149–159"
+    tags: [pr]
+    links:
+      - {label: PDF, url: /publications/Romanov_2006_TSSSW.pdf}
+
+  - id: prozorov-romanov-2005
+    group: articles
+    year: 2005
+    title: "Electronic Databases on Islam in Arabic, Persian, and English: A Review"
+    authors: "Stanislav M. Prozorov and **Maxim Romanov**"
+    venue: "*Pismennyie Pamyatniki Vostoka / Written Monuments of the Orient* 2, no. 3 (2005): 240–257. With a summary in English"
+    lang: Russian
+    tags: [pr]
+    links:
+      - {label: PDF, url: /publications/Romanov_2005_EDOIIAPE_CollectiveArticle.pdf}
+      - {label: "PDF (IOM RAS)", url: "http://islamica.orientalstudies.ru/rus/images/pdf/a_prozorov_co_2005.pdf"}
+
+  - id: romanov-2004-hadith
+    group: articles
+    year: 2004
+    title: "The Paradigm of the Science of Ḥadīṯ (*ʿilm al-ḥadīṯ*)"
+    venue: "*Vostok / Oriens* 5 (2004): 5–11. With a summary in English"
+    lang: Russian
+    tags: [pr]
+    links:
+      - {label: "PDF (IOM RAS)", url: "http://islamica.orientalstudies.ru/rus/images/pdf/a_romanov_2004.pdf"}
+
+  - id: romanov-2009-talbis
+    group: articles
+    year: 2009
+    title: "*Ḥadīṯ* Reports in Ibn al-Jawzī’s (d. 597/1201) System of Argumentation, Based on His *Talbīs Iblīs* (“Devil’s Delusions”)"
+    venue: "*Khristianskii Vostok / Christian Orient*, n.s. 5 (XI) (2009): 310–316. Moscow: Indrik (Russian Academy of Sciences and the State Hermitage). Accepted for publication in 2003"
+    lang: Russian
+    tags: [pr]
+    links:
+      - {label: PDF, url: /publications/Romanov_2009_HVSAIJ.pdf}
+      - {label: "PDF (IOM RAS)", url: "http://islamica.orientalstudies.ru/rus/images/pdf/a_romanov_2009.pdf"}
+
+  - id: prozorov-romanov-2003
+    group: articles
+    year: 2003
+    title: "Principles and Procedures of Extracting and Processing Data from Arabic Sources: Historical and Biographical Sources"
+    authors: "Stanislav M. Prozorov and **Maxim Romanov**"
+    venue: "*Vostok / Oriens* 4 (2003): 117–127. With a summary in English"
+    lang: Russian
+    tags: [pr]
+    links:
+      - {label: PDF, url: /publications/Romanov_2003_PAPOEAPDFAS_CollectiveArticle.pdf}
+      - {label: "PDF (IOM RAS)", url: "http://islamica.orientalstudies.ru/rus/images/pdf/a_prozorov_co_2003.pdf"}
+
+  # ------------------------------------------------------------------ proceedings and posters
+  - id: yousef-2023-alp
+    group: proceedings
+    year: 2023
+    title: "Enhancing State-of-the-Art NLP Models for Classical Arabic"
+    authors: "Tariq Yousef, Lisa Mischer, Hamid Reza Hakimi, and **Maxim Romanov**"
+    venue: "In *Proceedings of the Ancient Language Processing Workshop* (RANLP 2023, Varna, 8 September 2023), 160–169"
+    tags: [pr, oa, eis1600]
+    links:
+      - {label: "PDF (proceedings)", url: /publications/EIS1600_2023_ESOANLPMfCA.pdf}
+      - {label: "ACL Anthology", url: "https://aclanthology.org/2023.alp-1.18/"}
+
+  - id: grallert-romanov-2022
+    group: proceedings
+    year: 2022
+    title: "Establishing Parameters for Stylometric Authorship Attribution of 19th-Century Arabic Books and Periodicals"
+    authors: "Till Grallert and **Maxim Romanov**"
+    venue: "In *Digital Humanities 2022: Book of Abstracts* (University of Tokyo), 346–348"
+    tags: [pr]
+
+  - id: romanov-2019-openiti-poster
+    group: proceedings
+    year: 2019
+    title: "Open Islamicate Texts Initiative: A Machine-Readable Corpus of Texts Produced in the Premodern Islamicate World (poster)"
+    authors: "**Maxim Romanov**, Matthew Thomas Miller, Sarah Bowen Savant, and Masoumeh Seydi"
+    venue: "In *Digital Humanities 2019 Conference Papers* (Utrecht University, 9–12 July 2019)"
+    note: "The poster won the Utrecht Centre for Digital Humanities award for innovative and interdisciplinary research."
+    tags: [key, pr, oa]
+    links:
+      - {label: Abstract, url: "https://dev.clariah.nl/files/dh2019/boa/0838.html"}
+      - {label: Poster, url: "https://dev.clariah.nl/files/dh2019/posters/0838.pdf"}
+
+  - id: romanov-seydi-2019-thurayya
+    group: proceedings
+    year: 2019
+    title: "al-Ṯurayyā, the Gazetteer and the Geospatial Model of the Early Islamic World"
+    authors: "**Maxim Romanov** and Masoumeh Seydi"
+    venue: "In *Digital Humanities 2019 Conference Papers* (Utrecht University, 9–12 July 2019)"
+    tags: [key, pr, oa]
+    links:
+      - {label: Abstract, url: "https://dev.clariah.nl/files/dh2019/boa/0909.html"}
+
+  - id: romanov-2019-oib-poster
+    group: proceedings
+    year: 2019
+    title: "Orbis-in-a-Box (OIB): Modeling Historical Geographical Networks (poster)"
+    authors: "**Maxim Romanov**, Masoumeh Seydi, James Baillie, Karl Grossner, and Rainer Simon"
+    venue: "In *Digital Humanities 2019 Conference Papers* (Utrecht University, 9–12 July 2019)"
+    tags: [key, pr, oa]
+    links:
+      - {label: Abstract, url: "https://dev.clariah.nl/files/dh2019/boa/0286.html"}
+      - {label: Poster, url: "https://dev.clariah.nl/files/dh2019/posters/0286.pdf"}
+
+  - id: seydi-2017-gir
+    group: proceedings
+    year: 2017
+    title: "Premodern Geographical Description: Data Retrieval and Identification"
+    authors: "Masoumeh Seydi, **Maxim Romanov**, and Chiara Palladino (alphabetically)"
+    venue: "In *Proceedings of the 11th Workshop on Geographic Information Retrieval (GIR’17)*, 4:1–4:10. New York: ACM Press, 2017"
+    tags: [pr]
+    links:
+      - {label: DOI, url: "https://doi.org/10.1145/3155902.3155911"}
+      - {label: PDF, url: /publications/Romanov_2017_PGDDRI_CollectiveArticle.pdf}
+
+  - id: belinkov-2016-shamela
+    group: proceedings
+    year: 2016
+    title: "Shamela: A Large-Scale Historical Arabic Corpus"
+    authors: "Yonatan Belinkov, Alexander Magidow, **Maxim Romanov**, Avi Shmidman, and Moshe Koppel (alphabetically)"
+    venue: "In *Proceedings of the Workshop on Language Technology Resources and Tools for Digital Humanities (LT4DH)*, 45–53. Osaka, 11–17 December 2016"
+    tags: [pr, oa]
+    links:
+      - {label: PDF, url: /publications/LT4DH07.pdf}
+      - {label: "ACL Anthology", url: "https://aclanthology.org/W16-4007/"}
+
+  # ------------------------------------------------------------------ dissertation
+  - id: romanov-2013-dissertation
+    group: dissertation
+    year: 2013
+    title: "*Computational Reading of Arabic Biographical Collections with Special Reference to Preaching in the Sunnī World (661–1300 CE)*"
+    venue: "Ph.D. dissertation, University of Michigan, 2013"
+    tags: [key]
+    links:
+      - {label: "Deep Blue (U of Michigan)", url: "https://deepblue.lib.umich.edu/handle/2027.42/102300"}
+      - {label: "PDF (46 MB)", url: /publications/Romanov_2013_Dissertation.pdf}
+      - {label: "Read as a note", url: /notes/dissertation-online/}
+
+  # ------------------------------------------------------------------ working papers, preprints, teaching materials
+  - id: romanov-2017-aamabc-preprint
+    group: working
+    year: 2017
+    title: "Algorithmic Analysis of Medieval Arabic Biographical Collections (preprint)"
+    venue: "Leipzig University, May 2017. Published in *Speculum* 92 (2017)"
+    links:
+      - {label: PDF, url: /files/Romanov_2017_AAMABC_Pandoc.pdf}
+      - {label: "Published version", url: "#romanov-2017-speculum"}
+
+  - id: romanov-2016-omqh-preprint
+    group: working
+    year: 2016
+    title: "Observations of a Medieval Quantitative Historian? (preprint)"
+    venue: "Leipzig University, September 2016. Published in *Der Islam* 94 (2017)"
+    links:
+      - {label: PDF, url: /files/Romanov-OMQH-2016.pdf}
+      - {label: "Published version", url: "#romanov-2017-derislam"}
+
+  - id: romanov-2015-catwop
+    group: working
+    year: 2015
+    title: "*Classical Arabic Through the Words of the Prophet: A Frequency-Based Ḥadīṯ Reader*"
+    venue: "Perseus Project & Department of Classics, Tufts University, 2015. A computationally generated introduction to the language of Ḥadīṯ (205 pages)"
+    tags: [key]
+    links:
+      - {label: PDF, url: /files/Romanov_CATWOP.pdf}
+      - {label: "How it was made", url: /notes/hadith-reader/}
+
+  - id: romanov-2014-acw-wp
+    group: working
+    year: 2014
+    title: "After the Classical World: The Social Geography of Islam (661–1300 CE) (working paper)"
+    venue: "Tufts University, April 2014. Published in *Ars Islamica* (2016)"
+    links:
+      - {label: PDF, url: "/files/Romanov.%20ACW_WP20141214.pdf"}
+      - {label: "Published version", url: "#romanov-2016-acw"}
+
+  # ------------------------------------------------------------------ data, software, digital publications
+  - id: openiti-2023-release
+    group: data
+    year: 2023
+    title: "OpenITI: A Machine-Readable Corpus of Islamicate Texts, Primary Version 2023.1.8"
+    authors: "Lorenz Nigst, **Maxim Romanov**, Sarah Bowen Savant, Masoumeh Seydi, and Peter Verkinderen"
+    venue: "Zenodo, 2023. Data set. About 8,700 unique titles by over 3,300 authors; some 861 million words (2.4 billion with all versions)"
+    tags: [key]
+    links:
+      - {label: DOI, url: "https://doi.org/10.5281/zenodo.10021513"}
+      - {label: GitHub, url: "https://github.com/OpenITI"}
+      - {label: Documentation, url: "https://kitab-project.org/docs/openITI"}
+
+  - id: romanov-2025-ngramreader
+    group: data
+    year: 2025
+    title: "ADHFAIS Appendix 1: OpenITI NgramReader (based on OpenITI, release 2023.1.8), version 1"
+    venue: "Zenodo, 2025. An online application for tracing the use of words and phrases across the Arabic written tradition; companion to *Digital Humanities for Arabic and Islamic Studies*"
+    tags: [key]
+    links:
+      - {label: Application, url: "https://eis1600.aai.uni-hamburg.de/shiny/OpenITI_NgramReader/"}
+      - {label: DOI, url: "https://doi.org/10.5281/zenodo.15662942"}
+
+  - id: romanov-2025-bookclassification
+    group: data
+    year: 2025
+    title: "ADHFAIS Appendix 2: M10 Book Classification (based on OpenITI, release 2023.1.8), version 1"
+    venue: "Zenodo, 2025. An experiment in soft classification of the works of the Arabic written tradition against ten types of texts"
+    tags: [key]
+    links:
+      - {label: Application, url: "https://eis1600.aai.uni-hamburg.de/shiny/t10BookClassifier/"}
+      - {label: DOI, url: "https://doi.org/10.5281/zenodo.15663089"}
+
+  - id: althurayya
+    group: data
+    year: 2014
+    status: ongoing
+    title: "al-Ṯurayyā Project: Gazetteer and Geospatial Model of the Early Islamic World"
+    authors: "**Maxim Romanov** and Masoumeh Seydi"
+    venue: "althurayya.github.io. Over 2,000 toponyms and route sections georeferenced from Georgette Cornu’s *Atlas du monde arabo-islamique à l’époque classique*"
+    tags: [key]
+    links:
+      - {label: Website, url: "https://althurayya.github.io/"}
+      - {label: "Project page", url: /research/#althurayya}
+
+  - id: markdown
+    group: data
+    year: 2014
+    status: ongoing
+    title: "OpenITI mARkdown: A Light-Weight Annotation Scheme for Arabic-Script Texts"
+    venue: "Structural, morphological, and semantic tagging designed as a research method; the format of the OpenITI corpus"
+    tags: [key]
+    links:
+      - {label: Description, url: /mARkdown/}
+      - {label: "Editor highlighting (Kate)", url: "https://github.com/OpenITI/mARkdown_highlighting_Kate"}
+
+  - id: betacode
+    group: data
+    year: 2015
+    title: "betaCode for Arabic: Conversion Routines"
+    venue: "Python scripts for typing fully vocalized Arabic in ASCII and converting it into Arabic script and several transliteration schemes"
+    links:
+      - {label: GitHub, url: "https://github.com/maximromanov/ArabicBetacode"}
+      - {label: "Read the note", url: /notes/betaCode/}

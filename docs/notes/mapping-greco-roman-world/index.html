@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapping the Greco-Roman World · Maxim Romanov</title>
+<meta name="description" content="“Envy is not a very good thing. Yet envy is precisely what an early Islamicist feels when he reads Roger Bagnall and Bruce Frier’s The Demography of Roman Egypt.” [^fn1] These words stuck in my head since the very moment I read them and over the past two years…">
+<meta name="author" content="Maxim Romanov">
+<link rel="canonical" href="https://maximromanov.github.io/notes/mapping-greco-roman-world/">
+<meta property="og:title" content="Mapping the Greco-Roman World · Maxim Romanov">
+<meta property="og:description" content="“Envy is not a very good thing. Yet envy is precisely what an early Islamicist feels when he reads Roger Bagnall and Bruce Frier’s The Demography of Roman Egypt.” [^fn1] These words stuck in my head since the very moment I read them and over the past two years…">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://maximromanov.github.io/notes/mapping-greco-roman-world/">
+<meta property="og:image" content="https://maximromanov.github.io/assets/img/rm-mark.png">
+<link rel="icon" href="/assets/img/rm-mark-500.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/rm-mark-500.png">
+<link rel="stylesheet" href="/assets/site.css?v=8d32db97">
+<script>
+/* Apply a saved theme before first paint to avoid a flash. */
+try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}
+</script>
+
+</head>
+<body class="page-note">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="/" aria-label="Maxim Romanov, home">
+      <img class="mark" src="/assets/img/rm-mark.png" alt="" width="40" height="40">
+      <span class="brand-name">Maxim Romanov</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/research/"><span class="nav-num" aria-hidden="true">١</span>Research</a>
+      <a href="/publications/"><span class="nav-num" aria-hidden="true">٢</span>Publications</a>
+      <a href="/talks/"><span class="nav-num" aria-hidden="true">٣</span>Talks</a>
+      <a href="/teaching/"><span class="nav-num" aria-hidden="true">٤</span>Teaching</a>
+      <a href="/notes/" class="active"><span class="nav-num" aria-hidden="true">٥</span>Notes</a>
+      <a href="/cv/"><span class="nav-num" aria-hidden="true">٦</span>CV</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm0 16V5a7 7 0 0 1 0 14z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main" class="wrap ">
+<header class="page-head note-head"><p class="app"><a href="/notes/">Notes</a> · <time datetime="2015-04-02">April 2, 2015</time></p><h1>Mapping the Greco-Roman World</h1></header><figure class="cover"><img src="/images/thematic/00810001.jpg" alt="" loading="lazy"><figcaption><strong>Photo credit</strong>: Unknown Maker. Grave Naiskos of an Enthroned Woman with an Attendant, about 100 B.C., Marble; 94.6 x 120.7 x 21.6 cm (37 1/4 x 47 1/2 x 8 1/2 in.). <a href="http://www.getty.edu/art/collection/objects/7009/unknown-maker-grave-naiskos-of-an-enthroned-woman-with-an-attendant-east-greek-about-100-bc/">The J. Paul Getty Museum, Villa Collection, Malibu, California.</a></figcaption></figure><article class="prose note-body"><p>“Envy is not a very good thing. Yet envy is precisely what an early Islamicist feels when he reads Roger Bagnall and Bruce Frier’s <em>The Demography of Roman Egypt</em>.” <sup id="fnref:fn1"><a class="footnote-ref" href="#fn:fn1">1</a></sup> These words stuck in my head since the very moment I read them and over the past two years of working among and with the classicists my classics envy has been growing—on top of 300 original census declarations that were at the disposal of of the above mentioned scholars, there are way too many things to envy, especially when it comes to all things digital.</p>
+<p>The <a href="http://pleiades.stoa.org/">Pleiades Gazetteer</a> is a particularly interesting case: with almost 35,000 places, it offers several well-populated categories of geographical objects. The categories include settlements, forts, temples, villas, stations, [amphi]theaters, churches, bridges, baths, cemetaries, plazas, archs. What makes it even more interesting is that most of these objects have chronological markers, i.e. they belong to one or more of the following periods: archaic (750–550BC), classical (550–330BC), hellenistic-republican (330–30BC), roman (30BC–300CE), late-antique (300–640CE).</p>
+<p>This data offers a opportunity for an interesting digital exersize with historical data. I assigned it to my students as a part of introduction to <a href="https://www.r-project.org/">R</a> (within my “Introduction to Text Mining for the Students of Humanities”, Tufts University, Spring 2015). The task was to explore the Pleiades data set, find out what is what and what can be done with it. The goal was to discover that 1) geographical objects are categorized, and that 2) they also have chronological markers, which can be used 3) to maps the geography of the Greco-Roman world over time.</p>
+<p>The map of forts turned out to be particularly interesting.</p>
+<p>Below is the code and some of the resulting visualizations.</p>
+<pre><code class="language-r"># R
+
+# You might need to install the necessary packages, which you can do by running the following lines
+# NB: uncomment them first
+
+# install.packages(&quot;ggplot2&quot;)
+# install.packages(&quot;maps&quot;)
+# install.packages(&quot;mapdata&quot;)
+# install.packages(&quot;rgeos&quot;)
+# install.packages(&quot;maptools&quot;)
+# install.packages(&quot;mapproj&quot;)
+# install.packages(&quot;PBSmapping&quot;)
+# install.packages(&quot;data.table&quot;)
+
+library(ggplot2)
+library(maps)
+library(mapdata)
+library(rgeos)
+library(maptools)
+library(mapproj)
+library(PBSmapping)
+library(data.table)
+
+xlim=c(-12,55); ylim=c(20,60)
+
+worldmap=map_data(&quot;world&quot;)
+setnames(worldmap,c(&quot;X&quot;,&quot;Y&quot;,&quot;PID&quot;,&quot;POS&quot;,&quot;region&quot;,&quot;subregion&quot;))
+worldmap=clipPolys(worldmap,xlim=xlim,ylim=ylim,keepExtra=TRUE)
+
+# setwd(&quot;&quot;) # set your working folder here
+dataFolder=&quot;&quot; # ideally, full path to the folder
+csvName=paste0(dataFolder,&quot;pleiades-locations-20150316.csv&quot;)
+locsRaw=read.csv(csvName,stringsAsFactors=F,header=T,sep=',')
+# url: http://atlantides.org/downloads/pleiades/dumps/
+# ---: download the latest csv, unzip 
+
+periods=rbind(
+  c(&quot;archaic&quot;,&quot;750-550BC&quot;),
+  c(&quot;classical&quot;,&quot;550-330BC&quot;),
+  c(&quot;hellenistic-republican&quot;,&quot;330-30BC&quot;),
+  c(&quot;roman&quot;,&quot;30BC-300CE&quot;),
+  c(&quot;late-antique&quot;,&quot;300-640CE&quot;)
+  )
+
+features=rbind(
+  c(&quot;&quot;,&quot;locations&quot;),
+  c(&quot;settlement&quot;,&quot;settlements&quot;),
+  c(&quot;fort&quot;,&quot;forts&quot;),
+  c(&quot;temple&quot;,&quot;temples&quot;),
+  c(&quot;villa&quot;,&quot;villas&quot;),
+  c(&quot;station&quot;,&quot;stations&quot;),
+  c(&quot;theatre&quot;,&quot;theatres&quot;),
+  c(&quot;amphitheatre&quot;,&quot;amphitheatres&quot;),
+  c(&quot;church&quot;,&quot;churches&quot;),
+  c(&quot;bridge&quot;,&quot;bridges&quot;),
+  c(&quot;bath&quot;,&quot;baths&quot;),
+  c(&quot;cemetery&quot;,&quot;cemeteries&quot;),
+  c(&quot;plaza&quot;,&quot;plazas&quot;),
+  c(&quot;arch&quot;,&quot;archs&quot;)
+)
+
+land=&quot;grey&quot;; water=&quot;grey80&quot;; bgColor=&quot;grey80&quot;
+locPleiades=geom_point(data=locsRaw,color=&quot;grey70&quot;,alpha=.75,size=1,aes(y=reprLat,x=reprLong))
+
+for (i in 1:nrow(features)) {
+  locs=locsRaw[ with(locsRaw, grepl(features[i,1],featureType)),]
+  for (ii in 1:nrow(periods)) {
+    locPer=locs[ with(locs,grepl(periods[ii,1],timePeriodsKeys)),]
+    locPer=geom_point(data=locPer,color=&quot;red&quot;,alpha=.75,size=1,aes(y=reprLat,x=reprLong))
+
+    dataLabel=&quot;Data: Pleiades Project&quot;
+    fName=paste0(dataFolder,&quot;Pleiades_&quot;,features[i,2],sprintf(&quot;%02d&quot;,ii),&quot;.png&quot;)
+    header=paste0(features[i,2],&quot; in the &quot;,periods[ii,1],&quot; period (&quot;,periods[ii,2],&quot;)&quot;)
+
+    p=ggplot()+
+      coord_map(xlim=xlim,ylim=ylim)+
+      geom_polygon(data=worldmap,aes(X,Y,group=PID),size=0.1,colour=land,fill=water,alpha=1)+
+      annotate(&quot;text&quot;,x=-11,y=21,hjust=0,label=dataLabel,size=3,color=&quot;grey40&quot;)+
+      annotate(&quot;text&quot;,x=54,y=59,hjust=1,label=header,size=5,color=&quot;grey40&quot;)+ 
+      locPleiades+ locPer+ labs(y=&quot;&quot;,x=&quot;&quot;)+theme_grey()
+
+    ggsave(file=fName,plot=p,dpi=600,width=7,height=6)
+  }
+}
+</code></pre>
+<h2 id="using-image-magick-to-animate-maps">Using Image Magick to animate maps</h2>
+<p>The fastest and easiest way to animate the results is to use <a href="http://www.imagemagick.org/"><strong>ImageMagick</strong></a>, a free command-line utility. The following command will take all <strong>.png</strong> files whose names begin with <strong>Pleiades_Settle</strong> and convert them into an animated GIF file <strong>Pleiades_Settlements.gif</strong>, which will play continuously (<code>-loop 0</code>), with each frame downsized (<code>-resize 1200x900</code>) and paused for .75 of a second (<code>-delay 75</code>).</p>
+<pre><code>convert -resize 1200x900 -delay 75 -loop 0 Pleiades_Settle*.png Pleiades_Settlements.gif
+</code></pre>
+<h2 id="chronological-cartograms">Chronological Cartograms</h2>
+<h3 id="all-locations">All Locations</h3>
+<figure class="fit">
+    <a href="/images/pleiades/Pleiades_locations.gif" title="">
+    <img src="/images/pleiades/Pleiades_locations.gif">
+    </a>
+</figure>
+
+<h3 id="settlements">Settlements</h3>
+<figure class="fit">
+    <a href="/images/pleiades/Pleiades_settlements.gif" title="">
+    <img src="/images/pleiades/Pleiades_settlements.gif">
+    </a>
+</figure>
+
+<h3 id="forts">Forts</h3>
+<figure class="fit">
+    <a href="/images/pleiades/Pleiades_forts.gif" title="">
+    <img src="/images/pleiades/Pleiades_forts.gif">
+    </a>
+</figure>
+
+<h3 id="all-categories">All categories</h3>
+<p><a href="/images/pleiades/Pleiades_amphitheatres.gif">Amphitheaters</a>, 
+<a href="/images/pleiades/Pleiades_archs.gif">arches</a>,
+<a href="/images/pleiades/Pleiades_baths.gif">baths</a>, 
+<a href="/images/pleiades/Pleiades_bridges.gif">bridges</a>, 
+<a href="/images/pleiades/Pleiades_cemeteries.gif">cemeteries</a>, 
+<a href="/images/pleiades/Pleiades_churches.gif">churches</a>, 
+<a href="/images/pleiades/Pleiades_forts.gif">forts</a>, 
+<a href="/images/pleiades/Pleiades_locations.gif">locations</a>, 
+<a href="/images/pleiades/Pleiades_plazas.gif">plazas</a>, 
+<a href="/images/pleiades/Pleiades_settlements.gif">settlements</a>, 
+<a href="/images/pleiades/Pleiades_stations.gif">stations</a>, 
+<a href="/images/pleiades/Pleiades_temples.gif">temples</a>, 
+<a href="/images/pleiades/Pleiades_theatres.gif">theaters</a>, 
+<a href="/images/pleiades/Pleiades_villas.gif">villas</a>.</p>
+<h2 id="footnotes">Footnotes</h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:fn1">
+<p>al-Qādī, Wadād. “Population Census and Land Surveys under the Umayyads (41-132/661-750).” <em>Der Islam</em> 83, no. 2 (2006), p. 341.&#160;<a class="footnote-backref" href="#fnref:fn1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></article><p class="tags"><span class="tag">Coding</span><span class="tag">R</span><span class="tag">Teaching</span><span class="tag">Mapping</span></p>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-left">
+      <span class="foot-name">Maxim Romanov</span>
+      <span class="foot-ar" lang="ar" dir="rtl">الرقميّات</span>
+      <span class="foot-old">formerly <i>al-Raqmiyyāt</i></span>
+    </div>
+    <div class="foot-links"><a href="mailto:maxim.romanov@uni-hamburg.de">Email</a> · <a href="https://github.com/maximromanov">GitHub</a> · <a href="https://eis1600.aai.uni-hamburg.de/">EIS1600</a> · <a href="https://univie.academia.edu/MaximRomanov">Academia.edu</a></div>
+    <p class="foot-note">© 2026 Maxim Romanov. Hand-built static site; no cookies, no trackers. Text is licensed CC BY-NC-SA 4.0 unless noted.</p>
+  </div>
+</footer>
+<script src="/assets/theme.js?v=8d32db97" defer></script>
+</body>
+</html>
