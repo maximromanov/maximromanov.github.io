@@ -124,6 +124,24 @@ def link_html(l):
     return f'<a href="{l["url"]}">{l["label"]}</a>'
 
 
+def analytics_code():
+    return (SITE.get("analytics") or {}).get("goatcounter") or ""
+
+
+def analytics_html():
+    code = analytics_code()
+    if not code:
+        return ""
+    return f'<script data-goatcounter="https://{esc(code)}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
+
+
+def views_html():
+    code = analytics_code()
+    if not code or not (SITE.get("analytics") or {}).get("show_views"):
+        return ""
+    return f' <span class="views" data-views="https://{esc(code)}.goatcounter.com/counter/TOTAL.json"></span>'
+
+
 def foot_links_html():
     return " · ".join(link_html(l) for l in SITE["links"])
 
@@ -143,7 +161,9 @@ def render(page):
         "main_class": page.get("main_class", ""),
         "extra_head": page.get("extra_head", ""),
         "foot_links": foot_links_html(),
-        "footer_note": SITE["footer_note"],
+        "footer_note": SITE["footer_note_counted"] if analytics_code() else SITE["footer_note"],
+        "analytics": analytics_html(),
+        "views": views_html(),
         "old_name": SITE["old_name"],
         "old_name_ar": SITE["old_name_ar"],
         "year": str(YEAR),

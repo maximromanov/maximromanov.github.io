@@ -28,3 +28,12 @@
     if (e.hasAttribute('data-show')) e.textContent = addr;
   }
 })();
+
+/* Public view counter (GoatCounter), shown only when the site config enables it. */
+(function () {
+  var el = document.querySelector('.views[data-views]');
+  if (!el || !window.fetch) return;
+  fetch(el.getAttribute('data-views')).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+    if (d && d.count) el.textContent = String(d.count).replace(/\s/g, ',') + ' views.';
+  }).catch(function () {});
+})();

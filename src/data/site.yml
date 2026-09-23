@@ -38,4 +38,13 @@ redirects:
   - {from: /categories/, to: /notes/}
   - {from: /tags/, to: /notes/}
 
+# View counting with GoatCounter (goatcounter.com): free for personal sites, open source, no cookies,
+# no personal data. Set `goatcounter` to your site code (the part before .goatcounter.com) to switch it on;
+# leave it empty to load nothing. `show_views: true` prints the running total in the footer; that needs
+# "Allow adding visitor counts on your website" enabled in the GoatCounter settings.
+analytics:
+  goatcounter: ""
+  show_views: true
+
 footer_note: "Hand-built static site; no cookies, no trackers. Text is licensed CC BY-NC-SA 4.0 unless noted."
+footer_note_counted: "Hand-built static site; no cookies. Visits are counted without personal data by GoatCounter. Text is licensed CC BY-NC-SA 4.0 unless noted."

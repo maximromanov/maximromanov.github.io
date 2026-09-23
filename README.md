@@ -72,6 +72,14 @@ drop cap. Dark mode follows the system and can be toggled. Fonts are served from
 so that no third-party request is made when the site loads. Tokens are at the top of
 `docs/assets/site.css`.
 
+## View counting
+
+`analytics.goatcounter` in `src/data/site.yml` holds the GoatCounter site code (empty = nothing is
+loaded). When set, every page loads GoatCounter's counting script, the footer note changes to say so,
+and with `show_views: true` the footer shows the running total (needs "Allow adding visitor counts on
+your website" in the GoatCounter settings). GoatCounter sets no cookies and stores no personal data.
+GitHub also shows 14 days of traffic for the repository under Insights → Traffic, without any script.
+
 ## History
 
 The previous version of the site (2013–2023, Jekyll with the Minimal Mistakes theme, named

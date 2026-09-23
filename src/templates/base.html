@@ -52,9 +52,10 @@ try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.doc
       <span class="foot-old">formerly <i>{{old_name}}</i></span>
     </div>
     <div class="foot-links">{{foot_links}}</div>
-    <p class="foot-note">© {{year}} Maxim Romanov. {{footer_note}}</p>
+    <p class="foot-note">© {{year}} Maxim Romanov. {{footer_note}}{{views}}</p>
   </div>
 </footer>
 <script src="/assets/theme.js?v={{build_id}}" defer></script>
+{{analytics}}
 </body>
 </html>

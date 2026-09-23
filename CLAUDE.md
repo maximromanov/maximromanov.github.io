@@ -21,8 +21,8 @@ and commits. Read `README.md` first; it describes the layout and the update reci
   first person, concrete, no commendation adverbs, no filler. Do not pad entries.
 - Do not publish drafts marked "do not share", whole books or volumes that are not open access,
   or grant proposals unless Maxim asks for it explicitly.
-- Do not add analytics, external scripts, or third-party fonts. The site loads nothing from
-  other domains.
+- Do not add analytics, external scripts, or third-party fonts beyond the GoatCounter counter
+  configured in `site.yml`. Fonts are self-hosted.
 - Verify new external links with a request before committing them; do not invent DOIs,
   identifiers, or URLs.
 

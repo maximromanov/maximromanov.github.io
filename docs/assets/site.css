@@ -330,6 +330,7 @@ th { font-family: var(--f-ui); font-size: 13px; letter-spacing: .04em; text-tran
 .foot-old { color: var(--faint); }
 .foot-links a { color: var(--muted); text-decoration: none; }
 .foot-links a:hover { color: var(--red); }
+.views { color: var(--faint); }
 .foot-note { grid-column: 1 / -1; margin: 6px 0 0; color: var(--faint); font-size: 12.5px; }
 @media (max-width: 640px) { .foot-inner { grid-template-columns: 1fr; } }
 
