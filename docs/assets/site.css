@@ -133,6 +133,24 @@ th { font-family: var(--f-ui); font-size: 13px; letter-spacing: .04em; text-tran
 .lede { font-size: clamp(18px, 2.1vw, 21px); color: var(--muted); line-height: 1.5; margin: 18px 0 0; max-width: 58ch; text-wrap: pretty; }
 .intro { margin-top: 12px; }
 
+/* ---------- illustrations (manuscript-style) ---------- */
+.illus { margin: 0; }
+.illus img { display: block; width: 100%; height: auto; border-radius: 3px; border: 1px solid var(--rule); box-shadow: 0 1px 0 var(--rule-soft), 0 10px 28px rgba(60, 40, 20, .14); }
+.illus figcaption { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); margin-top: 8px; text-align: right; }
+.page-head-illus { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 36px; align-items: end; max-width: none; }
+.page-head-illus .page-head-text { max-width: 760px; }
+.home-head-illus { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 40px; align-items: center; }
+.illus-home img { transform: rotate(-1deg); }
+@media (max-width: 860px) {
+  .page-head-illus { grid-template-columns: minmax(0, 1fr) 280px; gap: 24px; }
+  .home-head-illus { grid-template-columns: minmax(0, 1fr) 300px; }
+}
+@media (max-width: 720px) {
+  .page-head-illus, .home-head-illus { grid-template-columns: 1fr; gap: 22px; }
+  .page-head-illus .illus, .illus-home { max-width: 460px; }
+  .illus-home img { transform: none; }
+}
+
 /* ---------- home ---------- */
 .home-head { padding: clamp(44px, 8vw, 96px) 0 28px; }
 .home-head h1 { font-size: clamp(42px, 7vw, 76px); letter-spacing: -.028em; line-height: 1.02; }

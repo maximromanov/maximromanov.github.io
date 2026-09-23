@@ -7,6 +7,10 @@ standing: "Social history of the premodern Islamic world, the Arabic written tra
 position: "Emmy Noether Junior Research Group Leader at the Asien-Afrika-Institut, Universität Hamburg, where I direct [EIS1600](/research/#eis1600), *The Evolution of Islamic Societies (c. 600–1600 CE): Algorithmic Analysis into Social History* (DFG, 2021–2027). Co-founder of the [Open Islamicate Texts Initiative](/research/#openiti)."
 description: "Maxim Romanov is a historian of the premodern Islamic world and the Arabic written tradition, working with computational methods. Emmy Noether group leader (EIS1600) at Universität Hamburg; co-PI of OpenITI; author of Digital Humanities for Arabic and Islamic Studies (Brill, 2026)."
 feature_book: romanov-2026-dhais
+illustration:
+  src: /assets/img/kalila-scholar.jpg
+  alt: "A scholar in a turban and blue robe sits on a cushioned bench working at a desktop computer, with books and an armillary sphere behind him, painted in the manner of a medieval Arabic manuscript"
+  caption: "After a Kalīla wa-Dimna manuscript · AI-generated"
 ---
 
 I am a historian of the Islamic world over the *longue durée*, with a particular focus on the period from the early Islamic centuries to the late medieval era. My research rests on a simple premise: the Arabic written tradition—biographical collections, chronicles, and local histories above all—is the primary archive for reconstructing the social history of a period from which very few documents survive. These texts are numerous, enormous, and highly formulaic. For a long time these qualities were treated as obstacles. I treat them as evidence.

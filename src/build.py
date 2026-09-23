@@ -134,14 +134,27 @@ def render(page):
     write(permalink_to_file(page["permalink"]), out)
 
 
-def page_head(title, lede=None, kicker=None):
-    h = '<header class="page-head">'
+def illustration_html(ill, cls="illus"):
+    """ill: {src, alt, caption}. Renders a framed figure; -640 variant is used on small screens."""
+    if not ill:
+        return ""
+    src = ill["src"]
+    small = src.replace(".jpg", "-640.jpg")
+    cap = f'<figcaption>{mdi(ill["caption"])}</figcaption>' if ill.get("caption") else ""
+    return (
+        f'<figure class="{cls}"><img src="{esc(src)}" srcset="{esc(small)} 640w, {esc(src)} 1200w" '
+        f'sizes="(max-width: 720px) 100vw, 380px" alt="{esc(ill.get("alt", ""))}" loading="eager">{cap}</figure>'
+    )
+
+
+def page_head(title, lede=None, kicker=None, illustration=None):
+    h = '<header class="page-head' + (' page-head-illus' if illustration else '') + '"><div class="page-head-text">'
     if kicker:
         h += f'<p class="app">{mdi(kicker)}</p>'
     h += f"<h1>{mdi(title)}</h1>"
     if lede:
         h += f'<p class="lede">{mdi(lede)}</p>'
-    h += "</header>"
+    h += "</div>" + illustration_html(illustration) + "</header>"
     return h
 
 
@@ -239,7 +252,7 @@ def render_publications_page(meta, intro_md):
     data = load_yaml("publications")
     groups = data["groups"]
     items = data["items"]
-    out = page_head(meta["title"], meta.get("lede"), meta.get("kicker"))
+    out = page_head(meta["title"], meta.get("lede"), meta.get("kicker"), meta.get("illustration"))
     out += f'<div class="prose intro">{md(intro_md)}</div>' if intro_md.strip() else ""
     out += '<nav class="subnav" aria-label="Sections">' + " ".join(
         f'<a href="#{g["id"]}">{esc(g["title"])}</a>' for g in groups
@@ -298,7 +311,7 @@ def render_year_grouped(entries, renderer):
 
 def render_talks_page(meta, intro_md):
     data = load_yaml("talks")
-    out = page_head(meta["title"], meta.get("lede"), meta.get("kicker"))
+    out = page_head(meta["title"], meta.get("lede"), meta.get("kicker"), meta.get("illustration"))
     out += f'<div class="prose intro">{md(intro_md)}</div>' if intro_md.strip() else ""
     sections = [
         ("invited", "Invited Talks, Guest Lectures, Keynotes"),
@@ -347,7 +360,7 @@ def render_supervision(s):
 
 def render_teaching_page(meta, intro_md):
     data = load_yaml("teaching")
-    out = page_head(meta["title"], meta.get("lede"), meta.get("kicker"))
+    out = page_head(meta["title"], meta.get("lede"), meta.get("kicker"), meta.get("illustration"))
     out += f'<div class="prose intro">{md(intro_md)}</div>' if intro_md.strip() else ""
     out += '<nav class="subnav" aria-label="Sections"><a href="#courses">Courses</a> <a href="#workshops">Workshops and Summer Schools</a> <a href="#supervision">Supervision</a></nav>'
     out += '<section class="items-section" id="courses"><h2>Courses</h2>'
@@ -371,7 +384,7 @@ def render_cv_page(meta, intro_md):
     pubs = load_yaml("publications")
     talks = load_yaml("talks")
     teaching = load_yaml("teaching")
-    out = page_head(meta["title"], meta.get("lede"), meta.get("kicker"))
+    out = page_head(meta["title"], meta.get("lede"), meta.get("kicker"), meta.get("illustration"))
     out += f'<div class="prose intro">{md(intro_md)}</div>' if intro_md.strip() else ""
     sections = []
 
@@ -462,7 +475,7 @@ def render_note(meta, body):
 
 
 def render_notes_index(meta, intro_md, notes):
-    out = page_head(meta["title"], meta.get("lede"), meta.get("kicker"))
+    out = page_head(meta["title"], meta.get("lede"), meta.get("kicker"), meta.get("illustration"))
     out += f'<div class="prose intro">{md(intro_md)}</div>' if intro_md.strip() else ""
     out += '<ol class="items notes-list">'
     for m, _ in notes:
@@ -511,7 +524,7 @@ def build_pages():
         elif layout == "notes":
             page["content"] = render_notes_index(meta, body, notes)
         else:
-            head = page_head(meta["title"], meta.get("lede"), meta.get("kicker"))
+            head = page_head(meta["title"], meta.get("lede"), meta.get("kicker"), meta.get("illustration"))
             cls = "prose" + (" prose-wide" if meta.get("wide") else "")
             toc = ""
             if meta.get("toc"):
@@ -530,7 +543,7 @@ def build_pages():
 def render_home(meta, body):
     """Home page: a hero block, then the essay from the Markdown body, then a project rail."""
     links = " · ".join(f'<a href="{l["url"]}">{l["label"]}</a>' for l in SITE["links"])
-    hero = '<section class="home-head">'
+    hero = '<section class="home-head' + (' home-head-illus' if meta.get("illustration") else '') + '"><div class="home-head-text">'
     if meta.get("kicker"):
         hero += f'<p class="app">{mdi(meta["kicker"])}</p>'
     hero += f'<h1>{esc(SITE["name"])}</h1>'
@@ -539,7 +552,7 @@ def render_home(meta, body):
     if meta.get("position"):
         hero += f'<p class="hd-position">{mdi(meta["position"])}</p>'
     hero += f'<p class="hd-links">{links}</p>'
-    hero += "</section>"
+    hero += "</div>" + illustration_html(meta.get("illustration"), cls="illus illus-home") + "</section>"
     rail = '<section class="rail" aria-label="Projects"><ul class="rail-list">'
     for p in SITE["projects_rail"]:
         rail += f'<li><a href="{p["url"]}"><span class="rail-abbr">{esc(p["abbr"])}</span><span class="rail-label">{esc(p["label"])}</span></a></li>'

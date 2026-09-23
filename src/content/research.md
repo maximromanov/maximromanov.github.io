@@ -5,6 +5,10 @@ kicker: "Projects and Methods"
 lede: "Projects, corpora, and tools, from the current Emmy Noether group back to the dissertation that started the method. Each entry says what was built, why, and where to find it."
 description: "Research projects of Maxim Romanov: EIS1600, OpenITI, mARkdown, al-Ṯurayyā, NgramReader and Book Classification, KITAB, OpenITI AOCP."
 wide: true
+illustration:
+  src: /assets/img/kalila-fishing.jpg
+  alt: "A man in a turban stands in a river casting a fishing rod while a dog watches from the bank, painted in the manner of a medieval Arabic manuscript"
+  caption: "After a Kalīla wa-Dimna manuscript · AI-generated"
 ---
 
 <div class="project" id="eis1600" markdown="1">

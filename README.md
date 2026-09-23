@@ -53,7 +53,12 @@ Common tasks:
 
 Front-matter fields for pages: `title`, `permalink`, `layout` (page, home, publications, talks,
 teaching, cv, notes), `kicker` (small label above the title), `lede` (subtitle), `description`
-(meta description), `toc`, `wide`, `old_urls`.
+(meta description), `toc`, `wide`, `old_urls`, and `illustration` (`src`, `alt`, `caption`; the
+image sits beside the page title). The home page also takes `feature_book` (a publication id to
+show as a panel with its cover).
+
+Illustrations: six manuscript-style images (AI-generated after a *Kalīla wa-Dimna* manuscript) are
+in `docs/assets/img/kalila-*.jpg`, each at 1200 and 640 px wide. `kalila-walk-2` is unused.
 
 ## Design
 
