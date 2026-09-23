@@ -58,7 +58,7 @@ image sits beside the page title). The home page also takes `feature_book` (a pu
 show as a panel with its cover).
 
 Illustrations: six manuscript-style images (AI-generated after a *Kalīla wa-Dimna* manuscript) are
-in `docs/assets/img/kalila-*.jpg`, each at 1200 and 640 px wide. `kalila-walk-2` is unused.
+in `docs/assets/img/kalila-*.jpg`, each at 1200 and 640 px wide. `kalila-walk` (the version with the oddly drawn dog) is unused.
 
 ## Design
 
