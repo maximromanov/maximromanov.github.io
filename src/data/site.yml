@@ -43,7 +43,7 @@ redirects:
 # leave it empty to load nothing. `show_views: true` prints the running total in the footer; that needs
 # "Allow adding visitor counts on your website" enabled in the GoatCounter settings.
 analytics:
-  goatcounter: ""
+  goatcounter: "maximromanov"
   show_views: true
 
 footer_note: "Hand-built static site; no cookies, no trackers. Text is licensed CC BY-NC-SA 4.0 unless noted."
