@@ -155,6 +155,23 @@ th { font-family: var(--f-ui); font-size: 13px; letter-spacing: .04em; text-tran
   .rail-list li:nth-child(n+3) { border-top: 1px solid var(--rule-soft); }
 }
 
+/* featured book (home) */
+.feature-book { display: grid; grid-template-columns: 150px 1fr; gap: 26px; align-items: start; background: var(--panel); border: 1px solid var(--rule-soft); border-left: 3px solid var(--red); border-radius: 4px; padding: 22px 26px; margin: 0 0 44px; max-width: 820px; }
+.fb-cover img { display: block; width: 150px; height: auto; border-radius: 2px; box-shadow: 0 6px 18px rgba(0,0,0,.22); }
+.fb-text .app { margin-bottom: 8px; color: var(--red); }
+.fb-title { font-size: clamp(20px, 2.4vw, 25px); font-weight: 600; margin: 0 0 10px; line-height: 1.22; }
+.fb-title em { font-style: italic; }
+.fb-blurb { font-size: 15.5px; color: var(--muted); margin: 0 0 8px; line-height: 1.5; max-width: 60ch; }
+.feature-book .it-links { margin-top: 10px; }
+@media (max-width: 560px) { .feature-book { grid-template-columns: 1fr; gap: 16px; padding: 18px; } .fb-cover img { width: 120px; } }
+
+/* publication with a cover */
+.it-with-cover { display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: start; }
+.it-cover img { display: block; width: 120px; height: auto; border-radius: 2px; box-shadow: 0 4px 14px rgba(0,0,0,.2); }
+.it-toc { margin: .5em 0 0; padding-left: 1.2em; }
+.it-toc li { margin-bottom: .3em; }
+@media (max-width: 560px) { .it-with-cover { grid-template-columns: 1fr; } .it-cover img { width: 100px; } }
+
 /* ---------- prose ---------- */
 .prose { max-width: var(--measure); font-size: 17.5px; }
 .prose-wide { max-width: 820px; }

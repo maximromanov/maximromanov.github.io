@@ -24,12 +24,22 @@ items:
   - id: romanov-2026-dhais
     group: books
     year: 2026
-    status: forthcoming
-    title: "*Digital Humanities for Arabic and Islamic Studies: A Proposition to the Field*"
-    venue: "Handbook of Oriental Studies, Section 1: The Near and Middle East, vol. 199. Leiden: Brill, 2026"
+    status: "new"
+    title: "*Digital Humanities for Arabic and Islamic Studies: A Proposition for the Field*"
+    venue: "Handbook of Oriental Studies, Section 1: The Near and Middle East, vol. 199. Leiden and Boston: Brill, 2026. E-book (PDF) published 1 September 2026, ISBN 978-90-04-76053-0; hardback 1 October 2026, ISBN 978-90-04-76052-3"
+    cover: /assets/img/book-dhais-cover.jpg
+    feature_blurb: "A proposition for bringing Arabic and Islamic studies into the digital age from within: how to build the corpus the field needs, and what can be learned from a billion words across fourteen centuries. Handbook of Oriental Studies 199. Open supplement with all figures on figshare; two interactive appendices online."
     tags: [key, pr]
+    note: "An open online supplement with all figures from the book, enlargeable for closer examination, is published by Brill on figshare under a CC BY 4.0 licence (DOI 10.6084/m9.figshare.32324454). Two interactive applications accompany the case studies: the OpenITI NgramReader and the M10 Book Classification."
+    toc:
+      - "Introduction"
+      - "1. A Pitch for Digital Humanities: The Premise · The Inescapable Digital Turn · The Ailment · The Remedy · The Ghost of the Network · The Pitch · The Proposition"
+      - "2. Digital Avatars and Metaobjects: Issues of the Text · Issues of the Corpus · Toward an Engineering Solution · Digital Pragmatism · Approaching Corpus Design · Linked Local Data · Uniform Resource Identifiers · URI-Based Local Structure · Encoding Conventions · Handling Metadata · The Hub That Makes It All Work · Corpus Releases · mARkdown as a Text Annotation Scheme · A Working Subcorpus"
+      - "3. Computational Inquiries: Outlining Practical Premises · Case Study 1, Tracing Term Usage · Case Study 2, Modeling Textual Typology · Case Study 3, Charting Linguistic Evolution"
+      - "Afterword · Glossary of Common DH Terms · Bibliography · Index"
     links:
-      - {label: Publisher, url: "https://brill.com/display/title/74416"}
+      - {label: "Brill (order or read online)", url: "https://brill.com/display/title/74416"}
+      - {label: "Online supplement: figures (figshare, open)", url: "https://doi.org/10.6084/m9.figshare.32324454"}
       - {label: "Appendix 1: NgramReader", url: "https://eis1600.aai.uni-hamburg.de/shiny/OpenITI_NgramReader/"}
       - {label: "Appendix 2: Book Classification", url: "https://eis1600.aai.uni-hamburg.de/shiny/t10BookClassifier/"}
     abstract: |

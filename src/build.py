@@ -197,11 +197,42 @@ def render_publication(p):
         body += f'<p class="it-note">{mdi(p["note"])}</p>'
     if p.get("abstract"):
         body += f'<details class="it-abstract"><summary>Abstract</summary>{md(p["abstract"])}</details>'
+    if p.get("toc"):
+        body += '<details class="it-abstract"><summary>Contents</summary><ul class="it-toc">' + "".join(
+            f"<li>{mdi(x)}</li>" for x in p["toc"]
+        ) + "</ul></details>"
     body += links_row(p.get("links"))
     body += tag_badges(p.get("tags"))
     key = " it-key" if "key" in (p.get("tags") or []) else ""
     anchor = f' id="{esc(p["id"])}"' if p.get("id") else ""
+    if p.get("cover"):
+        cover = f'<a class="it-cover" href="{esc(p["links"][0]["url"]) if p.get("links") else "#"}"><img src="{esc(p["cover"])}" alt="Cover of {esc(strip_tags(mdi(p["title"])))}" loading="lazy"></a>'
+        body = f'<div class="it-with-cover">{cover}<div class="it-cover-text">{body}</div></div>'
     return f'<li class="item{key}"{anchor}><div class="it-label">{label}</div><div class="it-body">{body}</div></li>'
+
+
+def find_publication(pid):
+    for p in load_yaml("publications")["items"]:
+        if p.get("id") == pid:
+            return p
+    return None
+
+
+def render_featured_book(pid):
+    """A compact panel with cover, title, one line, and links, for the home page."""
+    p = find_publication(pid)
+    if not p:
+        return ""
+    title = mdi(p["title"])
+    links = links_row(p.get("links"))
+    blurb = mdi(p.get("feature_blurb") or "")
+    return (
+        '<section class="feature-book" aria-label="New book">'
+        f'<a class="fb-cover" href="{esc(p["links"][0]["url"])}"><img src="{esc(p["cover"])}" alt="" width="180"></a>'
+        '<div class="fb-text"><p class="app">New book · Brill, 2026</p>'
+        f'<h2 class="fb-title">{title}</h2>'
+        f'<p class="fb-blurb">{blurb}</p>{links}</div></section>'
+    )
 
 
 def render_publications_page(meta, intro_md):
@@ -513,8 +544,9 @@ def render_home(meta, body):
     for p in SITE["projects_rail"]:
         rail += f'<li><a href="{p["url"]}"><span class="rail-abbr">{esc(p["abbr"])}</span><span class="rail-label">{esc(p["label"])}</span></a></li>'
     rail += "</ul></section>"
+    feature = render_featured_book(meta["feature_book"]) if meta.get("feature_book") else ""
     essay = f'<article class="prose home-essay">{md(body)}</article>'
-    return hero + rail + essay
+    return hero + rail + feature + essay
 
 
 def write_redirect(old, new):
