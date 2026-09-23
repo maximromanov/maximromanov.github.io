@@ -19,12 +19,17 @@
 (function () {
   if (window.NO_EMAIL_DECODE) return;
   var els = document.querySelectorAll('a.email[data-e]');
-  for (var i = 0; i < els.length; i++) {
-    var e = els[i];
-    var addr = e.getAttribute('data-e').split('').reverse().join('').replace(/[a-zA-Z]/g, function (c) {
+  function decode(s) {
+    return s.split('').reverse().join('').replace(/[a-zA-Z]/g, function (c) {
       return String.fromCharCode((c <= 'Z' ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
     });
-    e.setAttribute('href', 'mailto:' + addr);
+  }
+  for (var i = 0; i < els.length; i++) {
+    els[i].setAttribute('title', 'Send an e-mail');
+    els[i].addEventListener('click', function (ev) {
+      ev.preventDefault();
+      window.location.href = 'mailto:' + decode(this.getAttribute('data-e'));
+    });
   }
 })();
 
