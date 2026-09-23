@@ -62,9 +62,11 @@ in `docs/assets/img/kalila-*.jpg`, each at 1200 and 640 px wide. `kalila-walk` (
 
 ## Design
 
-Warm paper background, deep red accent taken from the calligraphic RM mark, Literata for text,
-Inter for interface text, JetBrains Mono for labels. Dark mode follows the system and can be
-toggled. Fonts are served from `docs/assets/fonts/` (Google Fonts subsets, latin and latin-ext)
+Warm paper background with a faint grain, deep red accent taken from the calligraphic RM mark, a
+gold hairline for frames and rules (the *jadwal* of a manuscript page), Literata for text, Inter for
+interface text, JetBrains Mono for labels, Amiri for Arabic (the name on the home page, the nav
+numerals, the footer). Section headings carry a small red rosette; the home essay opens with a red
+drop cap. Dark mode follows the system and can be toggled. Fonts are served from `docs/assets/fonts/` (Google Fonts subsets, latin and latin-ext)
 so that no third-party request is made when the site loads. Tokens are at the top of
 `docs/assets/site.css`.
 

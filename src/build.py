@@ -543,7 +543,7 @@ def build_pages():
 def render_home(meta, body):
     """Home page: a hero block, then the essay from the Markdown body, then a project rail."""
     links = " · ".join(f'<a href="{l["url"]}">{l["label"]}</a>' for l in SITE["links"])
-    hero = '<section class="home-head' + (' home-head-illus' if meta.get("illustration") else '') + '"><div class="home-head-text">'
+    hero = '<section class="home-head home-head-illus"><div class="home-head-text">'
     if meta.get("kicker"):
         hero += f'<p class="app">{mdi(meta["kicker"])}</p>'
     hero += f'<h1>{esc(SITE["name"])}</h1>'
@@ -552,7 +552,11 @@ def render_home(meta, body):
     if meta.get("position"):
         hero += f'<p class="hd-position">{mdi(meta["position"])}</p>'
     hero += f'<p class="hd-links">{links}</p>'
-    hero += "</div>" + illustration_html(meta.get("illustration"), cls="illus illus-home") + "</section>"
+    if meta.get("illustration"):
+        side = illustration_html(meta.get("illustration"), cls="illus illus-home")
+    else:
+        side = f'<div class="hd-ar-wrap" aria-hidden="true"><p class="hd-ar" lang="ar" dir="rtl">{esc(SITE.get("name_ar", ""))}</p></div>'
+    hero += "</div>" + side + "</section>"
     rail = '<section class="rail" aria-label="Projects"><ul class="rail-list">'
     for p in SITE["projects_rail"]:
         rail += f'<li><a href="{p["url"]}"><span class="rail-abbr">{esc(p["abbr"])}</span><span class="rail-label">{esc(p["label"])}</span></a></li>'
