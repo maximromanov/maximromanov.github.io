@@ -554,6 +554,14 @@ def render_home(meta, body):
     hero += f'<p class="hd-links">{links}</p>'
     if meta.get("illustration"):
         side = illustration_html(meta.get("illustration"), cls="illus illus-home")
+    elif meta.get("portrait"):
+        pt = meta["portrait"]
+        small = pt["src"].replace(".jpg", "-360.jpg")
+        side = (
+            f'<figure class="illus portrait"><img src="{esc(pt["src"])}" srcset="{esc(small)} 360w, {esc(pt["src"])} 720w" '
+            f'sizes="(max-width: 720px) 60vw, 300px" alt="{esc(pt.get("alt", ""))}">'
+            f'<figcaption class="portrait-ar" lang="ar" dir="rtl">{esc(SITE.get("name_ar", ""))}</figcaption></figure>'
+        )
     else:
         side = f'<div class="hd-ar-wrap" aria-hidden="true"><p class="hd-ar" lang="ar" dir="rtl">{esc(SITE.get("name_ar", ""))}</p></div>'
     hero += "</div>" + side + "</section>"

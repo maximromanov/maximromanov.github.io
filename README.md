@@ -55,7 +55,9 @@ Front-matter fields for pages: `title`, `permalink`, `layout` (page, home, publi
 teaching, cv, notes), `kicker` (small label above the title), `lede` (subtitle), `description`
 (meta description), `toc`, `wide`, `old_urls`, and `illustration` (`src`, `alt`, `caption`; the
 image sits beside the page title). The home page also takes `feature_book` (a publication id to
-show as a panel with its cover).
+show as a panel with its cover) and `portrait` (`src`, `alt`; a 4:5 photograph at 720 and 360 px wide,
+shown in the hero's right column with the Arabic name as its caption; without it the Arabic name
+alone fills that column).
 
 Illustrations: six manuscript-style images (AI-generated after a *Kalīla wa-Dimna* manuscript) are
 in `docs/assets/img/kalila-*.jpg`, each at 1200 and 640 px wide. `kalila-walk` (the version with the oddly drawn dog) is unused.

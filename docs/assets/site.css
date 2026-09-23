@@ -156,6 +156,10 @@ th { font-family: var(--f-ui); font-size: 13px; letter-spacing: .04em; text-tran
 .page-head-illus .page-head-text { max-width: 760px; }
 .home-head-illus { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 40px; align-items: center; }
 .illus-home img { transform: rotate(-1deg); }
+.portrait { justify-self: end; width: 300px; max-width: 100%; }
+.portrait img { display: block; width: 100%; height: auto; }
+.portrait .portrait-ar { font-family: var(--f-ar); font-size: clamp(30px, 3.6vw, 44px); color: var(--red); text-align: center; text-transform: none; letter-spacing: 0; margin-top: 14px; line-height: 1.2; }
+@media (max-width: 720px) { .portrait { justify-self: start; width: 240px; } }
 .hd-ar-wrap { display: flex; justify-content: flex-end; align-items: center; height: 100%; }
 .hd-ar { font-family: var(--f-ar); font-size: clamp(64px, 9vw, 124px); line-height: 1.1; color: var(--red); opacity: .92; margin: 0; text-align: right; font-weight: 400; text-shadow: 0 1px 0 rgba(255,255,255,.4); }
 @media (max-width: 720px) { .hd-ar-wrap { justify-content: flex-start; } .hd-ar { font-size: 56px; text-align: left; opacity: .85; } }
