@@ -25,7 +25,6 @@
       return String.fromCharCode((c <= 'Z' ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
     });
     e.setAttribute('href', 'mailto:' + addr);
-    if (e.hasAttribute('data-show')) e.textContent = addr;
   }
 })();
 

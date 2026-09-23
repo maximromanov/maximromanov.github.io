@@ -94,9 +94,9 @@ def scramble(addr):
 
 
 def email_html(addr, label=None):
-    """A link that becomes mailto: only in the browser. Without script it reads 'name [at] domain'."""
+    """A link that becomes mailto: only in the browser; the visible text always stays 'name [at] domain'."""
     shown = label or addr.replace("@", " [at] ")
-    return f'<a class="email" href="#contact" data-e="{esc(scramble(addr))}"{" data-show" if not label else ""}>{esc(shown)}</a>'
+    return f'<a class="email" href="#contact" data-e="{esc(scramble(addr))}">{esc(shown)}</a>'
 
 
 # --------------------------------------------------------------------------- site / template
