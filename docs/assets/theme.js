@@ -1,4 +1,4 @@
-/* Dark-mode toggle. The only script on the site; no tracking of any kind. */
+/* Dark-mode toggle and e-mail unscrambling. The only script on the site; no tracking of any kind. */
 (function () {
   var root = document.documentElement;
   var btn = document.querySelector('.theme-toggle');
@@ -13,4 +13,18 @@
     root.setAttribute('data-theme', next);
     try { localStorage.setItem('theme', next); } catch (e) {}
   });
+})();
+
+/* E-mail addresses are stored scrambled (ROT13, reversed) so they never appear in the page source. */
+(function () {
+  if (window.NO_EMAIL_DECODE) return;
+  var els = document.querySelectorAll('a.email[data-e]');
+  for (var i = 0; i < els.length; i++) {
+    var e = els[i];
+    var addr = e.getAttribute('data-e').split('').reverse().join('').replace(/[a-zA-Z]/g, function (c) {
+      return String.fromCharCode((c <= 'Z' ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+    });
+    e.setAttribute('href', 'mailto:' + addr);
+    if (e.hasAttribute('data-show')) e.textContent = addr;
+  }
 })();

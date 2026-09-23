@@ -34,6 +34,7 @@ def main():
         with sync_playwright() as p:
             browser = p.chromium.launch()
             page = browser.new_page(color_scheme="light")
+            page.add_init_script("window.NO_EMAIL_DECODE = true;")
             page.goto(f"http://127.0.0.1:{PORT}/cv/", wait_until="networkidle")
             page.emulate_media(media="print")
             page.pdf(

@@ -7,7 +7,7 @@ top:
   - label: Position
     text: "*Emmy Noether Junior Research Group Leader*, DFG project “The Evolution of Islamic Societies (c. 600–1600 CE): Algorithmic Analysis into Social History” (**EIS1600**), Universität Hamburg, Asien-Afrika-Institut"
   - label: Email
-    text: "[maxim.romanov@uni-hamburg.de](mailto:maxim.romanov@uni-hamburg.de)"
+    text: "{{email:maxim.romanov@uni-hamburg.de}}"
   - label: ORCID
     text: "[0000-0001-7331-3858](https://orcid.org/0000-0001-7331-3858)"
   - label: Websites

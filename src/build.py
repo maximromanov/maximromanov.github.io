@@ -10,6 +10,7 @@ Writes  docs/                 the published site (GitHub Pages serves this folde
 Dependencies: Python 3.9+, PyYAML, Markdown  (pip install pyyaml markdown)
 Run:          python3 src/build.py
 """
+import codecs
 import datetime
 import hashlib
 import html
@@ -51,6 +52,7 @@ def mdi(text):
         return ""
     out = markdown.markdown(str(text), extensions=["extra"])
     out = re.sub(r"^<p>(.*)</p>$", r"\1", out.strip(), flags=re.S)
+    out = re.sub(r"\{\{email:([^}]+)\}\}", lambda m: email_html(m.group(1)), out)
     return out
 
 
@@ -85,6 +87,18 @@ def strip_tags(s):
     return re.sub(r"<[^>]+>", "", s)
 
 
+
+def scramble(addr):
+    """ROT13 the letters and reverse the string; theme.js undoes it in the browser."""
+    return codecs.encode(addr, "rot13")[::-1]
+
+
+def email_html(addr, label=None):
+    """A link that becomes mailto: only in the browser. Without script it reads 'name [at] domain'."""
+    shown = label or addr.replace("@", " [at] ")
+    return f'<a class="email" href="#contact" data-e="{esc(scramble(addr))}"{" data-show" if not label else ""}>{esc(shown)}</a>'
+
+
 # --------------------------------------------------------------------------- site / template
 
 SITE = load_yaml("site")
@@ -104,8 +118,14 @@ def nav_html(active_path):
     return "\n      ".join(items)
 
 
+def link_html(l):
+    if l.get("email"):
+        return email_html(l["email"], l["label"])
+    return f'<a href="{l["url"]}">{l["label"]}</a>'
+
+
 def foot_links_html():
-    return " · ".join(f'<a href="{l["url"]}">{l["label"]}</a>' for l in SITE["links"])
+    return " · ".join(link_html(l) for l in SITE["links"])
 
 
 def render(page):
@@ -542,7 +562,7 @@ def build_pages():
 
 def render_home(meta, body):
     """Home page: a hero block, then the essay from the Markdown body, then a project rail."""
-    links = " · ".join(f'<a href="{l["url"]}">{l["label"]}</a>' for l in SITE["links"])
+    links = " · ".join(link_html(l) for l in SITE["links"])
     hero = '<section class="home-head home-head-illus"><div class="home-head-text">'
     if meta.get("kicker"):
         hero += f'<p class="app">{mdi(meta["kicker"])}</p>'
