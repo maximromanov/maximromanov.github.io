@@ -30,7 +30,7 @@ items:
     cover: /assets/img/book-dhais-cover.jpg
     feature_blurb: "A proposition for bringing Arabic and Islamic studies into the digital age from within: how to build the corpus the field needs, and what can be learned from a billion words across fourteen centuries. Handbook of Oriental Studies 199. Open supplement with all figures on figshare; two interactive appendices online."
     tags: [key, pr]
-    note: "An open online supplement with all figures from the book, enlargeable for closer examination, is published by Brill on figshare under a CC BY 4.0 licence (DOI 10.6084/m9.figshare.32324454). Two interactive applications accompany the case studies: the OpenITI NgramReader and the M10 Book Classification."
+    note: "An open online supplement with all figures from the book, enlargeable for closer examination, is published by Brill on figshare under a CC BY 4.0 licence (DOI 10.6084/m9.figshare.32324454). Two interactive applications accompany the case studies: the OpenITI NgramReader and the Book Classification with the T10 model (published as “M10 Book Classification”)."
     toc:
       - "Introduction"
       - "1. A Pitch for Digital Humanities: The Premise · The Inescapable Digital Turn · The Ailment · The Remedy · The Ghost of the Network · The Pitch · The Proposition"
@@ -41,7 +41,7 @@ items:
       - {label: "Brill (order or read online)", url: "https://brill.com/display/title/74416"}
       - {label: "Online supplement: figures (figshare, open)", url: "https://doi.org/10.6084/m9.figshare.32324454"}
       - {label: "Appendix 1: NgramReader", url: "https://eis1600.aai.uni-hamburg.de/shiny/OpenITI_NgramReader/"}
-      - {label: "Appendix 2: Book Classification", url: "https://eis1600.aai.uni-hamburg.de/shiny/t10BookClassifier/"}
+      - {label: "Appendix 2: Book Classification (T10)", url: "https://eis1600.aai.uni-hamburg.de/shiny/t10BookClassifier/"}
     abstract: |
       In *Digital Humanities for Arabic and Islamic Studies*, Maxim Romanov proposes a bold vision for bringing Arabic and Islamic Studies fully into the digital age. Building on the vast OpenITI corpus—over a billion words spanning 1,400 years—Romanov demonstrates how computational tools can illuminate long-term cultural and linguistic developments across the Islamic world. Through accessible case studies on terminology tracing, genre modeling, and linguistic change, the book shows how digital methods expand rather than replace traditional scholarship. Romanov argues that the field’s digital transformation must be led from within—by scholars who understand its texts, traditions, and questions. This book provides both a roadmap and an invitation to rethink how the Arabic and Islamic heritage can be studied in the twenty-first century.
 
@@ -373,7 +373,7 @@ items:
     group: data
     year: 2025
     title: "ADHFAIS Appendix 2: M10 Book Classification (based on OpenITI, release 2023.1.8), version 1"
-    venue: "Zenodo, 2025. An experiment in soft classification of the works of the Arabic written tradition against ten types of texts"
+    venue: "Zenodo, 2025. An experiment in soft classification of the works of the Arabic written tradition against ten types of texts. The application uses the T10 typological model of the book; “M10” in the published title is the same model (M for model)"
     tags: [key]
     links:
       - {label: Application, url: "https://eis1600.aai.uni-hamburg.de/shiny/t10BookClassifier/"}
