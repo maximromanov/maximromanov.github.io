@@ -322,6 +322,7 @@ def render_talk(t, show_kind=True):
         if d[:1].islower():
             d = d[0].upper() + d[1:]
         body += f'<p class="it-meta">{mdi(d)}</p>'
+    body += links_row(t.get("links"))
     kind = t.get("kind")
     cls = "item"
     if kind == "keynote":

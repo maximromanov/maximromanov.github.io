@@ -1,4 +1,13 @@
 invited:
+- date: September 2026
+  year: 2026
+  month: 9
+  country: Germany
+  title: 'Digital Scholarly Communications…'
+  detail: 'Keynote at *Beyond the Book: Digital Research, Presentation, and Sustainability*, Freie Universität Berlin, Institute of Arabic Studies, September 21–22, 2026'
+  kind: keynote
+  links:
+    - {label: Slides, url: "https://maximromanov.github.io/slides/2026-09-22-fub-keynote/"}
 - date: April 2025
   year: 2025
   month: 4
