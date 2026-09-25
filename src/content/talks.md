@@ -11,4 +11,3 @@ illustration:
   caption: "After a Kalīla wa-Dimna manuscript · AI-generated"
 ---
 
-Slides of recent talks are published as web pages at [maximromanov.github.io/slides](https://maximromanov.github.io/slides/) and linked from the entries below.

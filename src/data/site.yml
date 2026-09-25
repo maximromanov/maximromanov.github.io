@@ -22,7 +22,6 @@ links:
   - {label: EIS1600, url: "https://eis1600.aai.uni-hamburg.de/"}
   - {label: ORCID, url: "https://orcid.org/0000-0001-7331-3858"}
   - {label: Academia.edu, url: "https://univie.academia.edu/MaximRomanov"}
-  - {label: Slides, url: "https://maximromanov.github.io/slides/"}
 
 # Affiliated projects shown in the header rail on the home page.
 projects_rail:

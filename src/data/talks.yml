@@ -6,8 +6,6 @@ invited:
   title: 'Digital Scholarly Communications…'
   detail: 'Keynote at *Beyond the Book: Digital Research, Presentation, and Sustainability*, Freie Universität Berlin, Institute of Arabic Studies, September 21–22, 2026'
   kind: keynote
-  links:
-    - {label: Slides, url: "https://maximromanov.github.io/slides/2026-09-22-fub-keynote/"}
 - date: April 2025
   year: 2025
   month: 4
@@ -293,8 +291,6 @@ papers:
   country: Germany
   title: 'Text Reuse in the Arabic Written Tradition: A Case of Biographical Collections'
   detail: 'at *Making of a Sage: Corpora of Wise Sayings in a Religio-Historical Perspective*, International Workshop at Göttingen University, organized by Ute Pietruschka, June 28–29, 2024'
-  links:
-    - {label: Slides, url: "https://maximromanov.github.io/slides/2024-06-28-goettingen/"}
 - date: March 2024
   year: 2024
   month: 3
@@ -307,8 +303,6 @@ papers:
   country: Japan
   title: 'Ṣundūq al-ġarāʾib fī-l-ʿaṣr al-raqāʾim: Reading Medieval Texts in the Digital Age'
   detail: at The Middle East and Europe, 1097–1517, Waseda University, Tokyo, 9–10 December, 2023
-  links:
-    - {label: Slides, url: "https://maximromanov.github.io/slides/2023-12-09-waseda-tokyo/"}
 - date: October 2023
   year: 2023
   month: 10
