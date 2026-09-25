@@ -110,6 +110,12 @@ courses:
     terms: "2006–2007"
 
 workshops:
+  - date: June 2026
+    year: 2026
+    month: 6
+    country: Spain
+    title: 'Dialogue as Scholarly Practice: the Socratic Method in the Age of AI'
+    detail: "A 2-day workshop for scholars of Arabic, Islamic, and Middle Eastern studies on working with large language models without programming, at the Instituto de Lenguas y Culturas del Mediterráneo y Oriente Próximo (ILC), CCHS-CSIC, Madrid, June 8–9, 2026, with Alicia González Martínez and Hamid Reza Hakimi; the book *Digital Humanities for Arabic and Islamic Studies* was presented in the closing session"
   - date: September 2025
     year: 2025
     month: 9

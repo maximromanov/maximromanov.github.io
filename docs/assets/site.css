@@ -352,10 +352,38 @@ th { font-family: var(--f-ui); font-size: 14px; letter-spacing: .04em; text-tran
 @media (max-width: 640px) { .foot-inner { grid-template-columns: 1fr; } }
 
 /* ---------- print ---------- */
+.cv-print-head { display: none; }
 @media print {
-  .site-head, .site-foot, .theme-toggle, .subnav, .skip { display: none !important; }
-  body { background: #fff; color: #000; font-size: 11pt; }
+  .site-head, .site-foot, .theme-toggle, .subnav, .skip, .illus, .page-head-illus .illus, .app, .intro, .lede, .it-abstract, details, .it-links, .views { display: none !important; }
+  html { font-size: 9.5pt; }
+  body { background: #fff; color: #000; font-size: 9.5pt; line-height: 1.32; }
   a { color: #000; text-decoration: none; }
-  .item { break-inside: avoid; }
-  .page-head { padding-top: 0; }
+  .wrap { max-width: none; padding: 0; }
+  .page-head { padding: 0; max-width: none; display: grid; grid-template-columns: 1fr; }
+  .page-cv .page-head h1 { display: none; }
+  .cv-print-head { display: flex; align-items: center; gap: 12pt; border-bottom: 1.5pt solid #CC0000; padding-bottom: 8pt; margin-bottom: 10pt; font-size: 10pt; line-height: 1.35; }
+  .cv-print-head img { width: 42pt; height: 42pt; }
+  .cv-print-head b { font-size: 16pt; font-weight: 700; }
+  .cv-top { grid-template-columns: 6em 1fr; gap: 1pt 10pt; font-size: 9.5pt; }
+  .cv-top dt { font-size: 7.5pt; padding-top: 2pt; }
+  .cv-top dd:last-of-type, .cv-top dt:last-of-type { display: none; }
+  .items-section { margin: 0; }
+  h2, .cv-section > h2 { font-size: 11.5pt; margin: 9pt 0 3pt; padding-bottom: 1.5pt; border-bottom: .5pt solid #999; break-after: avoid; }
+  h2::before, .items-section > h2::before { content: none !important; display: none !important; }
+  .items-section > h2 .count { display: none; }
+  .year-head { font-size: 7.5pt; margin: 6pt 0 1pt; break-after: avoid; }
+  .items { margin: 0; }
+  .item, .cv-section .item, .items-compact .item { grid-template-columns: 6em minmax(0, 1fr); gap: 0 10pt; padding: 2pt 0; border-top: 0; break-inside: avoid; }
+  .item.it-key { padding: 2pt 0; }
+  .badges, .it-note { display: none !important; }
+  .it-label { flex-direction: row; flex-wrap: wrap; gap: 0 6pt; padding-top: 1pt; }
+  .it-year { font-size: 8pt; letter-spacing: 0; }
+  .it-where, .it-status { font-size: 7.5pt; }
+  .it-title { font-size: 9.5pt; font-weight: 700; line-height: 1.3; letter-spacing: 0; }
+  .it-meta, .it-text, .it-note { font-size: 9pt; line-height: 1.3; margin-top: 1pt; max-width: none; }
+  .it-with-cover { display: block; }
+  .it-cover { display: none; }
+  .badges { font-size: 7pt; margin-top: 1pt; }
+  .badge { padding: 0 3pt; }
+  .cv-section .it-title { font-size: 9.5pt; }
 }

@@ -6,6 +6,24 @@ invited:
   title: 'Digital Scholarly Communications…'
   detail: 'Keynote at *Beyond the Book: Digital Research, Presentation, and Sustainability*, Freie Universität Berlin, Institute of Arabic Studies, September 21–22, 2026'
   kind: keynote
+- date: June 2026
+  year: 2026
+  month: 6
+  country: Spain
+  title: 'Digital Humanities for Arabic and Islamic Studies: A Proposition for the Field'
+  detail: 'Book presentation, invited lecture at the XII Arabic Codicology Summer Course *The Islamic Manuscript Heritage in the El Escorial Collection*, directed by Nuria de Castilla and François Déroche, Real Biblioteca del Monasterio de San Lorenzo de El Escorial, June 2, 2026'
+- date: May 2026
+  year: 2026
+  month: 5
+  country: Netherlands
+  title: 'Digital Humanities for Arabic and Islamic Studies: A Proposition for the Field'
+  detail: 'Book presentation at a workshop organized by Yusuf Çelik, Faculty of Religion and Theology, Vrije Universiteit Amsterdam, May 13, 2026'
+- date: December 2025
+  year: 2025
+  month: 12
+  country: Austria
+  title: 'Modeling Social History of the Islamic World (c. 600–1600 CE) … with Generative LLMs'
+  detail: 'Guest lecture in the *VO DH Ringvorlesung* of Tara Andrews, winter term 2025/26, Universität Wien, December 9, 2025'
 - date: April 2025
   year: 2025
   month: 4
@@ -252,6 +270,12 @@ invited:
   title: 'Computational Reading of Classical Arabic Sources: the Case of Biographical Collections'
   detail: Invited talk, given at the Department of Classics, Tufts University (March 10, 2014); Bard College, Annandale-on-Hudson, NY (February 11, 2014); and the Center for Digital Research in the Humanities, University of Nebraska–Lincoln (January 30, 2014)
 papers:
+- date: July 2026
+  year: 2026
+  month: 7
+  country: Belgium
+  title: 'Out of How Many? Numerator Without / With Denominator'
+  detail: 'at the Seventeenth Meeting of the School of Abbasid Studies, KU Leuven, July 14–18, 2026'
 - date: October 2024
   year: 2024
   month: 10

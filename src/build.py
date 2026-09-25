@@ -427,6 +427,9 @@ def render_cv_page(meta, intro_md):
     teaching = load_yaml("teaching")
     out = page_head(meta["title"], meta.get("lede"), meta.get("kicker"), meta.get("illustration"))
     out += f'<div class="prose intro">{md(intro_md)}</div>' if intro_md.strip() else ""
+    # print-only head for the PDF: the mark, the name, the date of generation
+    out += ('<div class="cv-print-head" aria-hidden="true"><img src="/assets/img/rm-mark.png" alt="" width="56" height="56">'
+            f'<div><b>Maxim Romanov</b><br>Curriculum Vitae · {datetime.date.today().strftime("%B %Y")}</div></div>')
     sections = []
 
     def sec(sid, title, body):

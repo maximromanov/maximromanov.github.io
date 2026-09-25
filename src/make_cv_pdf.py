@@ -41,7 +41,7 @@ def main():
                 path=str(OUT),
                 format="A4",
                 print_background=False,
-                margin={"top": "18mm", "bottom": "18mm", "left": "16mm", "right": "16mm"},
+                margin={"top": "14mm", "bottom": "14mm", "left": "15mm", "right": "15mm"},
                 display_header_footer=True,
                 header_template='<div></div>',
                 footer_template='<div style="font-size:8px;font-family:Helvetica,Arial,sans-serif;color:#777;width:100%;text-align:center;">Maxim Romanov · Curriculum Vitae · <span class="pageNumber"></span>/<span class="totalPages"></span></div>',
