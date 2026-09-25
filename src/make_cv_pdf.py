@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "src" / "data"
 TEMPLATE = ROOT / "src" / "cv" / "template.tex"
 LOGO = ROOT / "docs" / "assets" / "img" / "rm-mark.png"
+LOGO_RED = ROOT / "src" / "cv" / "rm-mark-red.png"
 OUT = ROOT / "docs" / "files" / "Romanov_CV.pdf"
 
 
@@ -200,6 +201,7 @@ def main():
         tmpd = Path(tmp)
         (tmpd / "cv.tex").write_text(doc, encoding="utf-8")
         shutil.copy(LOGO, tmpd / "rm-mark.png")
+        shutil.copy(LOGO_RED, tmpd / "rm-mark-red.png")
         for _ in range(2):
             r = subprocess.run(["xelatex", "-interaction=nonstopmode", "-halt-on-error", "cv.tex"], cwd=tmpd,
                                capture_output=True, text=True)
