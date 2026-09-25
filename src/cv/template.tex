@@ -1,0 +1,46 @@
+% !TEX encoding = UTF-8 Unicode
+% Curriculum vitae of Maxim Romanov — typeset by src/make_cv_pdf.py from src/data/*.yml.
+% Adapted from Maxim's own CV_Auto template (book class, labels hanging in the left margin).
+\documentclass[a4paper, 10pt, oneside]{book}
+\usepackage[hyphens]{url}
+\usepackage{fontspec}
+\setmainfont{Baskerville}
+\usepackage[top=0.8in, bottom=0.8in, left=2.0in, right=0.55in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{rmred}{HTML}{CC0000}
+\usepackage{hyperref}
+\hypersetup{colorlinks, citecolor=rmred, linkcolor=rmred, urlcolor=rmred, pdftitle={Maxim Romanov — Curriculum Vitae}, pdfauthor={Maxim Romanov}}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{setspace}
+\singlespacing
+\usepackage{xspace}
+\usepackage[document]{ragged2e}
+\usepackage{enumitem}
+\setlist[itemize]{label={}, leftmargin=0pt, labelsep=0.6em, itemsep=1.5pt, parsep=0pt, topsep=2pt, partopsep=0pt}
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{11pt}{4pt}
+\usepackage{fancyhdr}
+\def\LOGO{\raisebox{-.15em}{\includegraphics[height=.9em]{rm-mark.png}}\xspace}
+\fancyhead[R]{\small \LOGO~\textit{Maxim Romanov} $|$~\thepage~$|$}
+\fancyhead[L]{}
+\fancyfoot[C]{}
+\fancyfoot[R]{\small Last update: \textit{@@date@@}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\parindent}{0pt}
+\begin{document}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture, overlay]
+  \node[anchor=north west] at ([shift={(0.7in,-0.5in)}]current page.north west) {\includegraphics[width=1.8cm]{rm-mark.png}};
+\end{tikzpicture}
+{\Huge\itshape Maxim Romanov}\par
+\vspace{3pt}
+{\small @@nameextra@@}\par
+\vspace{6pt}
+\pagestyle{fancy}
+
+@@sections@@
+
+\end{document}

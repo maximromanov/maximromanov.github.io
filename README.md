@@ -9,7 +9,8 @@ exactly as committed.
 ```
 src/
   build.py            renders src/ into docs/  (python3 src/build.py)
-  make_cv_pdf.py      renders docs/cv/ to docs/files/Romanov_CV.pdf (optional; needs playwright)
+  make_cv_pdf.py      typesets docs/files/Romanov_CV.pdf with XeLaTeX from the same YAML data (needs MacTeX)
+  cv/template.tex     the LaTeX template for that PDF
   templates/base.html the one page template (header, nav, footer)
   data/
     site.yml          name, navigation, contact links, project rail, redirects, footer

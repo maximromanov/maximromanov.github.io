@@ -13,7 +13,7 @@ top:
   - label: Websites
     text: "[eis1600.aai.uni-hamburg.de](https://eis1600.aai.uni-hamburg.de/) · [maximromanov.github.io](https://maximromanov.github.io)"
   - label: PDF
-    text: "[Download this CV as PDF](/files/Romanov_CV.pdf) (generated from this page) · [typeset long version, June 2025](/files/Romanov_CV_2025.pdf)"
+    text: "[Download this CV as PDF](/files/Romanov_CV.pdf) (typeset from the same data as this page)"
 
 employment:
   - years: 2021–2027
