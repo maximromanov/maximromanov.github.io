@@ -2,6 +2,15 @@ invited:
 - date: September 2026
   year: 2026
   month: 9
+  country: Egypt
+  title: 'Why One Manuscript Needs All The Others: The Case for a Unified Arabic Corpus'
+  detail: 'Invited lecture at the workshop *Unlocking Arabic Manuscripts: The Potential of Digital Humanities for Egypt’s Collections*, Institute of Arab Research and Studies and Freie Universität Berlin, with support from DAAD (COSIMENA) and the German Federal Foreign Office, Cairo, September 27–28, 2026'
+  links:
+    - {label: "Slides", url: "https://maximromanov.github.io/slides/2026-09-28-Cairo/"}
+    - {label: "Arabic companion (دليل المحاضرة بالعربية)", url: "https://maximromanov.github.io/slides/2026-09-28-Cairo/companion-ar.html"}
+- date: September 2026
+  year: 2026
+  month: 9
   country: Germany
   title: 'Digital Scholarly Communications…'
   detail: 'Keynote at *Beyond the Book: Digital Research, Presentation, and Sustainability*, Freie Universität Berlin, Institute of Arabic Studies, September 21–22, 2026'
