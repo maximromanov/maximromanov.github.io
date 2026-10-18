@@ -52,21 +52,21 @@
 
 /* ---------- tokens ---------- */
 :root {
-  --paper: #F6F1E8;        /* page background: warm, slightly aged paper */
-  --paper-2: #EEE7DA;      /* bands and panels */
-  --panel: #FBF8F2;        /* raised cards */
-  --rule: #D6CBB9;         /* hairlines */
-  --rule-soft: #E5DCCD;
+  --paper: #F7F6F2;        /* page background: faint eggshell */
+  --paper-2: #EEEDE7;      /* bands and panels */
+  --panel: #FCFBF9;        /* raised cards */
+  --rule: #D8D6CE;         /* hairlines */
+  --rule-soft: #E6E4DD;
   --ink: #1F1A15;          /* text */
-  --muted: #5F564B;        /* secondary text */
-  --faint: #8B8174;        /* labels */
+  --muted: #57534C;        /* secondary text */
+  --faint: #88837A;        /* labels */
   --red: #B5140E;          /* accent, from the RM mark */
   --red-soft: #D14A40;
-  --red-wash: #F4E2DE;
+  --red-wash: #F4E3DF;
   --link: #9E1B14;
   --link-underline: rgba(158, 27, 20, .35);
   --gold: #B8923F;          /* jadwal inner line, ornaments */
-  --grain-opacity: .055;
+  --grain-opacity: .03;
   --f-text: "Libre Baskerville", Baskerville, "Iowan Old Style", Georgia, serif;
   --f-ui: Calibri, "Carlito", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   --f-mono: Consolas, "Inconsolata", ui-monospace, SFMono-Regular, Menlo, monospace;
