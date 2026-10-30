@@ -6,11 +6,11 @@
 groups:
   - id: books
     title: Books
-  - id: translations
-    title: Other Contributions to Arabic and Islamic Studies
-    blurb: Russian translations of scholarship on Islam and a corrected reprint of an Arabic–Russian dictionary, a line of work begun at the Institute of Oriental Manuscripts in St. Petersburg.
   - id: articles
     title: Articles and Book Chapters
+  - id: translations
+    title: Other Publications in Arabic and Islamic Studies
+    blurb: Russian translations of scholarship on Islam and a corrected reprint of an Arabic–Russian dictionary, a line of work begun at the Institute of Oriental Manuscripts in St. Petersburg.
   - id: proceedings
     title: Conference Papers, Proceedings, and Posters
   - id: dissertation
