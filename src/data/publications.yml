@@ -6,6 +6,9 @@
 groups:
   - id: books
     title: Books
+  - id: translations
+    title: Translations, Editions, and Reference Works
+    blurb: Russian translations of scholarship on Islam and a corrected reprint of an Arabic–Russian dictionary, a line of work begun at the Institute of Oriental Manuscripts in St. Petersburg.
   - id: articles
     title: Articles and Book Chapters
   - id: proceedings
@@ -44,6 +47,63 @@ items:
       - {label: "Appendix 2: Book Classification (T10)", url: "https://eis1600.aai.uni-hamburg.de/shiny/t10BookClassifier/"}
     abstract: |
       In *Digital Humanities for Arabic and Islamic Studies*, Maxim Romanov proposes a bold vision for bringing Arabic and Islamic Studies fully into the digital age. Building on the vast OpenITI corpus—over a billion words spanning 1,400 years—Romanov demonstrates how computational tools can illuminate long-term cultural and linguistic developments across the Islamic world. Through accessible case studies on terminology tracing, genre modeling, and linguistic change, the book shows how digital methods expand rather than replace traditional scholarship. Romanov argues that the field’s digital transformation must be led from within—by scholars who understand its texts, traditions, and questions. This book provides both a roadmap and an invitation to rethink how the Arabic and Islamic heritage can be studied in the twenty-first century.
+
+  # ------------------------------------------------------------------ translations and editions
+  - id: chittick-2012-ru
+    group: translations
+    year: 2012
+    title: "*Sufizm: rukovodstvo dlia nachinaiushchego*"
+    authors: "William C. Chittick. Translated from English by **Maxim Romanov** and Yanis Eshots"
+    venue: "Moscow: Vostochnaia literatura, 2012. 245 pp. Russian translation of *Sufism: A Beginner’s Guide*"
+    lang: Russian
+
+  - id: cook-2008-ru
+    group: translations
+    year: 2008
+    title: "*Shestoi stolp islama: Zapreshchenie osuzhdaemogo*"
+    authors: "Michael Cook. Translated from English, edited, and indexed by **Maxim Romanov**"
+    venue: "Moscow and St. Petersburg: Dilya, 2008. 346 pp. Islam: vzgliad izvne. ISBN 978-5-88503-684-9. Arabic title on the title page: *al-Nahy ʿan al-munkar*. Russian translation of *Forbidding Wrong in Islam: An Introduction* (Cambridge: Cambridge University Press, 2003)"
+    lang: Russian
+
+  - id: girgas-2006-ru
+    group: translations
+    year: 2006
+    title: "*Arabsko-russkii slovar k Koranu i khadisam*"
+    authors: "V. F. Girgas. Revised reprint prepared by Stanislav M. Prozorov and **Maxim Romanov**"
+    venue: "St. Petersburg: Dilya, 2006. 928 pp. Arabic–Russian dictionary to the Qurʾān and the ḥadīṯ: a corrected photographic reprint of Girgas’s *Slovar k Arabskoi khrestomatii i Koranu* (Kazan, 1881)"
+    lang: Russian
+
+  - id: burton-2006-ru
+    group: translations
+    year: 2006
+    title: "*Musulmanskoe predanie: vvedenie v khadisovedenie*"
+    authors: "John Burton. Translated from English by S. A. Zhdanov and **Maxim Romanov**; scholarly editing and indexes by **Maxim Romanov**"
+    venue: "St. Petersburg: Dilya, 2006. 304 pp. ISBN 5-88503-461-3. Russian translation of *An Introduction to the Hadith* (Edinburgh: Edinburgh University Press, 1994)"
+    lang: Russian
+
+  - id: watt-2006-ru
+    group: translations
+    year: 2006
+    title: "*Mukhammad v Mekke*"
+    authors: "W. Montgomery Watt. Translated from English by M. E. Rezvan and N. S. Terletskii; editing (with M. E. Rezvan) and indexes by **Maxim Romanov**"
+    venue: "St. Petersburg: Dilya, 2006. 272 pp. ISBN 5-88503-507-5. Russian translation of *Muhammad at Mecca* (Oxford, 1953)"
+    lang: Russian
+
+  - id: bell-watt-2005-ru
+    group: translations
+    year: 2005
+    title: "*Koranistika: vvedenie*"
+    authors: "Richard Bell and W. Montgomery Watt. Translated from English by S. A. Zhdanov, B. V. Norik, and **Maxim Romanov**; indexes by **Maxim Romanov**; scholarly editor V. S. Rybalkin"
+    venue: "St. Petersburg: Dilya, 2005. 256 pp. Russian translation of *Bell’s Introduction to the Qurʾān* (Edinburgh: Edinburgh University Press, 1970)"
+    lang: Russian
+
+  - id: knysh-2004-ru
+    group: translations
+    year: 2004
+    title: "*Musulmanskii mistitsizm: kratkaia istoriia*"
+    authors: "Alexander D. Knysh. Translated from English, with indexes, by **Maxim Romanov**"
+    venue: "St. Petersburg: Dilya, 2004. 464 pp. ISBN 5-88503-232-7. Russian translation of *Islamic Mysticism: A Short History* (Leiden: Brill, 2000)"
+    lang: Russian
 
   # ------------------------------------------------------------------ articles and chapters
   - id: romanov-2019-1001mp
