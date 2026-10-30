@@ -52,31 +52,31 @@ items:
   - id: chittick-2012-ru
     group: translations
     year: 2012
-    title: "*Sufizm: rukovodstvo dlia nachinaiushchego*"
+    title: "*Суфизм: руководство для начинающего*"
     authors: "William C. Chittick. Translated from English by **Maxim Romanov** and Yanis Eshots"
-    venue: "Moscow: Vostochnaia literatura, 2012. 245 pp. Russian translation of *Sufism: A Beginner’s Guide*"
+    venue: "Moscow: Vostochnaya literatura, 2012. 245 pp. Russian translation of *Sufism: A Beginner’s Guide*"
     lang: Russian
 
   - id: cook-2008-ru
     group: translations
     year: 2008
-    title: "*Shestoi stolp islama: Zapreshchenie osuzhdaemogo*"
+    title: "*Шестой столп ислама. Запрещение осуждаемого*"
     authors: "Michael Cook. Translated from English, edited, and indexed by **Maxim Romanov**"
-    venue: "Moscow and St. Petersburg: Dilya, 2008. 346 pp. Islam: vzgliad izvne. ISBN 978-5-88503-684-9. Arabic title on the title page: *al-Nahy ʿan al-munkar*. Russian translation of *Forbidding Wrong in Islam: An Introduction* (Cambridge: Cambridge University Press, 2003)"
+    venue: "Moscow and St. Petersburg: Dilya, 2008. 346 pp. Series «Ислам: взгляд извне». ISBN 978-5-88503-684-9. Arabic title on the title page: *al-Nahy ʿan al-munkar*. Russian translation of *Forbidding Wrong in Islam: An Introduction* (Cambridge: Cambridge University Press, 2003)"
     lang: Russian
 
   - id: girgas-2006-ru
     group: translations
     year: 2006
-    title: "*Arabsko-russkii slovar k Koranu i khadisam*"
+    title: "*Арабско-русский словарь к Корану и хадисам*"
     authors: "V. F. Girgas. Revised reprint prepared by Stanislav M. Prozorov and **Maxim Romanov**"
-    venue: "St. Petersburg: Dilya, 2006. 928 pp. Arabic–Russian dictionary to the Qurʾān and the ḥadīṯ: a corrected photographic reprint of Girgas’s *Slovar k Arabskoi khrestomatii i Koranu* (Kazan, 1881)"
+    venue: "St. Petersburg: Dilya, 2006. 928 pp. Arabic–Russian dictionary to the Qurʾān and the ḥadīṯ: a corrected photographic reprint of Girgas’s *Словарь к Арабской хрестоматии и Корану* (Kazan, 1881)"
     lang: Russian
 
   - id: burton-2006-ru
     group: translations
     year: 2006
-    title: "*Musulmanskoe predanie: vvedenie v khadisovedenie*"
+    title: "*Мусульманское предание: введение в хадисоведение*"
     authors: "John Burton. Translated from English by S. A. Zhdanov and **Maxim Romanov**; scholarly editing and indexes by **Maxim Romanov**"
     venue: "St. Petersburg: Dilya, 2006. 304 pp. ISBN 5-88503-461-3. Russian translation of *An Introduction to the Hadith* (Edinburgh: Edinburgh University Press, 1994)"
     lang: Russian
@@ -84,7 +84,7 @@ items:
   - id: watt-2006-ru
     group: translations
     year: 2006
-    title: "*Mukhammad v Mekke*"
+    title: "*Мухаммад в Мекке*"
     authors: "W. Montgomery Watt. Translated from English by M. E. Rezvan and N. S. Terletskii; editing (with M. E. Rezvan) and indexes by **Maxim Romanov**"
     venue: "St. Petersburg: Dilya, 2006. 272 pp. ISBN 5-88503-507-5. Russian translation of *Muhammad at Mecca* (Oxford, 1953)"
     lang: Russian
@@ -92,7 +92,7 @@ items:
   - id: bell-watt-2005-ru
     group: translations
     year: 2005
-    title: "*Koranistika: vvedenie*"
+    title: "*Коранистика: введение*"
     authors: "Richard Bell and W. Montgomery Watt. Translated from English by S. A. Zhdanov, B. V. Norik, and **Maxim Romanov**; indexes by **Maxim Romanov**; scholarly editor V. S. Rybalkin"
     venue: "St. Petersburg: Dilya, 2005. 256 pp. Russian translation of *Bell’s Introduction to the Qurʾān* (Edinburgh: Edinburgh University Press, 1970)"
     lang: Russian
@@ -100,7 +100,7 @@ items:
   - id: knysh-2004-ru
     group: translations
     year: 2004
-    title: "*Musulmanskii mistitsizm: kratkaia istoriia*"
+    title: "*Мусульманский мистицизм: краткая история*"
     authors: "Alexander D. Knysh. Translated from English, with indexes, by **Maxim Romanov**"
     venue: "St. Petersburg: Dilya, 2004. 464 pp. ISBN 5-88503-232-7. Russian translation of *Islamic Mysticism: A Short History* (Leiden: Brill, 2000)"
     lang: Russian
