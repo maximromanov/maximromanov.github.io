@@ -177,7 +177,8 @@ def main():
         gi = [p for p in pubs["items"] if p.get("group") == g["id"]]
         if not gi:
             continue
-        pub_items.append(("", r"\textsc{" + tex(g["title"].lower()) + "}"))
+        pub_items.append(("", r"\vspace{6pt}{\color{rmred}\fontsize{9.5}{12}\selectfont\addfontfeature{LetterSpace=9}"
+                          + tex(g["title"]).upper() + r"}\vspace{1pt}"))
         pub_items += [publication(p) for p in gi]
     secs.append(section("Publications", [("", r"{\small key = key contribution to digital humanities in the field · pr = peer-reviewed · oa = open access}")] + pub_items))
     secs.append(section("Invited Talks, Guest Lectures, Keynotes", [talk(t) for t in talks["invited"]]))
