@@ -3,7 +3,7 @@ title: Research
 permalink: /research/
 kicker: "Projects and Methods"
 lede: "Projects, corpora, and tools, from the current Emmy Noether group back to the dissertation that started the method. Each entry says what was built, why, and where to find it."
-description: "Research projects of Maxim Romanov: EIS1600, OpenITI, mARkdown, al-Ṯurayyā, NgramReader and Book Classification, KITAB, OpenITI AOCP."
+description: "Research projects of Maxim Romanov: EIS1600, OpenITI, mARkdown, al-Ṯurayyā, OpenITI NgramReader and T10 Book Classification, KITAB, OpenITI AOCP."
 wide: true
 illustration:
   src: /assets/img/kalila-fishing.jpg
@@ -67,13 +67,15 @@ al-Ṯurayyā is designed to help us understand spatial connections within the I
 
 <div class="project" id="adhfais-apps" markdown="1">
 
-## NgramReader and Book Classification
+## OpenITI NgramReader and T10 Book Classification
 
-<p class="meta"><b>Online applications</b> · 2025 · Appendices to <i>Digital Humanities for Arabic and Islamic Studies</i> (Brill, 2026)</p>
+<p class="meta"><b>Online applications</b> · version 1, 2025 · version 2, 2026 · Appendices to <i>Digital Humanities for Arabic and Islamic Studies</i> (Brill, 2026)</p>
 
-The **OpenITI NgramReader** is a tool similar to the Google Ngram Viewer, designed to trace the use of words and phrases over time across the whole corpus. The default graph shows the verb *tasalṭana* (“to become a sultan”), which came into use only in the Mamlūk period; the report beneath it shows that of some 2,400 attestations, about a third come from the Mamlūk historian Ibn Taġrībirdī (d. 874/1470). The **T10 Book Classification** application (published under the title *M10 Book Classification*, M for model; T10 and M10 name the same ten-type model, and T10 is the name used in the book) is an experiment in typology: each work in the corpus is measured against ten groups of texts selected to represent a type (“genre”), so that a work can belong to several types in different degrees instead of being forced into one category at the expense of all others. Both applications are built on OpenITI release 2023.1.8 and are archived on Zenodo. The book’s figures are also published as an open online supplement on figshare, where they can be enlarged for closer examination.
+The **OpenITI NgramReader** is a tool similar to the Google Ngram Viewer, designed to trace the use of words and phrases over time across the whole corpus. The default graph shows the verb *tasalṭana* (“to become a sultan”), which came into use only in the Mamlūk period; the report beneath it shows that of some 2,400 attestations, about a third come from the Mamlūk historian Ibn Taġrībirdī (d. 874/1470). The **T10 Book Classification** application is an experiment in typology: each work in the corpus is measured against ten groups of texts selected to represent a type (“genre”), so that a work can belong to several types in different degrees instead of being forced into one category at the expense of all others. Both applications are built on OpenITI release 2023.1.8 and are archived on Zenodo. Version 2 (2026) rebuilds them as free, fast web apps that run in the browser on OpenITI release 2023.1.8, with guided tours, shareable links and ready-made citations; they work on phones and can be added to the home screen. The book’s figures are also published as an open online supplement on figshare, where they can be enlarged for closer examination.
 
-<p class="links"><a href="https://eis1600.aai.uni-hamburg.de/shiny/OpenITI_NgramReader/">NgramReader</a> <a href="https://eis1600.aai.uni-hamburg.de/shiny/t10BookClassifier/">Book Classification</a> <a href="https://doi.org/10.6084/m9.figshare.32324454">Figures supplement (figshare)</a> <a href="/publications/#romanov-2026-dhais">The book</a> <a href="https://doi.org/10.5281/zenodo.15662942">Zenodo (NgramReader)</a> <a href="https://doi.org/10.5281/zenodo.15663089">Zenodo (Book Classification)</a></p>
+<p class="links"><a href="https://maximromanov.github.io/ngramreader/">Appendix 1: OpenITI NgramReader</a> <a href="https://maximromanov.github.io/classifier/">Appendix 2: T10 Book Classification</a> <a href="https://doi.org/10.6084/m9.figshare.32324454">Figures supplement (figshare)</a> <a href="/publications/#romanov-2026-dhais">The book</a> <a href="https://doi.org/10.5281/zenodo.23985408">Zenodo (NgramReader, version 2)</a> <a href="https://doi.org/10.5281/zenodo.15662941">Zenodo (NgramReader, all versions)</a> <a href="https://doi.org/10.5281/zenodo.23985062">Zenodo (Book Classification, version 2)</a> <a href="https://doi.org/10.5281/zenodo.15663088">Zenodo (Book Classification, all versions)</a></p>
+
+<p class="meta">Version 1 (2025). NgramReader: <a href="https://eis1600.aai.uni-hamburg.de/shiny/OpenITI_NgramReader/">Original R/Shiny version (v1, EIS1600 server)</a> · Book Classification, published as <i>M10 Book Classification</i> (M for model; M10 and T10 name the same ten-type model): <a href="https://eis1600.aai.uni-hamburg.de/shiny/t10BookClassifier/">Original R/Shiny version (v1, EIS1600 server)</a></p>
 
 </div>
 
