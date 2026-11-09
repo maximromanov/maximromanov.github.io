@@ -17,7 +17,7 @@
 <link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="/assets/img/icon-512.png" type="image/png" sizes="512x512">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/site.css?v=9c0ba8a3">
+<link rel="stylesheet" href="/assets/site.css?v=b51952fd">
 <script>
 /* Apply a saved theme before first paint to avoid a flash. */
 try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}
@@ -47,7 +47,7 @@ try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.doc
 </header>
 
 <main id="main" class="wrap ">
-<header class="page-head note-head"><p class="app"><a href="/notes/">Notes</a> · <time datetime="2013-01-02">January 2, 2013</time></p><h1>Python Functions for Arabic</h1></header><figure class="cover"><img src="/images/covers/13186u_a.jpg" alt="" loading="lazy"><figcaption><strong>Photo credit</strong>: Iraq, Baghdad &amp; mosque. <em>Library of Congress</em>, <a href="http://hdl.loc.gov/loc.pnp/matpc.13186">LC-DIG-matpc-13186</a></figcaption></figure><article class="prose note-body"><p>There are certain operations one has to repeat many times while manipulating Arabic text. For a number of purposes Arabic text must be normalized, namely &#8220;noise&#8221; characters deleted, the orthography of problematic letters unified, etc. Sometimes it is necessary to deNormalize search words, i.e. modify regular expressions in such a way that orthographic possibilities are considered to the maximum degree. Some software does not work with Arabic characters, so it makes sense to transliterate Arabic text and work with English characters instead. Below are some functions that perform such operations.</p>
+<section class="latest-notes" aria-labelledby="latest-notes-h"><h2 class="ln-label" id="latest-notes-h">Latest notes</h2><div class="ln-body"><ol class="ln-list"><li><time class="ln-date" datetime="2026-11-09">Nov 2026</time><a class="ln-title" href="/notes/ngramreader-classifier-v2/">NgramReader and Book Classifier, version 2</a></li></ol><a class="ln-all" href="/notes/">All notes →</a></div></section><header class="page-head note-head"><p class="app"><a href="/notes/">Notes</a> · <time datetime="2013-01-02">January 2, 2013</time></p><h1>Python Functions for Arabic</h1></header><figure class="cover"><img src="/images/covers/13186u_a.jpg" alt="" loading="lazy"><figcaption><strong>Photo credit</strong>: Iraq, Baghdad &amp; mosque. <em>Library of Congress</em>, <a href="http://hdl.loc.gov/loc.pnp/matpc.13186">LC-DIG-matpc-13186</a></figcaption></figure><article class="prose note-body"><p>There are certain operations one has to repeat many times while manipulating Arabic text. For a number of purposes Arabic text must be normalized, namely &#8220;noise&#8221; characters deleted, the orthography of problematic letters unified, etc. Sometimes it is necessary to deNormalize search words, i.e. modify regular expressions in such a way that orthographic possibilities are considered to the maximum degree. Some software does not work with Arabic characters, so it makes sense to transliterate Arabic text and work with English characters instead. Below are some functions that perform such operations.</p>
 <h2 id="transliteration">Transliteration</h2>
 <p>Some programs do not support Arabic, but might be crucial for research (for example, R). This function converts Arabic into a transliterated form that any program can process.</p>
 <pre><code class="language-python">  def translitArabic(text):
@@ -161,7 +161,7 @@ print(deNoise(testLine))
     <p class="foot-note">© 2026 Maxim Romanov. Hand-built static site; no cookies. Visits are counted without personal data by GoatCounter. Text is licensed CC BY-NC-SA 4.0 unless noted. <span class="views" data-views="https://maximromanov.goatcounter.com/counter/TOTAL.json"></span></p>
   </div>
 </footer>
-<script src="/assets/theme.js?v=9c0ba8a3" defer></script>
+<script src="/assets/theme.js?v=b51952fd" defer></script>
 <script data-goatcounter="https://maximromanov.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

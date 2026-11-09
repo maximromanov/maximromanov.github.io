@@ -43,7 +43,8 @@ def md(text):
     """Convert a Markdown block to HTML."""
     if not text:
         return ""
-    return markdown.markdown(text, extensions=MD_EXTENSIONS, extension_configs=MD_CONFIG)
+    out = markdown.markdown(text, extensions=MD_EXTENSIONS, extension_configs=MD_CONFIG)
+    return re.sub(r"\{\{email:([^}|]+)(?:\|([^}]+))?\}\}", lambda m: email_html(m.group(1), m.group(2)), out)
 
 
 def mdi(text):
@@ -52,7 +53,7 @@ def mdi(text):
         return ""
     out = markdown.markdown(str(text), extensions=["extra"])
     out = re.sub(r"^<p>(.*)</p>$", r"\1", out.strip(), flags=re.S)
-    out = re.sub(r"\{\{email:([^}]+)\}\}", lambda m: email_html(m.group(1)), out)
+    out = re.sub(r"\{\{email:([^}|]+)(?:\|([^}]+))?\}\}", lambda m: email_html(m.group(1), m.group(2)), out)
     return out
 
 

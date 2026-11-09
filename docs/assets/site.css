@@ -414,3 +414,7 @@ th { font-family: var(--f-ui); font-size: 14px; letter-spacing: .04em; text-tran
 
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .home-head .visually-hidden + .hd-standing { margin-top: 0; font-size: clamp(24px, 3.2vw, 34px); line-height: 1.28; }
+
+/* long URLs (links or plain text, e.g. DOIs in citations) must wrap on phones */
+.prose { overflow-wrap: break-word; }
+.prose a { overflow-wrap: anywhere; }
