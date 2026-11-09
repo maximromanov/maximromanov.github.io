@@ -146,6 +146,9 @@ def foot_links_html():
     return " · ".join(link_html(l) for l in SITE["links"])
 
 
+LATEST_NOTES_HTML = ""
+
+
 def render(page):
     """page: dict with title, description, content, permalink, body_class, main_class, extra_head."""
     title = page["title"]
@@ -156,7 +159,7 @@ def render(page):
         "description": esc(page.get("description") or SITE["description"]),
         "canonical": SITE["url"] + page["permalink"],
         "nav": nav_html(page["permalink"]),
-        "content": page["content"],
+        "content": (LATEST_NOTES_HTML if page.get("body_class") != "page-404" else "") + page["content"],
         "body_class": page.get("body_class", ""),
         "main_class": page.get("main_class", ""),
         "extra_head": page.get("extra_head", ""),
@@ -537,7 +540,9 @@ def render_notes_index(meta, intro_md, notes):
 
 
 def build_pages():
+    global LATEST_NOTES_HTML
     notes = collect_notes()
+    LATEST_NOTES_HTML = render_latest_notes(notes)
     for meta, body in notes:
         render_note(meta, body)
         for old in meta.get("old_urls") or []:
@@ -556,7 +561,7 @@ def build_pages():
         }
         if layout == "home":
             page["is_home"] = True
-            page["content"] = render_home(meta, body)
+            page["content"] = render_home(meta, body, notes)
         elif layout == "publications":
             page["content"] = render_publications_page(meta, body)
         elif layout == "talks":
@@ -584,13 +589,30 @@ def build_pages():
     return notes
 
 
-def render_home(meta, body):
+LATEST_NOTES_MAX_AGE_DAYS = 365
+
+
+def render_latest_notes(notes, n=5):
+    cutoff = datetime.date.today() - datetime.timedelta(days=LATEST_NOTES_MAX_AGE_DAYS)
+    notes = [x for x in notes if x[0]["date"] >= cutoff]
+    if not notes:
+        return ""
+    lis = ""
+    for m, _ in notes[:n]:
+        lis += (f'<li><time class="ln-date" datetime="{m["date"].isoformat()}">{m["date"].strftime("%b %Y")}</time>'
+                f'<a class="ln-title" href="{m["permalink"]}">{mdi(m["title"])}</a></li>')
+    return ('<section class="latest-notes" aria-labelledby="latest-notes-h">'
+            '<h2 class="ln-label" id="latest-notes-h">Latest notes</h2>'
+            f'<div class="ln-body"><ol class="ln-list">{lis}</ol><a class="ln-all" href="/notes/">All notes →</a></div></section>')
+
+
+def render_home(meta, body, notes=()):
     """Home page: a hero block, then the essay from the Markdown body, then a project rail."""
     links = " · ".join(link_html(l) for l in SITE["links"])
     hero = '<section class="home-head home-head-illus"><div class="home-head-text">'
     if meta.get("kicker"):
         hero += f'<p class="app">{mdi(meta["kicker"])}</p>'
-    hero += f'<h1>{esc(SITE["name"])}</h1>'
+    hero += f'<h1 class="visually-hidden">{esc(SITE["name"])}</h1>'
     if meta.get("standing"):
         hero += f'<p class="hd-standing">{mdi(meta["standing"])}</p>'
     if meta.get("position"):

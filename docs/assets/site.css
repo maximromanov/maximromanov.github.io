@@ -76,9 +76,9 @@
   --link-underline: rgba(158, 27, 20, .35);
   --gold: #B8923F;          /* jadwal inner line, ornaments */
   --grain-opacity: .03;
-  --f-text: "Libre Baskerville", Baskerville, "Iowan Old Style", Georgia, serif;
-  --f-ui: Calibri, "Carlito", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-  --f-mono: Consolas, "Inconsolata", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --f-text: "Libre Baskerville", "Amiri", Baskerville, "Iowan Old Style", Georgia, serif;
+  --f-ui: Calibri, "Carlito", "Amiri", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --f-mono: Consolas, "Inconsolata", "Amiri", ui-monospace, SFMono-Regular, Menlo, monospace;
   --f-ar: "Amiri", "Scheherazade New", "Noto Naskh Arabic", "Geeza Pro", "Traditional Arabic", serif;
   --measure: 66ch;
   --wrap: 960px;
@@ -201,6 +201,8 @@ th { font-family: var(--f-ui); font-size: 14px; letter-spacing: .04em; text-tran
 
 /* ---------- home ---------- */
 .home-head { padding: clamp(44px, 8vw, 96px) 0 28px; }
+.latest-notes + .home-head { padding-top: clamp(28px, 4vw, 48px); }
+.latest-notes + .page-head, .latest-notes + .page-head-illus { padding-top: clamp(20px, 3vw, 36px); }
 .home-head h1 { font-size: clamp(42px, 7vw, 76px); letter-spacing: -.028em; line-height: 1.02; }
 .hd-standing { font-size: clamp(19px, 2.5vw, 26px); font-weight: 400; color: var(--red); margin: 22px 0 0; line-height: 1.34; max-width: 30ch; letter-spacing: -.008em; text-wrap: balance; }
 .hd-position { font-family: var(--f-ui); font-size: 16.5px; color: var(--muted); margin: 18px 0 0; max-width: 60ch; line-height: 1.5; }
@@ -396,3 +398,19 @@ th { font-family: var(--f-ui); font-size: 14px; letter-spacing: .04em; text-tran
   .badge { padding: 0 3pt; }
   .cv-section .it-title { font-size: 9.5pt; }
 }
+
+/* ---------- latest notes on the home page ---------- */
+.latest-notes { display: grid; grid-template-columns: 22px 1fr; gap: 14px; margin: 26px 0 6px auto; width: fit-content; max-width: 100%; }
+.ln-label { writing-mode: vertical-rl; align-self: start; font-family: var(--f-mono); font-weight: 400; font-size: 11.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--red); margin: 0; padding: 4px 0 0; border: 0; line-height: 22px; white-space: nowrap; }
+.ln-body { border-left: 1px solid var(--rule); padding-left: 16px; min-width: 0; }
+.ln-list { list-style: none; margin: 0; padding: 0; }
+.ln-list li { display: grid; grid-template-columns: 70px 1fr; gap: 10px; align-items: baseline; padding: 0; line-height: 1.45; }
+.ln-date { font-family: var(--f-mono); font-size: 12px; color: var(--faint); letter-spacing: .02em; }
+.ln-title { font-family: var(--f-mono); font-size: 13px; line-height: 1.45; color: var(--ink); text-decoration: none; }
+.ln-title:hover { color: var(--link); text-decoration: underline; text-decoration-color: var(--link-underline); text-underline-offset: 3px; }
+.ln-all { display: inline-block; margin-top: 4px; font-family: var(--f-ui); font-size: 13.5px; color: var(--muted); text-decoration: none; }
+.ln-all:hover { color: var(--link); }
+@media (max-width: 560px) { .ln-list li { grid-template-columns: 1fr; gap: 0; padding: 2px 0; } }
+
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.home-head .visually-hidden + .hd-standing { margin-top: 0; font-size: clamp(24px, 3.2vw, 34px); line-height: 1.28; }

@@ -2,7 +2,6 @@
 title: "Maxim Romanov"
 layout: home
 permalink: /
-kicker: "Historian · Digital Humanities"
 standing: "Social history of the premodern Islamic world, the Arabic written tradition, and the computational methods for studying both"
 position: "Emmy Noether Junior Research Group Leader at the Asien-Afrika-Institut, Universität Hamburg, where I direct [EIS1600](/research/#eis1600), *The Evolution of Islamic Societies (c. 600–1600 CE): Algorithmic Analysis into Social History* (DFG, 2021–2027). Co-founder of the [Open Islamicate Texts Initiative](/research/#openiti)."
 description: "Maxim Romanov is a historian of the premodern Islamic world and the Arabic written tradition, working with computational methods. Emmy Noether group leader (EIS1600) at Universität Hamburg; co-PI of OpenITI; author of Digital Humanities for Arabic and Islamic Studies (Brill, 2026)."
