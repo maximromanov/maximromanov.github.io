@@ -418,3 +418,9 @@ th { font-family: var(--f-ui); font-size: 14px; letter-spacing: .04em; text-tran
 /* long URLs (links or plain text, e.g. DOIs in citations) must wrap on phones */
 .prose { overflow-wrap: break-word; }
 .prose a { overflow-wrap: anywhere; }
+
+/* ---------- dated update box at the top of a note ---------- */
+.note-body .post-update { margin: 0 0 2.2em; padding: 16px 22px 4px; background: var(--panel); border: 1px solid var(--rule-soft); border-left: 3px solid var(--red); border-radius: 4px; font-family: var(--f-ui); font-size: 16px; line-height: 1.55; }
+.note-body .post-update p { margin: 0 0 12px; }
+.note-body .post-update .pu-label { font-family: var(--f-mono); font-size: 12.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--red); margin-bottom: 8px; }
+.note-body .post-update code { font-size: .92em; }

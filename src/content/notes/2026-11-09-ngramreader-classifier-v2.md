@@ -7,6 +7,14 @@ excerpt: "The two online appendices to *Digital Humanities for Arabic and Islami
 tags: ["OpenITI", "NgramReader", "Book Classification", "DHFAIS"]
 ---
 
+<aside class="post-update" markdown="1">
+<p class="pu-label">Version 2.03 update · November 10, 2026</p>
+
+In the NgramReader, each search line now has its own fields: a label first, then one field per word form or regular expression, with *+ add form* for more. Searches that mix Arabic and Latin script are easier to write and to read this way, since each field runs in its own direction; charts, tables and citations keep the Arabic and Latin parts of a search apart as well. Beside each field, *⌨ Arabic* opens an Arabic keyboard with a row of keys for regular expressions; the Book Classifier has the same keyboard beside its search box. The keyboard is adapted, with his permission, from Peter Verkinderen’s [Arabic Virtual Keyboard](https://github.com/pverkind/arabicVirtualKeyboard), and the fields answer a problem he reported.
+
+Links and citations keep the earlier written form of a search line, `#Label #item1 #item2`, so links made before the update open unchanged. Each app now lists its changes on a “What’s new” page: [NgramReader](https://maximromanov.github.io/ngramreader/changes.html), [Book Classifier](https://maximromanov.github.io/classifier/changes.html).
+</aside>
+
 The two online appendices to my book *Digital Humanities for Arabic and Islamic Studies* (Brill, 2026) have a new version. The OpenITI NgramReader and the T10 Book Classification app now run as fast, static web apps on this site, and version 2 of both is archived on Zenodo.
 
 - **OpenITI NgramReader** (DHFAIS App{endix} 1): [maximromanov.github.io/ngramreader](https://maximromanov.github.io/ngramreader/) · [doi:10.5281/zenodo.23985408](https://doi.org/10.5281/zenodo.23985408)

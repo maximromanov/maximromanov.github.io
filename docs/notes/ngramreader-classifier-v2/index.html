@@ -17,7 +17,7 @@
 <link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="/assets/img/icon-512.png" type="image/png" sizes="512x512">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/site.css?v=b51952fd">
+<link rel="stylesheet" href="/assets/site.css?v=d155b5a2">
 <script>
 /* Apply a saved theme before first paint to avoid a flash. */
 try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}
@@ -47,7 +47,12 @@ try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.doc
 </header>
 
 <main id="main" class="wrap ">
-<section class="latest-notes" aria-labelledby="latest-notes-h"><h2 class="ln-label" id="latest-notes-h">Latest notes</h2><div class="ln-body"><ol class="ln-list"><li><time class="ln-date" datetime="2026-11-09">Nov 2026</time><a class="ln-title" href="/notes/ngramreader-classifier-v2/">NgramReader and Book Classifier, version 2</a></li></ol><a class="ln-all" href="/notes/">All notes →</a></div></section><header class="page-head note-head"><p class="app"><a href="/notes/">Notes</a> · <time datetime="2026-11-09">November 9, 2026</time></p><h1>NgramReader and Book Classifier, version 2</h1></header><article class="prose note-body"><p>The two online appendices to my book <em>Digital Humanities for Arabic and Islamic Studies</em> (Brill, 2026) have a new version. The OpenITI NgramReader and the T10 Book Classification app now run as fast, static web apps on this site, and version 2 of both is archived on Zenodo.</p>
+<section class="latest-notes" aria-labelledby="latest-notes-h"><h2 class="ln-label" id="latest-notes-h">Latest notes</h2><div class="ln-body"><ol class="ln-list"><li><time class="ln-date" datetime="2026-11-09">Nov 2026</time><a class="ln-title" href="/notes/ngramreader-classifier-v2/">NgramReader and Book Classifier, version 2</a></li></ol><a class="ln-all" href="/notes/">All notes →</a></div></section><header class="page-head note-head"><p class="app"><a href="/notes/">Notes</a> · <time datetime="2026-11-09">November 9, 2026</time></p><h1>NgramReader and Book Classifier, version 2</h1></header><article class="prose note-body"><aside class="post-update">
+<p class="pu-label">Version 2.03 update · November 10, 2026</p>
+<p>In the NgramReader, each search line now has its own fields: a label first, then one field per word form or regular expression, with <em>+ add form</em> for more. Searches that mix Arabic and Latin script are easier to write and to read this way, since each field runs in its own direction; charts, tables and citations keep the Arabic and Latin parts of a search apart as well. Beside each field, <em>⌨ Arabic</em> opens an Arabic keyboard with a row of keys for regular expressions; the Book Classifier has the same keyboard beside its search box. The keyboard is adapted, with his permission, from Peter Verkinderen’s <a href="https://github.com/pverkind/arabicVirtualKeyboard">Arabic Virtual Keyboard</a>, and the fields answer a problem he reported.</p>
+<p>Links and citations keep the earlier written form of a search line, <code>#Label #item1 #item2</code>, so links made before the update open unchanged. Each app now lists its changes on a “What’s new” page: <a href="https://maximromanov.github.io/ngramreader/changes.html">NgramReader</a>, <a href="https://maximromanov.github.io/classifier/changes.html">Book Classifier</a>.</p>
+</aside>
+<p>The two online appendices to my book <em>Digital Humanities for Arabic and Islamic Studies</em> (Brill, 2026) have a new version. The OpenITI NgramReader and the T10 Book Classification app now run as fast, static web apps on this site, and version 2 of both is archived on Zenodo.</p>
 <ul>
 <li><strong>OpenITI NgramReader</strong> (DHFAIS App{endix} 1): <a href="https://maximromanov.github.io/ngramreader/">maximromanov.github.io/ngramreader</a> · <a href="https://doi.org/10.5281/zenodo.23985408">doi:10.5281/zenodo.23985408</a></li>
 <li><strong>T10 Book Classification</strong> (DHFAIS App{endix} 2): <a href="https://maximromanov.github.io/classifier/">maximromanov.github.io/classifier</a> · <a href="https://doi.org/10.5281/zenodo.23985062">doi:10.5281/zenodo.23985062</a></li>
@@ -114,7 +119,7 @@ try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.doc
     <p class="foot-note">© 2026 Maxim Romanov. Hand-built static site; no cookies. Visits are counted without personal data by GoatCounter. Text is licensed CC BY-NC-SA 4.0 unless noted. <span class="views" data-views="https://maximromanov.goatcounter.com/counter/TOTAL.json"></span></p>
   </div>
 </footer>
-<script src="/assets/theme.js?v=b51952fd" defer></script>
+<script src="/assets/theme.js?v=d155b5a2" defer></script>
 <script data-goatcounter="https://maximromanov.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
