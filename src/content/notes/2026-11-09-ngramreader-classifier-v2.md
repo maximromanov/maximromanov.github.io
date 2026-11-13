@@ -8,6 +8,12 @@ tags: ["OpenITI", "NgramReader", "Book Classification", "DHFAIS"]
 ---
 
 <aside class="post-update" markdown="1">
+<p class="pu-label">Version 2.04 update · November 13, 2026</p>
+
+Links to the apps are now short and readable: a link shows the search itself, for example `…/ngramreader/#l=Baġdād~[wb]?bgdAd`. Arabic word forms are written in transliteration, and links no longer carry the data version; a link without one refers to OpenITI release 2023.1.8. All older links, including those in earlier citations, still open the same view. The Cite dialog can now copy citations as Markdown. The details are on each app’s “What’s new” page.
+</aside>
+
+<aside class="post-update" markdown="1">
 <p class="pu-label">Version 2.03 update · November 10, 2026</p>
 
 In the NgramReader, each search line now has its own fields: a label first, then one field per word form or regular expression, with *+ add form* for more. Searches that mix Arabic and Latin script are easier to write and to read this way, since each field runs in its own direction; charts, tables and citations keep the Arabic and Latin parts of a search apart as well. Beside each field, *⌨ Arabic* opens an Arabic keyboard with a row of keys for regular expressions; the Book Classifier has the same keyboard beside its search box. The keyboard is adapted, with his permission, from Peter Verkinderen’s [Arabic Virtual Keyboard](https://github.com/pverkind/arabicVirtualKeyboard), and the fields answer a problem he reported.
