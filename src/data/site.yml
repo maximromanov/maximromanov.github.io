@@ -46,5 +46,5 @@ analytics:
   goatcounter: "maximromanov"
   show_views: true
 
-footer_note: "Hand-built static site; no cookies, no trackers. Text is licensed CC BY-NC-SA 4.0 unless noted."
-footer_note_counted: "Hand-built static site; no cookies. Visits are counted without personal data by GoatCounter. Text is licensed CC BY-NC-SA 4.0 unless noted."
+footer_note: "Hand-built static site; no cookies, no trackers. Text is licensed CC BY-NC-SA 4.0 unless noted"
+footer_note_counted: "Hand-built static site; no cookies. Visits are counted without personal data by GoatCounter. Text is licensed CC BY-NC-SA 4.0 unless noted"

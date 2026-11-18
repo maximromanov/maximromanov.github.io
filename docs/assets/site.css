@@ -349,6 +349,7 @@ th { font-family: var(--f-ui); font-size: 14px; letter-spacing: .04em; text-tran
 .notes-list .it-title { font-size: 19px; }
 
 /* ---------- footer ---------- */
+.foot-note a.q, .foot-note a.q:hover, .foot-note a.q:visited { color: inherit; text-decoration: none; cursor: text; border: 0; background: none; }
 .site-foot { border-top: 1px solid var(--gold); box-shadow: inset 0 3px 0 var(--paper), inset 0 4px 0 var(--rule); margin-top: 48px; background: var(--paper-2); }
 .foot-ornament { grid-column: 1 / -1; text-align: center; margin: 0 0 6px; line-height: 1; }
 .foot-inner { padding-top: 22px; padding-bottom: 32px; display: grid; grid-template-columns: 1fr auto; gap: 10px 24px; align-items: baseline; font-family: var(--f-ui); font-size: 14.5px; color: var(--muted); }
